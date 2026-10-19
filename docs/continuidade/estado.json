@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 3,
+  "revisao": 4,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -175,26 +175,34 @@
     "observacao": "Confirmação limitada ao commit indicado; atualizações administrativas posteriores do remoto não são presumidas como já baixadas."
   },
   "pendencias": [
-    "Criar/ativar ambiente Python do projeto e confirmar versão e executável (PREP-05).",
-    "Escolher e preparar bibliotecas, verificar importações e registrar dependências/versões efetivas (PREP-05).",
+    "Inspecionar Python, pacotes relevantes, dependências declaradas e kernels existentes do SC_TECH (PREP-05).",
+    "Avaliar adequação e eventuais ajustes mínimos; verificar importações, interface/kernel e registrar dependências efetivas (PREP-05).",
     "Preparar destino e acesso PostgreSQL e verificar conexão Python (PREP-06).",
     "Obter e conferir os snapshots contratados (PREP-07).",
-    "Verificar a preparação e registrar checkpoint final de ambiente (PREP-08)."
+    "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno prepara e ativa o ambiente Python do projeto e informa versão e caminho do interpretador. Recomendação do agente: Conda ga001 com Python 3.12; não declarar criado nem registrar a proposta como decisão autoral de Bruno antes da confirmação.",
+  "proxima_acao": "Bruno fornece versão de Python, lista filtrada de pacotes, resultado de pip check no SC_TECH e lista de kernels vista pelo Jupyter do base. Inspeção antes de instalar ou atualizar pacotes.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
     "Não há código, SQL, análise ou conclusão da solução implementados por esta governança."
   ],
-  "ambiente_python_proposto": {
-    "origem": "Recomendação do agente, aguardando escolha/execução de Bruno.",
+  "ambiente_python_selecionado": {
+    "nome": "SC_TECH",
     "gerenciador": "Conda",
+    "origem": "Escolha explícita de Bruno na conversa de 19/10/2026.",
+    "motivo_informado": "Aproveitar bibliotecas existentes e evitar downloads repetidos.",
+    "status": "selecionado_para_inspecao_adequacao_ainda_nao_verificada",
+    "interface_desejada": "JupyterLab",
+    "versao_python_verificada_nesta_execucao": null,
+    "bibliotecas_verificadas_nesta_execucao": false,
+    "kernel_verificado_nesta_execucao": false
+  },
+  "ambiente_criado_anteriormente": {
     "nome": "ga001",
-    "linha_python": "3.12",
-    "justificativa": "Ambiente identificado para o projeto, usando a mesma linha Python do inventário inicial.",
-    "criado": false,
-    "bibliotecas_escolhidas": false,
-    "contrato_exige_apenas": "Python 3 e ambiente/dependências documentados."
+    "python_informado": "3.12.15",
+    "executavel_informado": "/home/bruno/anaconda3/envs/ga001/bin/python",
+    "origem": "Saída fornecida por Bruno.",
+    "situacao": "Preparação suspensa em favor da avaliação do SC_TECH; não removido pelo agente."
   }
 }
