@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 7,
+  "revisao": 8,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -168,7 +168,12 @@
     "resultado_conda_SC_TECH": {
       "fonte": "Saídas de python --version, conda list filtrado e pip check fornecidas por Bruno após aceitar a instalação; agente sem acesso à máquina.",
       "arquivo": "docs/ambiente.md",
-      "limite": "Presença e versões comprovadas pelas saídas; dependências declaradas verificadas. Não comprova importações, kernel, conexão PostgreSQL nem reprodutibilidade integral."
+      "limite": "Presença e versões comprovadas pelas saídas e dependências declaradas verificadas; interpretador do notebook confirmado posteriormente. Importações completas aguardam confirmação explícita; conexão PostgreSQL e reconstrução não testadas."
+    },
+    "kernel_SC_TECH": {
+      "arquivo": "docs/ambiente.md",
+      "fonte": "Saída fornecida por Bruno após orientação para executar o teste em notebook Jupyter; sem acesso do agente à máquina.",
+      "limite": "A saída confirma o interpretador. Nenhuma exceção foi reportada no teste do notebook; falta confirmação explícita de que todas as importações solicitadas foram executadas sem erro."
     }
   },
   "ultimo_checkpoint_concluido": {
@@ -185,12 +190,12 @@
     "observacao": "Confirmação limitada ao commit indicado; atualizações administrativas posteriores do remoto não são presumidas como já baixadas."
   },
   "pendencias": [
-    "Verificar importações e interpretador do kernel sc_tech; registrar dependências necessárias ao projeto (PREP-05).",
+    "Confirmar explicitamente que todas as importações no notebook passaram sem erro; environment.yml e instruções de reconstrução registrados, reconstrução ainda não executada (PREP-05).",
     "Preparar destino e acesso PostgreSQL e verificar conexão Python (PREP-06).",
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno abre JupyterLab a partir do SC_TECH na raiz do projeto, seleciona o kernel correspondente, verifica importações de NumPy, pandas, matplotlib.pyplot, Seaborn, SQLAlchemy e Psycopg e informa sys.executable e sys.version no próprio notebook. Não instalar novamente nem avançar à PREP-06 antes das verificações e do registro das dependências.",
+  "proxima_acao": "Bruno confirma se todas as importações solicitadas no notebook executaram sem erro, incluindo Psycopg. Não repetir instalação nem identificação do interpretador. Após essa confirmação, revisar e encerrar PREP-05 com a especificação environment.yml já registrada; sincronizar a cópia local e seguir à PREP-06.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -201,11 +206,11 @@
     "gerenciador": "Conda",
     "origem": "Escolha explícita de Bruno na conversa de 19/10/2026.",
     "motivo_informado": "Aproveitar bibliotecas existentes e evitar downloads repetidos.",
-    "status": "pacotes_instalados_confirmados_importacoes_kernel_e_reproducao_pendentes",
+    "status": "interpretador_kernel_confirmado_dependencias_declaradas_importacoes_aguardam_confirmacao",
     "interface_desejada": "JupyterLab",
     "versao_python_verificada_nesta_execucao": "3.13.9",
-    "bibliotecas_verificadas_nesta_execucao": "Versões dos pacotes e pip check confirmados; importações pendentes.",
-    "kernel_verificado_nesta_execucao": "Registro sc_tech encontrado; interpretador efetivo não verificado",
+    "bibliotecas_verificadas_nesta_execucao": "Versões e pip check confirmados; nenhuma exceção reportada no teste do notebook, confirmação explícita das importações pendente.",
+    "kernel_verificado_nesta_execucao": "/home/bruno/anaconda3/envs/SC_TECH/bin/python — Python 3.13.9, saída do notebook fornecida por Bruno.",
     "validade_da_versao_inventariada": "Saída posterior à instalação; inventário anterior de Python 3.13.14 permanece histórico."
   },
   "ambiente_criado_anteriormente": {
@@ -290,8 +295,27 @@
       "ipykernel": "7.3.0"
     },
     "pip_check": "No broken requirements found.",
-    "limite": "Presença e versões comprovadas pelas saídas; dependências declaradas verificadas. Não comprova importações, kernel, conexão PostgreSQL nem reprodutibilidade integral.",
+    "limite": "Presença e versões comprovadas pelas saídas e dependências declaradas verificadas; interpretador do notebook confirmado posteriormente. Importações completas aguardam confirmação explícita; conexão PostgreSQL e reconstrução não testadas.",
     "importacoes_verificadas": false,
-    "interpretador_do_kernel_verificado": false
+    "interpretador_do_kernel_verificado": true
+  },
+  "kernel_SC_TECH": {
+    "data": "2026-10-19",
+    "fonte": "Saída fornecida por Bruno após orientação para executar o teste em notebook Jupyter; sem acesso do agente à máquina.",
+    "executavel": "/home/bruno/anaconda3/envs/SC_TECH/bin/python",
+    "python": "3.13.9",
+    "saida": "/home/bruno/anaconda3/envs/SC_TECH/bin/python 3.13.9 | packaged by conda-forge | (main, Oct 16 2025, 10:31:39) [GCC 14.3.0]",
+    "interpretador_confirmado": true,
+    "importacoes_sem_erro_reportado": true,
+    "importacoes_confirmadas_explicitamente": false,
+    "limite": "A saída confirma o interpretador. Nenhuma exceção foi reportada no teste do notebook; falta confirmação explícita de que todas as importações solicitadas foram executadas sem erro."
+  },
+  "dependencias_reproducao": {
+    "arquivo": "environment.yml",
+    "instrucoes": "docs/ambiente.md",
+    "autoria": "Agente de IA; metadados administrativos com versões fornecidas por Bruno.",
+    "alcance": "Especificação das dependências usadas na preparação, com versões diretas e origem pip do Seaborn; não é exportação integral do SC_TECH nem lock de dependências transitivas.",
+    "reconstrucao_executada": false,
+    "teste_previsto": "Verificação de reprodução da entrega, T10."
   }
 }

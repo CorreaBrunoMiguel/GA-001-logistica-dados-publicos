@@ -1,0 +1,17 @@
+# Registro administrativo preparado pela IA a partir das versões fornecidas por Bruno.
+# Dependências do projeto; reconstrução ainda não executada.
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13.9
+  - numpy=2.5.1
+  - pandas=3.0.5
+  - matplotlib=3.11.1
+  - sqlalchemy=2.1.5
+  - psycopg=3.3.4
+  - psycopg-c=3.3.4
+  - jupyterlab=4.6.2
+  - ipykernel=7.3.0
+  - pip
+  - pip:
+      - seaborn==0.13.2

@@ -17,7 +17,7 @@ Bruno confirmou Project privado, cinco opções de Status com Backlog padrão, A
 
 A governança foi publicada e conferida no [commit 1c36880](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/commit/1c36880141502535cfe978c2a90fc6b66e6674c0): política integral em AGENTS.md, estado e procedimento de continuidade, apoio da IA, registro de decisões, exclusões Git e pastas técnicas vazias. Nenhuma solução Python, SQL ou análise foi implementada pela IA.
 
-O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-04 concluída; sincronização local confirmada até 548f8e1; PREP-05 em andamento.** Bruno confirmou Python 3.13.9, SQLAlchemy 2.1.5 e Psycopg 3.3.4 no SC_TECH; pip check sem dependências declaradas quebradas. Importações, kernel e dependências reproduzíveis ainda pendentes.
+O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-04 concluída; sincronização local confirmada até 548f8e1; PREP-05 em andamento.** Bruno confirmou Python 3.13.9, SQLAlchemy 2.1.5 e Psycopg 3.3.4 no SC_TECH; pip check sem dependências declaradas quebradas. O interpretador do notebook foi confirmado no SC_TECH, e environment.yml e instruções foram preparados. Falta confirmação explícita das importações sem erro; reconstrução ainda não executada.
 
 ## Estados acordados
 

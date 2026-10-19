@@ -19,7 +19,7 @@ Código, SQL, decisões técnicas, análises e conclusões são de **Bruno**. O 
 
 Leia [AGENTS.md](AGENTS.md), [estado da execução](docs/continuidade/estado.json) e [procedimento de continuidade](docs/continuidade/README.md). Consulte o remoto para identificar a referência atual antes de retomar a issue indicada.
 
-Situação deste checkpoint: PREP-00 a PREP-04 concluídas; PREP-05 em andamento: SC_TECH com Python 3.13.9, pacotes de análise/Jupyter, SQLAlchemy e Psycopg confirmados por saídas de Bruno; importações, kernel e dependências reproduzíveis pendentes. Bruno confirmou sincronização local até o commit 548f8e1c29d07fa03e8693be677c2bc51e1f72fa; alterações de acompanhamento posteriores são identificadas pelo histórico remoto.
+Situação deste checkpoint: PREP-00 a PREP-04 concluídas; PREP-05 em andamento: SC_TECH com Python 3.13.9, pacotes de análise/Jupyter, SQLAlchemy e Psycopg confirmados por saídas de Bruno; interpretador do notebook confirmado no SC_TECH; [dependências](environment.yml) e [instruções de reconstrução](docs/ambiente.md) registradas. Falta confirmação explícita de todas as importações sem erro; reconstrução ainda não executada. Bruno confirmou sincronização local até o commit 548f8e1c29d07fa03e8693be677c2bc51e1f72fa; alterações de acompanhamento posteriores são identificadas pelo histórico remoto.
 
 ## Documentação e autoria
 
@@ -29,6 +29,6 @@ Situação deste checkpoint: PREP-00 a PREP-04 concluídas; PREP-05 em andamento
 - [Declaração de apoio da IA](docs/apoio-ia.md).
 - [Cards completos e evidências](docs/kanban/cards.json).
 
-As pastas técnicas estão vazias. A implementação e os resultados serão produzidos por Bruno nas respectivas tarefas. Dependências, configuração de exemplo e comandos reais de execução serão documentados a partir da preparação e implementação efetivamente realizadas.
+As pastas técnicas estão vazias. A implementação e os resultados serão produzidos por Bruno nas respectivas tarefas. As dependências da preparação estão em [environment.yml](environment.yml), com [instruções e limites de reconstrução](docs/ambiente.md). Configuração de acesso e comandos do fluxo analítico serão documentados a partir da implementação efetiva.
 
 A estrutura de pastas é uma convenção de organização; não altera requisitos, dados ou critérios do contrato. A submissão final deverá identificar um commit completo e a exportação atualizada dos cards.

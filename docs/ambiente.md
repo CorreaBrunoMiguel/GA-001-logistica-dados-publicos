@@ -126,4 +126,37 @@ Prefixo informado: `/home/bruno/anaconda3/envs/SC_TECH`. Os pacotes acima foram 
 
 `pip check` retornou **No broken requirements found.** As saídas demonstram os pacotes instalados e a versão efetiva do Python; não é preciso repetir a instalação ou exigir o log final da transação para reconhecer isso. O plano aceito e o inventário anterior permanecem como histórico.
 
-**Pendências atuais da PREP-05:** verificar importações e o interpretador do kernel no JupyterLab e registrar as dependências necessárias à reprodução do projeto. Dependências declaradas consistentes não comprovam funcionamento em execução. A conexão PostgreSQL permanece na PREP-06.
+**Situação após a instalação:** o interpretador do notebook e as dependências de reprodução foram registrados nas seções seguintes. A confirmação explícita das importações permanece pendente. A conexão PostgreSQL pertence à PREP-06.
+
+## SC_TECH — interpretador do notebook confirmado
+
+**Data:** 19/10/2026. **Fonte:** saídas fornecidas por Bruno.
+
+Uma tentativa anterior foi executada no Python do `base` (`/home/bruno/anaconda3/bin/python`, 3.12.7) e retornou `ModuleNotFoundError: No module named 'psycopg'`. Essa tentativa não testou o SC_TECH. Após `conda activate SC_TECH`, o terminal mostrou o executável `/home/bruno/anaconda3/envs/SC_TECH/bin/python` e Python 3.13.9.
+
+Após orientação para abrir JupyterLab, selecionar o kernel do SC_TECH e repetir as importações, Bruno forneceu:
+
+```text
+/home/bruno/anaconda3/envs/SC_TECH/bin/python 3.13.9 | packaged by conda-forge | (main, Oct 16 2025, 10:31:39) [GCC 14.3.0]
+```
+
+O interpretador efetivo do notebook está confirmado. A resposta não contém exceção, mas mostra apenas o print; falta a confirmação explícita de que todas as importações solicitadas foram executadas sem erro. Não repetir a instalação nem a identificação do interpretador.
+
+## Dependências e reconstrução do ambiente
+
+A IA preparou administrativamente [environment.yml](../environment.yml) a partir das versões fornecidas por Bruno. Ele declara Python, NumPy e pandas (manipulação e leitura), Matplotlib e Seaborn (visualização), SQLAlchemy (acesso SQL), Psycopg/psycopg-c (driver PostgreSQL), JupyterLab e ipykernel (interface e kernel). O Seaborn foi mantido na seção pip conforme o inventário; os demais pacotes versionados foram informados como conda-forge.
+
+O arquivo registra o subconjunto usado na preparação do projeto, com versões diretas; não é uma exportação integral do SC_TECH nem um lock de dependências transitivas. O ambiente de trabalho escolhido por Bruno é SC_TECH.
+
+Para reconstruir em uma instalação Conda separada ou em um nome ainda não existente, a partir da raiz do repositório:
+
+```bash
+conda env create --name ga001-repro --file environment.yml
+conda activate ga001-repro
+python -m pip check
+jupyter lab
+```
+
+No JupyterLab, selecionar o kernel do ambiente reconstruído e conferir `sys.executable`, `sys.version` e as importações de NumPy, pandas, matplotlib.pyplot, Seaborn, SQLAlchemy e Psycopg. Caso a interface não exponha o kernel, registrá-lo a partir desse ambiente com `python -m ipykernel install --user --name ga001-repro --display-name "Python (ga001-repro)"` e selecioná-lo antes da conferência.
+
+**Limite da evidência:** a reconstrução não foi executada. O arquivo e as instruções ficam disponíveis para a verificação de reprodução da entrega (T10); nenhuma nova instalação foi realizada ou solicitada agora. A PREP-05 permanece aberta aguardando a confirmação explícita das importações no notebook atual.
