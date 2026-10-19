@@ -17,7 +17,7 @@ Bruno confirmou Project privado, cinco opções de Status com Backlog padrão, A
 
 A governança foi publicada e conferida no [commit 1c36880](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/commit/1c36880141502535cfe978c2a90fc6b66e6674c0): política integral em AGENTS.md, estado e procedimento de continuidade, apoio da IA, registro de decisões, exclusões Git e pastas técnicas vazias. Nenhuma solução Python, SQL ou análise foi implementada pela IA.
 
-O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-04 concluída; sincronização local confirmada até 548f8e1; PREP-05 em andamento.**
+O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-04 concluída; sincronização local confirmada até 548f8e1; PREP-05 em andamento.** Bruno aceitou o plano Conda no SC_TECH, incluindo mudança de Python; conclusão da transação e verificações posteriores ainda pendentes.
 
 ## Estados acordados
 

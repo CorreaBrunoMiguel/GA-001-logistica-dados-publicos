@@ -96,3 +96,11 @@ pip check retornou **No broken requirements found.** Isso é verificação de de
 O registro sc_tech existe; o interpretador efetivamente usado por ele ainda será conferido. SQLAlchemy e Psycopg não apareceram no filtro de pacotes. O agente propôs acrescentá-los para a integração PostgreSQL, sem declarar essa proposta como requisito de biblioteca do contrato ou como instalação já realizada.
 
 **PREP-05 permanece em andamento:** complementos, importações, ligação do kernel e dependências reproduzíveis ainda pendentes. A versão 3.12.7 no inventário inicial pertence ao base; o ambiente escolhido para avaliação é SC_TECH com Python 3.13.14, conforme a inspeção acima.
+
+## SC_TECH — plano Conda aceito
+
+**Data:** 19/10/2026. Bruno forneceu o plano do comando `conda install -n SC_TECH -c conda-forge --freeze-installed sqlalchemy psycopg` e informou que o aceitou, declarando não haver problema em alterar a versão do Python.
+
+O plano prevê Python **3.13.14 → 3.13.9**, SQLAlchemy **2.1.5**, Psycopg e psycopg-c **3.3.4**, libpq **18.6** e download de **198,1 MB**. Também altera certificados, OpenSSL, Qt/PySide6, bibliotecas gráficas, MySQL e outras bibliotecas nativas. Esses valores descrevem o plano; não são um inventário posterior à instalação. A opção `--freeze-installed` não preservou integralmente o conjunto instalado neste plano.
+
+A aceitação foi informada por Bruno; a saída final da transação ainda não foi fornecida. Conferir Python, pacotes e `pip check` após a transação, depois importações e interpretador do kernel. O inventário anterior permanece como registro histórico. Nenhuma instalação ou reversão foi executada pelo agente.

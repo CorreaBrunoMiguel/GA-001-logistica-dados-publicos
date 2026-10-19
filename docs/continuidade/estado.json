@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 5,
+  "revisao": 6,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -159,6 +159,11 @@
       "commit": "548f8e1c29d07fa03e8693be677c2bc51e1f72fa",
       "tipo": "Fast-forward",
       "origem": "Saída fornecida por Bruno; sem acesso do agente à máquina."
+    },
+    "plano_conda_SC_TECH": {
+      "fonte": "Plano e aceitação informados por Bruno na conversa.",
+      "arquivo": "docs/ambiente.md",
+      "limite": "Resultado da transação ainda pendente."
     }
   },
   "ultimo_checkpoint_concluido": {
@@ -175,13 +180,13 @@
     "observacao": "Confirmação limitada ao commit indicado; atualizações administrativas posteriores do remoto não são presumidas como já baixadas."
   },
   "pendencias": [
-    "Preparar os complementos propostos SQLAlchemy/Psycopg ou justificar alternativa válida, com versões efetivas (PREP-05).",
+    "Conferir conclusão da transação Conda aceita e versões/dependências resultantes do SC_TECH (PREP-05).",
     "Verificar importações e interpretador do kernel sc_tech; registrar dependências necessárias ao projeto (PREP-05).",
     "Preparar destino e acesso PostgreSQL e verificar conexão Python (PREP-06).",
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno instala os complementos propostos SQLAlchemy e Psycopg no SC_TECH com preservação dos pacotes existentes e fornece o resultado; não presumir instalação concluída.",
+  "proxima_acao": "Após a instalação aceita terminar, Bruno fornece a versão efetiva do Python, a listagem filtrada dos pacotes e pip check no SC_TECH. A aceitação do plano não comprova conclusão da transação. Não propor nova instalação antes de conferir esse resultado.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -192,11 +197,12 @@
     "gerenciador": "Conda",
     "origem": "Escolha explícita de Bruno na conversa de 19/10/2026.",
     "motivo_informado": "Aproveitar bibliotecas existentes e evitar downloads repetidos.",
-    "status": "inventario_inicial_registrado_complementos_e_validacoes_pendentes",
+    "status": "plano_conda_aceito_resultado_e_validacoes_pendentes",
     "interface_desejada": "JupyterLab",
     "versao_python_verificada_nesta_execucao": "3.13.14",
     "bibliotecas_verificadas_nesta_execucao": "Inventariadas; importações não verificadas",
-    "kernel_verificado_nesta_execucao": "Registro sc_tech encontrado; interpretador efetivo não verificado"
+    "kernel_verificado_nesta_execucao": "Registro sc_tech encontrado; interpretador efetivo não verificado",
+    "validade_da_versao_inventariada": "Python 3.13.14 foi informado antes da transação aceita; o plano prevê 3.13.9, ainda sem verificação posterior."
   },
   "ambiente_criado_anteriormente": {
     "nome": "ga001",
@@ -239,8 +245,26 @@
       ],
       "canal": "conda-forge",
       "opcao_preservacao": "--freeze-installed",
-      "status": "aguardando_execucao_e_confirmacao",
-      "justificativa": "Camada de acesso SQL e driver PostgreSQL para a integração proposta; não constitui técnica obrigatória adicional ao contrato."
+      "status": "plano_conda_aceito_por_Bruno_resultado_pendente",
+      "justificativa": "Camada de acesso SQL e driver PostgreSQL para a integração proposta; não constitui técnica obrigatória adicional ao contrato.",
+      "limite_opcao_preservacao": "O plano fornecido mostrou troca de Python e várias atualizações, apesar de --freeze-installed."
     }
+  },
+  "plano_conda_SC_TECH": {
+    "data": "2026-10-19",
+    "fonte": "Plano do Conda fornecido por Bruno e relato de que o aceitou; agente sem acesso à máquina.",
+    "comando": "conda install -n SC_TECH -c conda-forge --freeze-installed sqlalchemy psycopg",
+    "status": "aceito_por_Bruno_resultado_da_transacao_pendente",
+    "python_antes": "3.13.14",
+    "python_planejado": "3.13.9",
+    "sqlalchemy_planejado": "2.1.5",
+    "psycopg_planejado": "3.3.4",
+    "libpq_planejado": "18.6",
+    "download_planejado_mb": 198.1,
+    "outras_alteracoes": "O plano inclui atualizações de certificados, OpenSSL, Qt/PySide6, bibliotecas gráficas, MySQL e outras bibliotecas nativas; --freeze-installed não preservou integralmente o conjunto instalado.",
+    "aceitacao": "Bruno informou que aceitou e que não há problema em modificar a versão do Python.",
+    "transacao_concluida_verificada": null,
+    "importacoes_pos_transacao_verificadas": false,
+    "pip_check_pos_transacao_verificado": false
   }
 }

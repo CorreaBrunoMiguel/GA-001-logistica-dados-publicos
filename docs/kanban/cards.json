@@ -374,12 +374,13 @@
       "evidencias": [
         "Arquivo de dependências, identificação de interpretador/kernel e saídas das verificações no local documentado no README.",
         "Bruno confirmou ga001 com Python 3.12.15 e depois escolheu avaliar SC_TECH para reutilizar bibliotecas; adequação do SC_TECH ainda pendente.",
-        "Saídas de Bruno: Python 3.13.14, versões dos pacotes, pip check sem dependências quebradas declaradas e kernel sc_tech registrado. Importações e ligação efetiva do kernel ainda não verificadas."
+        "Saídas de Bruno: Python 3.13.14, versões dos pacotes, pip check sem dependências quebradas declaradas e kernel sc_tech registrado. Importações e ligação efetiva do kernel ainda não verificadas.",
+        "Bruno forneceu plano Conda com Python 3.13.14 → 3.13.9, SQLAlchemy 2.1.5 e Psycopg 3.3.4 e informou que o aceitou; saída final e verificação posterior ainda não fornecidas."
       ],
-      "bloqueios": "Inventário inicial do SC_TECH fornecido por Bruno: Python 3.13.14; NumPy, pandas, Matplotlib, Seaborn, JupyterLab e ipykernel presentes. pip check retornou 'No broken requirements found.' e kernel sc_tech está registrado. SQLAlchemy e Psycopg não apareceram na listagem filtrada. O agente propõe acrescentar esses dois pacotes para a integração PostgreSQL, preservando os já instalados. A instalação ainda não ocorreu como evidência; importações, caminho real do interpretador do kernel e registro das dependências do projeto permanecem pendentes. Nenhuma conclusão de funcionamento integral é inferida do pip check.",
-      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação de ambiente.\n**Responsável:** Bruno executa e justifica; agente orienta e revisa.\n**Estado de acompanhamento:** Em andamento. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nUsar um ambiente identificável e reproduzível para a integração Python/PostgreSQL.\n\n## Entradas e referências\n\n- [Inventário](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/8c4cbd7981855a4d1100976d5a652ba65139fe5e/docs/ambiente.md)\n- Contrato exige Python 3 e PostgreSQL; bibliotecas pertencem à escolha justificada do participante.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Avaliar o SC_TECH, ambiente existente escolhido por Bruno, com JupyterLab como interface; verificar sua adequação e documentar a configuração efetiva.\n- Selecionar bibliotecas para leitura de dados, conexão PostgreSQL e visualização; registrar a finalidade das escolhas.\n- Conferir interpretador e, se usar Jupyter, o kernel; verificar importações e registrar versões efetivas.\n\n## Critérios observáveis de conclusão\n\n- [ ] Ambiente do projeto identificado e utilizável.\n- [ ] Dependências e versões reais registradas; instruções permitem reconstruir o ambiente.\n\n## Evidências e registro\n\n- Inventário do SC_TECH em 19/10/2026 fornecido por Bruno; versões e alcance registrados em docs/ambiente.md. Escolha operacional DOP-001 em docs/decisoes-tecnicas.md.\n- Arquivo de dependências, identificação de interpretador/kernel e saídas das verificações no local documentado no README.\n\n## Bloqueios e limites conhecidos\n\nInventário inicial do SC_TECH fornecido por Bruno: Python 3.13.14; NumPy, pandas, Matplotlib, Seaborn, JupyterLab e ipykernel presentes. pip check retornou 'No broken requirements found.' e kernel sc_tech está registrado. SQLAlchemy e Psycopg não apareceram na listagem filtrada. O agente propõe acrescentar esses dois pacotes para a integração PostgreSQL, preservando os já instalados. A instalação ainda não ocorreu como evidência; importações, caminho real do interpretador do kernel e registro das dependências do projeto permanecem pendentes. Nenhuma conclusão de funcionamento integral é inferida do pip check.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "bloqueios": "Bruno forneceu o plano do Conda para instalar SQLAlchemy e Psycopg no SC_TECH e informou que o aceitou, incluindo a troca de Python 3.13.14 por 3.13.9. O plano também inclui atualizações de outras bibliotecas, portanto --freeze-installed não preservou integralmente o conjunto inventariado. A conclusão da transação e as versões resultantes ainda não foram fornecidas. Próxima verificação: versão do Python, listagem dos pacotes e pip check após a transação; depois importações, interpretador do kernel e dependências reproduzíveis. PREP-05 permanece em andamento.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação de ambiente.\n**Responsável:** Bruno executa e justifica; agente orienta e revisa.\n**Estado de acompanhamento:** Em andamento. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nUsar um ambiente identificável e reproduzível para a integração Python/PostgreSQL.\n\n## Entradas e referências\n\n- [Inventário](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/8c4cbd7981855a4d1100976d5a652ba65139fe5e/docs/ambiente.md)\n- Contrato exige Python 3 e PostgreSQL; bibliotecas pertencem à escolha justificada do participante.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Avaliar o SC_TECH, ambiente existente escolhido por Bruno, com JupyterLab como interface; verificar sua adequação e documentar a configuração efetiva.\n- Selecionar bibliotecas para leitura de dados, conexão PostgreSQL e visualização; registrar a finalidade das escolhas.\n- Conferir interpretador e, se usar Jupyter, o kernel; verificar importações e registrar versões efetivas.\n\n## Critérios observáveis de conclusão\n\n- [ ] Ambiente do projeto identificado e utilizável.\n- [ ] Dependências e versões reais registradas; instruções permitem reconstruir o ambiente.\n\n## Evidências e registro\n\n- Inventário do SC_TECH em 19/10/2026 fornecido por Bruno; versões e alcance registrados em docs/ambiente.md. Escolha operacional DOP-001 em docs/decisoes-tecnicas.md.\n- Arquivo de dependências, identificação de interpretador/kernel e saídas das verificações no local documentado no README.\n\n## Bloqueios e limites conhecidos\n\nBruno forneceu o plano do Conda para instalar SQLAlchemy e Psycopg no SC_TECH e informou que o aceitou, incluindo a troca de Python 3.13.14 por 3.13.9. O plano também inclui atualizações de outras bibliotecas, portanto --freeze-installed não preservou integralmente o conjunto inventariado. A conclusão da transação e as versões resultantes ainda não foram fornecidas. Próxima verificação: versão do Python, listagem dos pacotes e pip check após a transação; depois importações, interpretador do kernel e dependências reproduzíveis. PREP-05 permanece em andamento.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
       "criada_em": "2026-10-19T19:45:56Z",
-      "atualizada_em": "2026-10-19T20:26:30Z",
+      "atualizada_em": "2026-10-19T20:31:55Z",
       "fechada_em": null
     },
     {
@@ -935,7 +936,7 @@
       "fechada_em": null
     }
   ],
-  "marco": "PREP-05: inventário inicial do SC_TECH registrado",
+  "marco": "PREP-05: plano Conda aceito por Bruno, incluindo mudança de Python; resultado e validação pendentes",
   "governanca": {
     "commit_verificado": "1c36880141502535cfe978c2a90fc6b66e6674c0",
     "politica_integral_em": "AGENTS.md",
@@ -953,11 +954,12 @@
     "gerenciador": "Conda",
     "origem": "Escolha explícita de Bruno na conversa de 19/10/2026.",
     "motivo_informado": "Aproveitar bibliotecas existentes e evitar downloads repetidos.",
-    "status": "inventario_inicial_registrado_complementos_e_validacoes_pendentes",
+    "status": "plano_conda_aceito_resultado_e_validacoes_pendentes",
     "interface_desejada": "JupyterLab",
     "versao_python_verificada_nesta_execucao": "3.13.14",
     "bibliotecas_verificadas_nesta_execucao": "Inventariadas; importações não verificadas",
-    "kernel_verificado_nesta_execucao": "Registro sc_tech encontrado; interpretador efetivo não verificado"
+    "kernel_verificado_nesta_execucao": "Registro sc_tech encontrado; interpretador efetivo não verificado",
+    "validade_da_versao_inventariada": "Python 3.13.14 foi informado antes da transação aceita; o plano prevê 3.13.9, ainda sem verificação posterior."
   },
   "inspecao_SC_TECH": {
     "data": "2026-10-19",
@@ -993,8 +995,26 @@
       ],
       "canal": "conda-forge",
       "opcao_preservacao": "--freeze-installed",
-      "status": "aguardando_execucao_e_confirmacao",
-      "justificativa": "Camada de acesso SQL e driver PostgreSQL para a integração proposta; não constitui técnica obrigatória adicional ao contrato."
+      "status": "plano_conda_aceito_por_Bruno_resultado_pendente",
+      "justificativa": "Camada de acesso SQL e driver PostgreSQL para a integração proposta; não constitui técnica obrigatória adicional ao contrato.",
+      "limite_opcao_preservacao": "O plano fornecido mostrou troca de Python e várias atualizações, apesar de --freeze-installed."
     }
+  },
+  "plano_conda_SC_TECH": {
+    "data": "2026-10-19",
+    "fonte": "Plano do Conda fornecido por Bruno e relato de que o aceitou; agente sem acesso à máquina.",
+    "comando": "conda install -n SC_TECH -c conda-forge --freeze-installed sqlalchemy psycopg",
+    "status": "aceito_por_Bruno_resultado_da_transacao_pendente",
+    "python_antes": "3.13.14",
+    "python_planejado": "3.13.9",
+    "sqlalchemy_planejado": "2.1.5",
+    "psycopg_planejado": "3.3.4",
+    "libpq_planejado": "18.6",
+    "download_planejado_mb": 198.1,
+    "outras_alteracoes": "O plano inclui atualizações de certificados, OpenSSL, Qt/PySide6, bibliotecas gráficas, MySQL e outras bibliotecas nativas; --freeze-installed não preservou integralmente o conjunto instalado.",
+    "aceitacao": "Bruno informou que aceitou e que não há problema em modificar a versão do Python.",
+    "transacao_concluida_verificada": null,
+    "importacoes_pos_transacao_verificadas": false,
+    "pip_check_pos_transacao_verificado": false
   }
 }

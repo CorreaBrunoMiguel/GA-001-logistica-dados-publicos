@@ -30,3 +30,5 @@ O agente pode organizar a redação administrativa do registro a partir do racio
 - **Contrato relacionado:** R11; a demanda exige Python 3 e ambiente/dependências documentados, sem impor a criação de uma env nova.
 
 **Complemento do registro:** o agente recomendou SQLAlchemy e Psycopg, ausentes da listagem filtrada, para a integração PostgreSQL. É proposta de preparação; a instalação e as versões efetivas ainda aguardam evidências de Bruno.
+
+**Atualização de DOP-001:** Bruno forneceu o plano Conda e informou que o aceitou, incluindo a alteração planejada de Python 3.13.14 para 3.13.9. O agente havia indicado preservar pacotes, mas o plano também apresentou várias atualizações; não se registra preservação integral. A escolha de prosseguir é de Bruno. Conclusão da transação, versões efetivas e funcionamento permanecem pendentes de evidência.
