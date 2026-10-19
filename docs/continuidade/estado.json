@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 10,
+  "revisao": 11,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -184,6 +184,17 @@
       "data": "2026-10-19",
       "fonte": "Em 19/10/2026, Bruno confirmou explicitamente que todas as importações solicitadas no notebook executaram sem erro, incluindo Psycopg. NumPy, pandas, matplotlib.pyplot, Seaborn, SQLAlchemy e Psycopg verificados por relato do participante; interpretador identificado pelas saídas anteriores.",
       "arquivo": "docs/ambiente.md"
+    },
+    "inventario_postgresql": {
+      "arquivo": "docs/ambiente.md",
+      "data": "2026-10-19",
+      "fonte": "Saídas de \\du e \\l executadas por Bruno via sudo -u postgres psql; agente sem acesso à máquina.",
+      "quantidade_papeis_listados": 3,
+      "quantidade_bancos_listados": 6,
+      "postgres_administrador_confirmado": true,
+      "papel_ga001_app_existente": false,
+      "banco_ga001_logistica_existente": false,
+      "limite": "Listagem de recursos existentes; ainda não comprova criação, senha, autenticação do projeto ou conexão Python."
     }
   },
   "ultimo_checkpoint_concluido": {
@@ -209,7 +220,7 @@
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno executa no terminal: sudo -u postgres psql -X -P pager=off -d postgres -c '\\du' -c '\\l'. Fornecer as saídas de papéis e bancos existentes para orientar a configuração do acesso do projeto. Não criar nem alterar papéis ou bancos antes dessa conferência; não repetir testes concluídos do Python.",
+  "proxima_acao": "Bruno executa sudo -u postgres createuser --login --no-superuser --no-createdb --no-createrole --pwprompt ga001_app, definindo e confirmando a senha localmente. Se não houver erro, confere o papel com sudo -u postgres psql -X -P pager=off -d postgres -c '\\du ga001_app' e fornece somente a saída, sem senha. A criação do banco e a conexão Python ficam para as verificações seguintes.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -336,13 +347,27 @@
     "teste_previsto": "Verificação de reprodução da entrega, T10."
   },
   "preparacao_postgresql": {
-    "estado": "inventario_de_papeis_e_bancos_pendente",
+    "estado": "inventario_conferido_criacao_papel_pendente",
     "servidor_confirmado": "14.24",
     "acesso_administrativo_local_confirmado": true,
     "papel_bruno_ausente_na_verificacao_inicial": true,
     "destino_do_projeto_definido": false,
     "conexao_python_verificada": false,
-    "fonte": "PREP-01 e saídas previamente fornecidas por Bruno; inventário dos recursos atuais ainda aguardado.",
-    "modelagem_e_carga": "Cards T02 e T03; ainda não iniciados."
+    "fonte": "Inventário atual fornecido por Bruno; nomes específicos propostos pelo agente para organizar o acesso, execução ainda pendente.",
+    "modelagem_e_carga": "Cards T02 e T03; ainda não iniciados.",
+    "inventario": {
+      "data": "2026-10-19",
+      "fonte": "Saídas de \\du e \\l executadas por Bruno via sudo -u postgres psql; agente sem acesso à máquina.",
+      "quantidade_papeis_listados": 3,
+      "quantidade_bancos_listados": 6,
+      "postgres_administrador_confirmado": true,
+      "papel_ga001_app_existente": false,
+      "banco_ga001_logistica_existente": false,
+      "limite": "Listagem de recursos existentes; ainda não comprova criação, senha, autenticação do projeto ou conexão Python."
+    },
+    "papel_proposto": "ga001_app",
+    "papel_criado_verificado": false,
+    "banco_proposto": "ga001_logistica",
+    "banco_criado_verificado": false
   }
 }

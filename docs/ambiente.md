@@ -168,3 +168,13 @@ No JupyterLab, selecionar o kernel do ambiente reconstruído e conferir `sys.exe
 **PREP-05 concluída:** ambiente SC_TECH utilizável nas verificações realizadas, Python 3.13.9 e kernel identificados, pacotes e versões registrados, pip check sem dependências declaradas quebradas e especificação/instruções de reconstrução disponíveis. O agente organizou os registros administrativos; Bruno executou e confirmou os testes.
 
 A conexão PostgreSQL será verificada na PREP-06. A reconstrução do ambiente ainda não foi executada. Antes da próxima etapa, sincronizar a cópia local com o remoto e conferir o estado Git.
+
+## PostgreSQL — inventário para o acesso do projeto (PREP-06)
+
+**Data:** 19/10/2026. **Fonte:** saídas de `sudo -u postgres psql -X -P pager=off -d postgres -c '\du' -c '\l'` executado por Bruno; registro administrativo da IA.
+
+Foram listados três papéis e seis bancos. O papel postgres apresenta os atributos administrativos. Os nomes propostos para o projeto, `ga001_app` (papel) e `ga001_logistica` (banco), não aparecem nessas listagens. Não foi necessária alteração nos recursos existentes para realizar o inventário.
+
+Próxima ação: criar e conferir `ga001_app`, com login e atributos NOSUPERUSER, NOCREATEDB e NOCREATEROLE; senha definida interativamente por Bruno com `createuser --pwprompt`. A proposta de configuração foi orientada pelo agente, e sua execução ainda não foi comprovada. O banco, seu proprietário, o destino final, a autenticação e a conexão Python serão conferidos nas ações seguintes. Modelagem das tabelas e carga pertencem aos cards técnicos.
+
+Referência administrativa: [createuser — documentação PostgreSQL](https://www.postgresql.org/docs/18/app-createuser.html).

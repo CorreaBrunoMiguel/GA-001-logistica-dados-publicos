@@ -17,7 +17,7 @@ Bruno confirmou Project privado, cinco opções de Status com Backlog padrão, A
 
 A governança foi publicada e conferida no [commit 1c36880](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/commit/1c36880141502535cfe978c2a90fc6b66e6674c0): política integral em AGENTS.md, estado e procedimento de continuidade, apoio da IA, registro de decisões, exclusões Git e pastas técnicas vazias. Nenhuma solução Python, SQL ou análise foi implementada pela IA.
 
-O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-05 concluída; PREP-06 em andamento, aguardando inventário PostgreSQL.** Bruno confirmou Python 3.13.9, versões dos pacotes, pip check, interpretador do notebook no SC_TECH e todas as importações sem erro. environment.yml e instruções registrados; reconstrução ainda não executada. Bruno confirmou nova sincronização local até 9da5f1a, com apenas Untitled.ipynb sem rastreamento.
+O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-05 concluída; PREP-06 em andamento, com inventário PostgreSQL conferido e criação do papel de acesso pendente.** Bruno confirmou Python 3.13.9, versões dos pacotes, pip check, interpretador do notebook no SC_TECH e todas as importações sem erro. environment.yml e instruções registrados; reconstrução ainda não executada. Bruno confirmou nova sincronização local até 9da5f1a, com apenas Untitled.ipynb sem rastreamento.
 
 ## Estados acordados
 
