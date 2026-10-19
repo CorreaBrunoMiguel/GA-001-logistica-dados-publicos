@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 9,
+  "revisao": 10,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -31,7 +31,7 @@
     "numero": 7,
     "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7"
   },
-  "estado_etapa": "pronto",
+  "estado_etapa": "em_andamento",
   "etapas_preparacao": [
     {
       "id": "PREP-00",
@@ -95,7 +95,7 @@
     {
       "id": "PREP-06",
       "titulo": "Preparar o acesso PostgreSQL",
-      "estado": "pronto",
+      "estado": "em_andamento",
       "dependencias": [
         "PREP-01",
         "PREP-02",
@@ -156,9 +156,14 @@
       "fonte_status_issue": "Issue 6 fechada como concluída com confirmação das importações; issue 7 liberada como Pronto no acompanhamento documental. Status no Project não inspecionado."
     },
     "sincronizacao_local": {
-      "commit": "548f8e1c29d07fa03e8693be677c2bc51e1f72fa",
+      "commit": "9da5f1a532194dcbb34bd5c50d448f75576d34ef",
       "tipo": "Fast-forward",
-      "origem": "Saída fornecida por Bruno; sem acesso do agente à máquina."
+      "origem": "Saída de git pull --ff-only e git status --short --branch fornecida por Bruno em 19/10/2026; agente sem acesso à máquina.",
+      "saida_status": "## main...origin/main\n?? Untitled.ipynb",
+      "arquivos_nao_rastreados": [
+        "Untitled.ipynb"
+      ],
+      "alteracoes_rastreadas_reportadas": false
     },
     "plano_conda_SC_TECH": {
       "fonte": "Plano e aceitação informados por Bruno na conversa.",
@@ -189,19 +194,22 @@
   },
   "copia_local": {
     "clone_confirmado": true,
-    "sincronizacao_confirmada_ate": "548f8e1c29d07fa03e8693be677c2bc51e1f72fa",
-    "fonte": "Saída de git pull --ff-only e git status --short --branch fornecida por Bruno em 19/10/2026.",
-    "saida_status": "## main...origin/main",
-    "alteracoes_locais_reportadas": false,
-    "observacao": "Confirmação limitada ao commit indicado; atualizações administrativas posteriores do remoto não são presumidas como já baixadas."
+    "sincronizacao_confirmada_ate": "9da5f1a532194dcbb34bd5c50d448f75576d34ef",
+    "fonte": "Saída de git pull --ff-only e git status --short --branch fornecida por Bruno em 19/10/2026; agente sem acesso à máquina.",
+    "saida_status": "## main...origin/main\n?? Untitled.ipynb",
+    "alteracoes_locais_reportadas": true,
+    "observacao": "O notebook temporário está sem rastreamento. Não foi adicionado, removido ou alterado pelo agente. Confirmação de sincronização limitada ao commit indicado; avanços administrativos posteriores não são presumidos como baixados.",
+    "alteracoes_rastreadas_reportadas": false,
+    "arquivos_nao_rastreados": [
+      "Untitled.ipynb"
+    ]
   },
   "pendencias": [
-    "Sincronizar a cópia local com as atualizações administrativas remotas antes de executar PREP-06; última sincronização comprovada permanece em 548f8e1.",
     "Preparar destino e acesso PostgreSQL e verificar conexão Python (PREP-06).",
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno executa git pull --ff-only e git status --short --branch na raiz do repositório e fornece a saída. Confirmada a sincronização, iniciar PREP-06 (issue 7): identificar e preparar o destino e o acesso PostgreSQL e verificar a conexão Python. Não repetir preparação/importações do SC_TECH.",
+  "proxima_acao": "Bruno executa no terminal: sudo -u postgres psql -X -P pager=off -d postgres -c '\\du' -c '\\l'. Fornecer as saídas de papéis e bancos existentes para orientar a configuração do acesso do projeto. Não criar nem alterar papéis ou bancos antes dessa conferência; não repetir testes concluídos do Python.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -326,5 +334,15 @@
     "alcance": "Especificação das dependências usadas na preparação, com versões diretas e origem pip do Seaborn; não é exportação integral do SC_TECH nem lock de dependências transitivas.",
     "reconstrucao_executada": false,
     "teste_previsto": "Verificação de reprodução da entrega, T10."
+  },
+  "preparacao_postgresql": {
+    "estado": "inventario_de_papeis_e_bancos_pendente",
+    "servidor_confirmado": "14.24",
+    "acesso_administrativo_local_confirmado": true,
+    "papel_bruno_ausente_na_verificacao_inicial": true,
+    "destino_do_projeto_definido": false,
+    "conexao_python_verificada": false,
+    "fonte": "PREP-01 e saídas previamente fornecidas por Bruno; inventário dos recursos atuais ainda aguardado.",
+    "modelagem_e_carga": "Cards T02 e T03; ainda não iniciados."
   }
 }

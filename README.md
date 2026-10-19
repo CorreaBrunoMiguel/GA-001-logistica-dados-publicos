@@ -19,7 +19,7 @@ Código, SQL, decisões técnicas, análises e conclusões são de **Bruno**. O 
 
 Leia [AGENTS.md](AGENTS.md), [estado da execução](docs/continuidade/estado.json) e [procedimento de continuidade](docs/continuidade/README.md). Consulte o remoto para identificar a referência atual antes de retomar a issue indicada.
 
-Situação deste checkpoint: PREP-00 a PREP-05 concluídas. SC_TECH com Python 3.13.9, pacotes de análise/Jupyter, SQLAlchemy e Psycopg identificados; kernel confirmado por saída e todas as importações confirmadas sem erro por Bruno. [Dependências](environment.yml) e [instruções de reconstrução](docs/ambiente.md) registradas; reconstrução ainda não executada. PREP-06 pronta para iniciar após sincronização local. A última sincronização comprovada permanece no commit 548f8e1c29d07fa03e8693be677c2bc51e1f72fa.
+Situação deste checkpoint: PREP-00 a PREP-05 concluídas. SC_TECH com Python 3.13.9, pacotes de análise/Jupyter, SQLAlchemy e Psycopg identificados; kernel confirmado por saída e todas as importações confirmadas sem erro por Bruno. [Dependências](environment.yml) e [instruções de reconstrução](docs/ambiente.md) registradas; reconstrução ainda não executada. PREP-06 em andamento: aguardando inventário dos papéis e bancos PostgreSQL. Sincronização local confirmada até 9da5f1a532194dcbb34bd5c50d448f75576d34ef, com Untitled.ipynb sem rastreamento e sem alteração em arquivos rastreados reportada.
 
 ## Documentação e autoria
 
