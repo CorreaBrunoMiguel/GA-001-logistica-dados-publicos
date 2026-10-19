@@ -14,6 +14,7 @@
 - Orientação para distinguir o Python do base do SC_TECH e selecionar o kernel; revisão das saídas fornecidas por Bruno.
 - Preparação administrativa de environment.yml e instruções de reconstrução com as versões informadas; reconstrução não executada pelo agente ou comprovada nesta etapa.
 - Registro da sincronização local até 9da5f1a, com notebook temporário sem rastreamento, e início da orientação do inventário PostgreSQL; destino e conexão Python ainda não configurados/verificados.
+- Orientação dos comandos administrativos para papel e banco; revisão das saídas que confirmam proprietário e acesso pelo psql. Preparação de .env.example e docs/postgresql.md sem senha; teste de conexão Python proposto para Bruno implementar, ainda pendente.
 - Orientação da configuração manual do Project por Bruno.
 - Criação das 19 issues, dependências, critérios documentais e exportação dos cards.
 - Organização de README, AGENTS.md com política integral, continuidade, registro de decisões, exclusões Git e pastas vazias.

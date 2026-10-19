@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 12,
+  "revisao": 13,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -206,6 +206,25 @@
       "privilegios_administrativos_exibidos": false,
       "conexao_com_papel_verificada": false,
       "limite": "Listagem confirma a existência e os atributos exibidos; ainda não demonstra acesso por esse papel nem conexão Python."
+    },
+    "acesso_postgresql_psql": {
+      "arquivo": "docs/ambiente.md",
+      "data": "2026-10-19",
+      "fonte": "Saídas de psql com \\conninfo e \\l ga001_logistica fornecidas por Bruno.",
+      "dbname": "ga001_logistica",
+      "user": "ga001_app",
+      "host": "127.0.0.1",
+      "port": 5432,
+      "owner": "ga001_app",
+      "encoding": "UTF8",
+      "locale": "pt_BR.UTF-8",
+      "password_used": true,
+      "superuser": false,
+      "ssl": true,
+      "tls": "TLSv1.3",
+      "conexao_psql_verificada": true,
+      "conexao_python_verificada": false,
+      "limite": "Demonstra acesso por psql ao destino e propriedade do banco. A conexão por Python ainda será executada por Bruno."
     }
   },
   "ultimo_checkpoint_concluido": {
@@ -231,7 +250,7 @@
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno cria o banco com sudo -u postgres createdb --owner=ga001_app ga001_logistica. Se não houver erro, conecta usando psql -X -P pager=off -h 127.0.0.1 -p 5432 -U ga001_app -d ga001_logistica -W -c '\\conninfo' -c '\\l ga001_logistica', digitando localmente a senha do papel ga001_app. Fornecer as saídas ou o erro, sem senha. Depois verificar conexão Python e configuração reproduzível.",
+  "proxima_acao": "Bruno escreve e executa uma célula de teste no notebook com kernel SC_TECH: obter senha com getpass.getpass, abrir psycopg.connect com host 127.0.0.1, port 5432, dbname ga001_logistica e user ga001_app, exibir apenas info.dbname, info.user, info.host e info.port e fechar a conexão com gerenciador de contexto. Enviar código sem senha e saída, ou erro. Não repetir criação de papel/banco nem teste psql já comprovados.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -358,11 +377,11 @@
     "teste_previsto": "Verificação de reprodução da entrega, T10."
   },
   "preparacao_postgresql": {
-    "estado": "papel_conferido_criacao_banco_e_acesso_psql_pendentes",
+    "estado": "banco_e_acesso_psql_confirmados_conexao_python_pendente",
     "servidor_confirmado": "14.24",
     "acesso_administrativo_local_confirmado": true,
     "papel_bruno_ausente_na_verificacao_inicial": true,
-    "destino_do_projeto_definido": false,
+    "destino_do_projeto_definido": true,
     "conexao_python_verificada": false,
     "fonte": "Inventário atual fornecido por Bruno; nomes específicos propostos pelo agente para organizar o acesso, execução ainda pendente.",
     "modelagem_e_carga": "Cards T02 e T03; ainda não iniciados.",
@@ -379,7 +398,7 @@
     "papel_proposto": "ga001_app",
     "papel_criado_verificado": true,
     "banco_proposto": "ga001_logistica",
-    "banco_criado_verificado": false,
+    "banco_criado_verificado": true,
     "papel": {
       "data": "2026-10-19",
       "nome": "ga001_app",
@@ -387,8 +406,35 @@
       "existencia_confirmada": true,
       "atributos_exibidos": "",
       "privilegios_administrativos_exibidos": false,
-      "conexao_com_papel_verificada": false,
-      "limite": "Listagem confirma a existência e os atributos exibidos; ainda não demonstra acesso por esse papel nem conexão Python."
-    }
+      "conexao_com_papel_verificada": true,
+      "limite": "Existência e atributos conferidos; acesso por psql confirmado posteriormente. Conexão Python ainda pendente."
+    },
+    "conexao_psql_verificada": true,
+    "papel_projeto": "ga001_app",
+    "banco_projeto": "ga001_logistica",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "proprietario": "ga001_app",
+    "acesso_psql": {
+      "data": "2026-10-19",
+      "fonte": "Saídas de psql com \\conninfo e \\l ga001_logistica fornecidas por Bruno.",
+      "dbname": "ga001_logistica",
+      "user": "ga001_app",
+      "host": "127.0.0.1",
+      "port": 5432,
+      "owner": "ga001_app",
+      "encoding": "UTF8",
+      "locale": "pt_BR.UTF-8",
+      "password_used": true,
+      "superuser": false,
+      "ssl": true,
+      "tls": "TLSv1.3",
+      "conexao_psql_verificada": true,
+      "conexao_python_verificada": false,
+      "limite": "Demonstra acesso por psql ao destino e propriedade do banco. A conexão por Python ainda será executada por Bruno."
+    },
+    "configuracao_exemplo": ".env.example",
+    "instrucoes": "docs/postgresql.md",
+    "carregamento_configuracao_implementado": false
   }
 }

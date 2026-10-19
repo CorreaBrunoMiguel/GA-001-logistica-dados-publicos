@@ -426,12 +426,14 @@
         "PREP-05 concluída; dependências atendidas. Sincronização local com o remoto pendente antes da execução.",
         "Bruno confirmou pull fast-forward até 9da5f1a e status ## main...origin/main, com Untitled.ipynb sem rastreamento. Iniciado inventário PostgreSQL; aguardando saídas.",
         "Bruno forneceu \\du e \\l: três papéis e seis bancos listados; ga001_app e ga001_logistica não aparecem. Acesso administrativo postgres confirmado. Proposta para o projeto: papel ga001_app com LOGIN, NOSUPERUSER, NOCREATEDB e NOCREATEROLE, senha definida interativamente. Criação ainda não executada/comprovada.",
-        "Bruno forneceu \\du ga001_app: papel presente, campo Atributos vazio; nenhum privilégio administrativo exibido. A listagem não demonstra conexão pelo papel. Criação do banco ga001_logistica, propriedade ga001_app e acesso psql/Python ainda aguardam evidência."
+        "Bruno forneceu \\du ga001_app: papel presente, campo Atributos vazio; nenhum privilégio administrativo exibido. A listagem não demonstra conexão pelo papel. Criação do banco ga001_logistica, propriedade ga001_app e acesso psql/Python ainda aguardam evidência.",
+        "Bruno forneceu conexão psql bem-sucedida: ga001_logistica, ga001_app, 127.0.0.1:5432, Password Used true, Superuser off e TLSv1.3. \\l confirmou proprietário ga001_app, UTF8 e pt_BR.UTF-8. Aviso anterior de diretório ao executar createdb não impediu a criação, demonstrada pelo acesso posterior. Conexão Python ainda pendente.",
+        ".env.example e docs/postgresql.md preparados administrativamente pela IA, sem senha e sem código Python; implementação do teste é de Bruno."
       ],
-      "bloqueios": "Papel ga001_app existente e sem atributos administrativos exibidos na listagem. Banco ga001_logistica e proprietário ainda não verificados; próximo passo é criar o banco com --owner=ga001_app e conferir acesso pelo papel via TCP local (127.0.0.1:5432). Conexão Python e configuração reproduzível permanecem pendentes. Nenhuma senha deve ser registrada. Modelagem e carga ficam nos cards técnicos.",
-      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação de ambiente.\n**Responsável:** Bruno executa; agente orienta e revisa.\n**Estado de acompanhamento:** Em andamento. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nDisponibilizar acesso reproduzível ao destino de trabalho identificado.\n\n## Entradas e referências\n\n- PostgreSQL servidor 14.24 identificado nas saídas de Bruno.\n- Ambiente Python do projeto e configuração local.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n- PREP-05: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6\n\nPREP-01, PREP-02 e PREP-05 concluídas. Bruno confirmou sincronização local até 9da5f1a532194dcbb34bd5c50d448f75576d34ef. Inventário de papéis e bancos conferido e existência do papel ga001_app confirmada por Bruno. Próxima ação: criar banco do projeto e verificar acesso pelo psql.\n\n## Trabalho a realizar\n\n- Definir e preparar banco/schema de trabalho identificado e acesso apropriado ao projeto.\n- Tratar a ausência do papel bruno conforme a opção de acesso escolhida; não presumir que o nome do usuário Linux seja a credencial da aplicação.\n- Documentar configuração sem segredos e exemplo sanitizado; verificar a conexão a partir do Python.\n\n## Critérios observáveis de conclusão\n\n- [ ] Destino e acesso do projeto identificados.\n- [ ] Conexão Python ao destino correto demonstrada.\n- [ ] Configuração e instruções são reproduzíveis sem segredos no Git.\n\n## Evidências e registro\n\n- Bruno forneceu \\du ga001_app: papel presente, campo Atributos vazio; nenhum privilégio administrativo exibido. A listagem não demonstra conexão pelo papel. Criação do banco ga001_logistica, propriedade ga001_app e acesso psql/Python ainda aguardam evidência.\n- Bruno forneceu \\du e \\l: três papéis e seis bancos listados; ga001_app e ga001_logistica não aparecem. Acesso administrativo postgres confirmado. Proposta para o projeto: papel ga001_app com LOGIN, NOSUPERUSER, NOCREATEDB e NOCREATEROLE, senha definida interativamente. Criação ainda não executada/comprovada.\n- Sincronização local fornecida por Bruno: fast-forward até 9da5f1a532194dcbb34bd5c50d448f75576d34ef. git status mostra main alinhada ao remoto nessa referência e somente Untitled.ipynb sem rastreamento; o agente não alterou esse notebook.\n- Instruções, exemplo sanitizado e saída da conexão; não incluir senha nem string de conexão sensível.\n\n## Bloqueios e limites conhecidos\n\nPapel ga001_app existente e sem atributos administrativos exibidos na listagem. Banco ga001_logistica e proprietário ainda não verificados; próximo passo é criar o banco com --owner=ga001_app e conferir acesso pelo papel via TCP local (127.0.0.1:5432). Conexão Python e configuração reproduzível permanecem pendentes. Nenhuma senha deve ser registrada. Modelagem e carga ficam nos cards técnicos.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "bloqueios": "Nenhum bloqueio de papel, banco ou acesso psql. Falta demonstrar a conexão pelo Python no SC_TECH: Bruno escreve e executa o teste com Psycopg e senha via getpass; mostrar somente banco, usuário, host e porta da conexão aberta e fechar a conexão. Configuração de referência e instruções registradas, sem segredo. A PREP-06 permanece aberta até essa evidência.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação de ambiente.\n**Responsável:** Bruno executa; agente orienta e revisa.\n**Estado de acompanhamento:** Em andamento. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nDisponibilizar acesso reproduzível ao destino de trabalho identificado.\n\n## Entradas e referências\n\n- PostgreSQL servidor 14.24 identificado nas saídas de Bruno.\n- Ambiente Python do projeto e configuração local.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n- PREP-05: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6\n\nPREP-01, PREP-02 e PREP-05 concluídas. Bruno confirmou sincronização local até 9da5f1a532194dcbb34bd5c50d448f75576d34ef. Inventário de papéis e bancos conferido e existência do papel ga001_app confirmada por Bruno. Banco e acesso por psql confirmados posteriormente. Próxima ação: Bruno escrever e executar o teste de conexão Python.\n\n## Trabalho a realizar\n\n- Definir e preparar banco/schema de trabalho identificado e acesso apropriado ao projeto.\n- Tratar a ausência do papel bruno conforme a opção de acesso escolhida; não presumir que o nome do usuário Linux seja a credencial da aplicação.\n- Documentar configuração sem segredos e exemplo sanitizado; verificar a conexão a partir do Python.\n\n## Critérios observáveis de conclusão\n\n- [x] Destino e acesso do projeto identificados.\n- [ ] Conexão Python ao destino correto demonstrada.\n- [x] Configuração e instruções são reproduzíveis sem segredos no Git.\n\n## Evidências e registro\n\n- Bruno forneceu conexão psql bem-sucedida: ga001_logistica, ga001_app, 127.0.0.1:5432, Password Used true, Superuser off e TLSv1.3. \\l confirmou proprietário ga001_app, UTF8 e pt_BR.UTF-8. Aviso anterior de diretório ao executar createdb não impediu a criação, demonstrada pelo acesso posterior. Conexão Python ainda pendente.\n- Configuração de referência em [.env.example](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/main/.env.example) e [instruções PostgreSQL](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/main/docs/postgresql.md), administrativas, sem senha. Não há carregador .env implementado; o teste usa parâmetros explícitos e entrada de senha em tempo de execução.\n- Bruno forneceu \\du ga001_app: papel presente, campo Atributos vazio; nenhum privilégio administrativo exibido. A listagem não demonstra conexão pelo papel. Criação do banco ga001_logistica, propriedade ga001_app e acesso psql/Python ainda aguardam evidência.\n- Bruno forneceu \\du e \\l: três papéis e seis bancos listados; ga001_app e ga001_logistica não aparecem. Acesso administrativo postgres confirmado. Proposta para o projeto: papel ga001_app com LOGIN, NOSUPERUSER, NOCREATEDB e NOCREATEROLE, senha definida interativamente. Criação ainda não executada/comprovada.\n- Sincronização local fornecida por Bruno: fast-forward até 9da5f1a532194dcbb34bd5c50d448f75576d34ef. git status mostra main alinhada ao remoto nessa referência e somente Untitled.ipynb sem rastreamento; o agente não alterou esse notebook.\n- Instruções, exemplo sanitizado e saída da conexão; não incluir senha nem string de conexão sensível.\n\n## Bloqueios e limites conhecidos\n\nNenhum bloqueio de papel, banco ou acesso psql. Falta demonstrar a conexão pelo Python no SC_TECH: Bruno escreve e executa o teste com Psycopg e senha via getpass; mostrar somente banco, usuário, host e porta da conexão aberta e fechar a conexão. Configuração de referência e instruções registradas, sem segredo. A PREP-06 permanece aberta até essa evidência.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
       "criada_em": "2026-10-19T19:45:57Z",
-      "atualizada_em": "2026-10-19T21:03:54Z",
+      "atualizada_em": "2026-10-19T21:08:37Z",
       "fechada_em": null
     },
     {
@@ -944,7 +946,7 @@
       "fechada_em": null
     }
   ],
-  "marco": "PREP-06 em andamento: papel ga001_app confirmado; criação do banco e acesso psql pendentes.",
+  "marco": "PREP-06: banco, proprietário e acesso psql confirmados; configuração de referência registrada; conexão Python pendente.",
   "governanca": {
     "commit_verificado": "1c36880141502535cfe978c2a90fc6b66e6674c0",
     "politica_integral_em": "AGENTS.md",
@@ -1085,11 +1087,11 @@
     "limite": "Listagem de recursos existentes; ainda não comprova criação, senha, autenticação do projeto ou conexão Python."
   },
   "preparacao_postgresql": {
-    "estado": "papel_conferido_criacao_banco_e_acesso_psql_pendentes",
+    "estado": "banco_e_acesso_psql_confirmados_conexao_python_pendente",
     "servidor_confirmado": "14.24",
     "acesso_administrativo_local_confirmado": true,
     "papel_bruno_ausente_na_verificacao_inicial": true,
-    "destino_do_projeto_definido": false,
+    "destino_do_projeto_definido": true,
     "conexao_python_verificada": false,
     "fonte": "Inventário atual fornecido por Bruno; nomes específicos propostos pelo agente para organizar o acesso, execução ainda pendente.",
     "modelagem_e_carga": "Cards T02 e T03; ainda não iniciados.",
@@ -1106,7 +1108,7 @@
     "papel_proposto": "ga001_app",
     "papel_criado_verificado": true,
     "banco_proposto": "ga001_logistica",
-    "banco_criado_verificado": false,
+    "banco_criado_verificado": true,
     "papel": {
       "data": "2026-10-19",
       "nome": "ga001_app",
@@ -1114,8 +1116,35 @@
       "existencia_confirmada": true,
       "atributos_exibidos": "",
       "privilegios_administrativos_exibidos": false,
-      "conexao_com_papel_verificada": false,
-      "limite": "Listagem confirma a existência e os atributos exibidos; ainda não demonstra acesso por esse papel nem conexão Python."
-    }
+      "conexao_com_papel_verificada": true,
+      "limite": "Existência e atributos conferidos; acesso por psql confirmado posteriormente. Conexão Python ainda pendente."
+    },
+    "conexao_psql_verificada": true,
+    "papel_projeto": "ga001_app",
+    "banco_projeto": "ga001_logistica",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "proprietario": "ga001_app",
+    "acesso_psql": {
+      "data": "2026-10-19",
+      "fonte": "Saídas de psql com \\conninfo e \\l ga001_logistica fornecidas por Bruno.",
+      "dbname": "ga001_logistica",
+      "user": "ga001_app",
+      "host": "127.0.0.1",
+      "port": 5432,
+      "owner": "ga001_app",
+      "encoding": "UTF8",
+      "locale": "pt_BR.UTF-8",
+      "password_used": true,
+      "superuser": false,
+      "ssl": true,
+      "tls": "TLSv1.3",
+      "conexao_psql_verificada": true,
+      "conexao_python_verificada": false,
+      "limite": "Demonstra acesso por psql ao destino e propriedade do banco. A conexão por Python ainda será executada por Bruno."
+    },
+    "configuracao_exemplo": ".env.example",
+    "instrucoes": "docs/postgresql.md",
+    "carregamento_configuracao_implementado": false
   }
 }

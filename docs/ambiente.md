@@ -186,3 +186,24 @@ Referência administrativa: [createuser — documentação PostgreSQL](https://w
 Próxima ação orientada: criar `ga001_logistica` com `ga001_app` como proprietário, usando `sudo -u postgres createdb --owner=ga001_app ga001_logistica`. Depois conferir conexão e proprietário via psql com `127.0.0.1:5432`, usuário `ga001_app`, banco `ga001_logistica`, prompt de senha e metacomandos `\conninfo` e `\l ga001_logistica`. Nenhum desses resultados posteriores é declarado concluído agora.
 
 Referência administrativa: [createdb — opção owner](https://www.postgresql.org/docs/18/app-createdb.html).
+
+## PostgreSQL — banco e acesso psql confirmados (PREP-06)
+
+**Data:** 19/10/2026. **Fonte:** saídas fornecidas por Bruno; registro administrativo da IA.
+
+O comando createdb emitiu `could not change directory to "/home/bruno/Desktop/analises/GA-001-logistica-dados-publicos": Permissão negada`. O acesso posterior confirmou que o banco foi criado; não foi necessário repetir a criação nem alterar permissões da pasta.
+
+| Evidência | Valor fornecido |
+| --- | --- |
+| Banco conectado | ga001_logistica |
+| Usuário conectado | ga001_app |
+| Host / porta | 127.0.0.1 / 5432 |
+| Proprietário do banco | ga001_app |
+| Codificação / localidade | UTF8 / pt_BR.UTF-8 |
+| Password Used | true |
+| Superuser | off |
+| SSL / protocolo | true / TLSv1.3 |
+
+O psql demonstrou o destino e o acesso. A [referência de configuração](../.env.example) e as [instruções de reconstrução e teste](postgresql.md) foram preparadas administrativamente pela IA. A senha não integra esses arquivos; .env não é carregado automaticamente pelo Python.
+
+**Pendência atual:** Bruno escrever e executar a conexão no notebook com kernel SC_TECH, solicitando senha com getpass, usando Psycopg e exibindo banco, usuário, host e porta da conexão aberta. A PREP-06 permanece em andamento até a evidência Python.
