@@ -10,7 +10,7 @@
   "project_url": "https://github.com/users/CorreaBrunoMiguel/projects/5",
   "origem_dos_estados": {
     "issues": "Consultadas no GitHub após a criação e fechamento das etapas concluídas.",
-    "acompanhamento": "PREP-00 a PREP-04 concluídas; demais cards em Backlog. PREP-04 é governança administrativa executada pelo agente.",
+    "acompanhamento": "PREP-00 a PREP-04 concluídas; PREP-05 em andamento, com preparação do ambiente pendente. Campo Status do Project não lido pelo agente.",
     "campo_status_project": "Configuração e estados anteriores confirmados por Bruno; interface não lida pelo agente. Valores finais após fechar as issues 4 e 5 não inspecionados pelo agente."
   },
   "configuracoes_informadas_por_Bruno": {
@@ -369,15 +369,15 @@
       ],
       "estado_issue": "open",
       "motivo_fechamento": null,
-      "estado_acompanhamento": "Backlog",
+      "estado_acompanhamento": "Em andamento",
       "status_project_observado": null,
       "evidencias": [
         "Arquivo de dependências, identificação de interpretador/kernel e saídas das verificações no local documentado no README."
       ],
-      "bloqueios": "Ambiente ativo inventariado é base; ambiente dedicado e bibliotecas do projeto ainda não preparados.",
-      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação de ambiente.\n**Responsável:** Bruno executa e justifica; agente orienta e revisa.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nUsar um ambiente identificável e reproduzível para a integração Python/PostgreSQL.\n\n## Entradas e referências\n\n- [Inventário](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/8c4cbd7981855a4d1100976d5a652ba65139fe5e/docs/ambiente.md)\n- Contrato exige Python 3 e PostgreSQL; bibliotecas pertencem à escolha justificada do participante.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Escolher o isolamento e a interface de trabalho adequados.\n- Selecionar bibliotecas para leitura de dados, conexão PostgreSQL e visualização; registrar a finalidade das escolhas.\n- Conferir interpretador e, se usar Jupyter, o kernel; verificar importações e registrar versões efetivas.\n\n## Critérios observáveis de conclusão\n\n- [ ] Ambiente do projeto identificado e utilizável.\n- [ ] Dependências e versões reais registradas; instruções permitem reconstruir o ambiente.\n\n## Evidências e registro\n\n- Arquivo de dependências, identificação de interpretador/kernel e saídas das verificações no local documentado no README.\n\n## Bloqueios e limites conhecidos\n\nAmbiente ativo inventariado é base; ambiente dedicado e bibliotecas do projeto ainda não preparados.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "bloqueios": "Ambiente ativo inventariado é base; ambiente do projeto e bibliotecas ainda não preparados. A sincronização local foi confirmada por Bruno até o commit 548f8e1c29d07fa03e8693be677c2bc51e1f72fa. Recomendação inicial do agente: ambiente Conda ga001 com Python 3.12, mantendo a linha já inventariada; criação e escolha ainda aguardam execução/confirmação de Bruno. Essa proposta não constitui exigência contratual.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação de ambiente.\n**Responsável:** Bruno executa e justifica; agente orienta e revisa.\n**Estado de acompanhamento:** Em andamento. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nUsar um ambiente identificável e reproduzível para a integração Python/PostgreSQL.\n\n## Entradas e referências\n\n- [Inventário](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/8c4cbd7981855a4d1100976d5a652ba65139fe5e/docs/ambiente.md)\n- Contrato exige Python 3 e PostgreSQL; bibliotecas pertencem à escolha justificada do participante.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Escolher o isolamento e a interface de trabalho adequados.\n- Selecionar bibliotecas para leitura de dados, conexão PostgreSQL e visualização; registrar a finalidade das escolhas.\n- Conferir interpretador e, se usar Jupyter, o kernel; verificar importações e registrar versões efetivas.\n\n## Critérios observáveis de conclusão\n\n- [ ] Ambiente do projeto identificado e utilizável.\n- [ ] Dependências e versões reais registradas; instruções permitem reconstruir o ambiente.\n\n## Evidências e registro\n\n- Arquivo de dependências, identificação de interpretador/kernel e saídas das verificações no local documentado no README.\n\n## Bloqueios e limites conhecidos\n\nAmbiente ativo inventariado é base; ambiente do projeto e bibliotecas ainda não preparados. A sincronização local foi confirmada por Bruno até o commit 548f8e1c29d07fa03e8693be677c2bc51e1f72fa. Recomendação inicial do agente: ambiente Conda ga001 com Python 3.12, mantendo a linha já inventariada; criação e escolha ainda aguardam execução/confirmação de Bruno. Essa proposta não constitui exigência contratual.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
       "criada_em": "2026-10-19T19:45:56Z",
-      "atualizada_em": "2026-10-19T19:45:56Z",
+      "atualizada_em": "2026-10-19T20:08:37Z",
       "fechada_em": null
     },
     {
@@ -933,11 +933,17 @@
       "fechada_em": null
     }
   ],
-  "marco": "PREP-04 concluída; sincronização local pendente",
+  "marco": "Sincronização local confirmada; PREP-05 em andamento",
   "governanca": {
     "commit_verificado": "1c36880141502535cfe978c2a90fc6b66e6674c0",
     "politica_integral_em": "AGENTS.md",
     "estado_execucao": "docs/continuidade/estado.json",
     "sincronizacao_local": "pendente_confirmacao_por_Bruno"
+  },
+  "sincronizacao_local": {
+    "commit_confirmado": "548f8e1c29d07fa03e8693be677c2bc51e1f72fa",
+    "fonte": "Saída fornecida por Bruno em 19/10/2026.",
+    "status": "## main...origin/main",
+    "alteracoes_reportadas": false
   }
 }

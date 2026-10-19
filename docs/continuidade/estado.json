@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 2,
+  "revisao": 3,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -26,9 +26,12 @@
     "id": "W003",
     "origem": "Identificador documental registrado no Gerador Analítico; não é ID interno da plataforma."
   },
-  "etapa_atual": null,
-  "issue_atual": null,
-  "estado_etapa": "aguardando_sincronizacao_local",
+  "etapa_atual": "PREP-05",
+  "issue_atual": {
+    "numero": 6,
+    "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6"
+  },
+  "estado_etapa": "em_andamento",
   "etapas_preparacao": [
     {
       "id": "PREP-00",
@@ -81,7 +84,7 @@
     {
       "id": "PREP-05",
       "titulo": "Preparar o ambiente Python",
-      "estado": "backlog",
+      "estado": "em_andamento",
       "dependencias": [
         "PREP-01",
         "PREP-02"
@@ -151,6 +154,11 @@
       "fechadas": 5,
       "abertas": 14,
       "fonte_status_issue": "Consulta GitHub após fechamento da issue 5; campos finais do Project não inspecionados."
+    },
+    "sincronizacao_local": {
+      "commit": "548f8e1c29d07fa03e8693be677c2bc51e1f72fa",
+      "tipo": "Fast-forward",
+      "origem": "Saída fornecida por Bruno; sem acesso do agente à máquina."
     }
   },
   "ultimo_checkpoint_concluido": {
@@ -160,25 +168,33 @@
   },
   "copia_local": {
     "clone_confirmado": true,
-    "hash_local_nao_informado": true,
-    "sincronizacao_apos_alteracoes_administrativas": "pendente_confirmacao_por_Bruno"
+    "sincronizacao_confirmada_ate": "548f8e1c29d07fa03e8693be677c2bc51e1f72fa",
+    "fonte": "Saída de git pull --ff-only e git status --short --branch fornecida por Bruno em 19/10/2026.",
+    "saida_status": "## main...origin/main",
+    "alteracoes_locais_reportadas": false,
+    "observacao": "Confirmação limitada ao commit indicado; atualizações administrativas posteriores do remoto não são presumidas como já baixadas."
   },
   "pendencias": [
-    "Confirmar sincronização da cópia local de Bruno após as alterações administrativas remotas.",
-    "Preparar o ambiente Python do projeto (PREP-05).",
+    "Criar/ativar ambiente Python do projeto e confirmar versão e executável (PREP-05).",
+    "Escolher e preparar bibliotecas, verificar importações e registrar dependências/versões efetivas (PREP-05).",
     "Preparar destino e acesso PostgreSQL e verificar conexão Python (PREP-06).",
     "Obter e conferir os snapshots contratados (PREP-07).",
-    "Verificar a preparação e registrar o checkpoint final de ambiente (PREP-08)."
+    "Verificar a preparação e registrar checkpoint final de ambiente (PREP-08)."
   ],
-  "proxima_acao": "Bruno sincroniza a cópia local com git pull --ff-only e fornece git status --short --branch; depois retomar PREP-05 / issue 6.",
+  "proxima_acao": "Bruno prepara e ativa o ambiente Python do projeto e informa versão e caminho do interpretador. Recomendação do agente: Conda ga001 com Python 3.12; não declarar criado nem registrar a proposta como decisão autoral de Bruno antes da confirmação.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
     "Não há código, SQL, análise ou conclusão da solução implementados por esta governança."
   ],
-  "proxima_etapa": "PREP-05",
-  "proxima_issue": {
-    "numero": 6,
-    "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6"
+  "ambiente_python_proposto": {
+    "origem": "Recomendação do agente, aguardando escolha/execução de Bruno.",
+    "gerenciador": "Conda",
+    "nome": "ga001",
+    "linha_python": "3.12",
+    "justificativa": "Ambiente identificado para o projeto, usando a mesma linha Python do inventário inicial.",
+    "criado": false,
+    "bibliotecas_escolhidas": false,
+    "contrato_exige_apenas": "Python 3 e ambiente/dependências documentados."
   }
 }

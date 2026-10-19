@@ -17,7 +17,7 @@ Bruno confirmou Project privado, cinco opções de Status com Backlog padrão, A
 
 A governança foi publicada e conferida no [commit 1c36880](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/commit/1c36880141502535cfe978c2a90fc6b66e6674c0): política integral em AGENTS.md, estado e procedimento de continuidade, apoio da IA, registro de decisões, exclusões Git e pastas técnicas vazias. Nenhuma solução Python, SQL ou análise foi implementada pela IA.
 
-O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-04 concluída; confirmar sincronização local antes da PREP-05.**
+O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-04 concluída; sincronização local confirmada até 548f8e1; PREP-05 em andamento.**
 
 ## Estados acordados
 
@@ -40,7 +40,7 @@ Dependências satisfeitas não autorizam marcar uma tarefa como concluída. A se
 | PREP-02 | [#3 — Criar o repositório da solução e confirmar o clone](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3) | Concluído | Fechada | R09, R11 | PREP-00 |
 | PREP-03 | [#4 — Configurar o Project, vincular issues e preservar os cards](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/4) | Concluído | Fechada | R09 | PREP-02 |
 | PREP-04 | [#5 — Estruturar a governança e a continuidade da execução](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5) | Concluído | Fechada | R09, R10, R11 | PREP-02 |
-| PREP-05 | [#6 — Preparar e identificar o ambiente Python do projeto](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6) | Backlog | Aberta | R11 | PREP-01, PREP-02 |
+| PREP-05 | [#6 — Preparar e identificar o ambiente Python do projeto](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6) | Em andamento | Aberta | R11 | PREP-01, PREP-02 |
 | PREP-06 | [#7 — Preparar o destino PostgreSQL e verificar a conexão Python](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7) | Backlog | Aberta | R11 | PREP-01, PREP-02, PREP-05 |
 | PREP-07 | [#8 — Obter e conferir os snapshots contratados](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/8) | Backlog | Aberta | R01, R11 | PREP-02, PREP-04 |
 | PREP-08 | [#9 — Conferir a preparação e registrar o checkpoint de ambiente](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/9) | Backlog | Aberta | R09, R10, R11 | PREP-03, PREP-04, PREP-05, PREP-06, PREP-07 |
