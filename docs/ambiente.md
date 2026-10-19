@@ -178,3 +178,11 @@ Foram listados três papéis e seis bancos. O papel postgres apresenta os atribu
 Próxima ação: criar e conferir `ga001_app`, com login e atributos NOSUPERUSER, NOCREATEDB e NOCREATEROLE; senha definida interativamente por Bruno com `createuser --pwprompt`. A proposta de configuração foi orientada pelo agente, e sua execução ainda não foi comprovada. O banco, seu proprietário, o destino final, a autenticação e a conexão Python serão conferidos nas ações seguintes. Modelagem das tabelas e carga pertencem aos cards técnicos.
 
 Referência administrativa: [createuser — documentação PostgreSQL](https://www.postgresql.org/docs/18/app-createuser.html).
+
+## PostgreSQL — papel de acesso conferido (PREP-06)
+
+**Data:** 19/10/2026. Bruno forneceu a saída de `\du ga001_app`: papel `ga001_app` presente e campo Atributos vazio. Nenhum atributo administrativo foi exibido. A existência do papel está confirmada; a listagem ainda não testa conexão por esse papel ou a configuração da senha.
+
+Próxima ação orientada: criar `ga001_logistica` com `ga001_app` como proprietário, usando `sudo -u postgres createdb --owner=ga001_app ga001_logistica`. Depois conferir conexão e proprietário via psql com `127.0.0.1:5432`, usuário `ga001_app`, banco `ga001_logistica`, prompt de senha e metacomandos `\conninfo` e `\l ga001_logistica`. Nenhum desses resultados posteriores é declarado concluído agora.
+
+Referência administrativa: [createdb — opção owner](https://www.postgresql.org/docs/18/app-createdb.html).

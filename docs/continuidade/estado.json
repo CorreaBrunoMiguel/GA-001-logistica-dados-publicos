@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 11,
+  "revisao": 12,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -195,6 +195,17 @@
       "papel_ga001_app_existente": false,
       "banco_ga001_logistica_existente": false,
       "limite": "Listagem de recursos existentes; ainda não comprova criação, senha, autenticação do projeto ou conexão Python."
+    },
+    "papel_postgresql": {
+      "arquivo": "docs/ambiente.md",
+      "data": "2026-10-19",
+      "nome": "ga001_app",
+      "fonte": "Saída de sudo -u postgres psql -X -P pager=off -d postgres -c '\\du ga001_app' fornecida por Bruno.",
+      "existencia_confirmada": true,
+      "atributos_exibidos": "",
+      "privilegios_administrativos_exibidos": false,
+      "conexao_com_papel_verificada": false,
+      "limite": "Listagem confirma a existência e os atributos exibidos; ainda não demonstra acesso por esse papel nem conexão Python."
     }
   },
   "ultimo_checkpoint_concluido": {
@@ -220,7 +231,7 @@
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno executa sudo -u postgres createuser --login --no-superuser --no-createdb --no-createrole --pwprompt ga001_app, definindo e confirmando a senha localmente. Se não houver erro, confere o papel com sudo -u postgres psql -X -P pager=off -d postgres -c '\\du ga001_app' e fornece somente a saída, sem senha. A criação do banco e a conexão Python ficam para as verificações seguintes.",
+  "proxima_acao": "Bruno cria o banco com sudo -u postgres createdb --owner=ga001_app ga001_logistica. Se não houver erro, conecta usando psql -X -P pager=off -h 127.0.0.1 -p 5432 -U ga001_app -d ga001_logistica -W -c '\\conninfo' -c '\\l ga001_logistica', digitando localmente a senha do papel ga001_app. Fornecer as saídas ou o erro, sem senha. Depois verificar conexão Python e configuração reproduzível.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -347,7 +358,7 @@
     "teste_previsto": "Verificação de reprodução da entrega, T10."
   },
   "preparacao_postgresql": {
-    "estado": "inventario_conferido_criacao_papel_pendente",
+    "estado": "papel_conferido_criacao_banco_e_acesso_psql_pendentes",
     "servidor_confirmado": "14.24",
     "acesso_administrativo_local_confirmado": true,
     "papel_bruno_ausente_na_verificacao_inicial": true,
@@ -366,8 +377,18 @@
       "limite": "Listagem de recursos existentes; ainda não comprova criação, senha, autenticação do projeto ou conexão Python."
     },
     "papel_proposto": "ga001_app",
-    "papel_criado_verificado": false,
+    "papel_criado_verificado": true,
     "banco_proposto": "ga001_logistica",
-    "banco_criado_verificado": false
+    "banco_criado_verificado": false,
+    "papel": {
+      "data": "2026-10-19",
+      "nome": "ga001_app",
+      "fonte": "Saída de sudo -u postgres psql -X -P pager=off -d postgres -c '\\du ga001_app' fornecida por Bruno.",
+      "existencia_confirmada": true,
+      "atributos_exibidos": "",
+      "privilegios_administrativos_exibidos": false,
+      "conexao_com_papel_verificada": false,
+      "limite": "Listagem confirma a existência e os atributos exibidos; ainda não demonstra acesso por esse papel nem conexão Python."
+    }
   }
 }
