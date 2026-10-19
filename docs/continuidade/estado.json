@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 6,
+  "revisao": 7,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -164,6 +164,11 @@
       "fonte": "Plano e aceitação informados por Bruno na conversa.",
       "arquivo": "docs/ambiente.md",
       "limite": "Resultado da transação ainda pendente."
+    },
+    "resultado_conda_SC_TECH": {
+      "fonte": "Saídas de python --version, conda list filtrado e pip check fornecidas por Bruno após aceitar a instalação; agente sem acesso à máquina.",
+      "arquivo": "docs/ambiente.md",
+      "limite": "Presença e versões comprovadas pelas saídas; dependências declaradas verificadas. Não comprova importações, kernel, conexão PostgreSQL nem reprodutibilidade integral."
     }
   },
   "ultimo_checkpoint_concluido": {
@@ -180,13 +185,12 @@
     "observacao": "Confirmação limitada ao commit indicado; atualizações administrativas posteriores do remoto não são presumidas como já baixadas."
   },
   "pendencias": [
-    "Conferir conclusão da transação Conda aceita e versões/dependências resultantes do SC_TECH (PREP-05).",
     "Verificar importações e interpretador do kernel sc_tech; registrar dependências necessárias ao projeto (PREP-05).",
     "Preparar destino e acesso PostgreSQL e verificar conexão Python (PREP-06).",
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Após a instalação aceita terminar, Bruno fornece a versão efetiva do Python, a listagem filtrada dos pacotes e pip check no SC_TECH. A aceitação do plano não comprova conclusão da transação. Não propor nova instalação antes de conferir esse resultado.",
+  "proxima_acao": "Bruno abre JupyterLab a partir do SC_TECH na raiz do projeto, seleciona o kernel correspondente, verifica importações de NumPy, pandas, matplotlib.pyplot, Seaborn, SQLAlchemy e Psycopg e informa sys.executable e sys.version no próprio notebook. Não instalar novamente nem avançar à PREP-06 antes das verificações e do registro das dependências.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -197,12 +201,12 @@
     "gerenciador": "Conda",
     "origem": "Escolha explícita de Bruno na conversa de 19/10/2026.",
     "motivo_informado": "Aproveitar bibliotecas existentes e evitar downloads repetidos.",
-    "status": "plano_conda_aceito_resultado_e_validacoes_pendentes",
+    "status": "pacotes_instalados_confirmados_importacoes_kernel_e_reproducao_pendentes",
     "interface_desejada": "JupyterLab",
-    "versao_python_verificada_nesta_execucao": "3.13.14",
-    "bibliotecas_verificadas_nesta_execucao": "Inventariadas; importações não verificadas",
+    "versao_python_verificada_nesta_execucao": "3.13.9",
+    "bibliotecas_verificadas_nesta_execucao": "Versões dos pacotes e pip check confirmados; importações pendentes.",
     "kernel_verificado_nesta_execucao": "Registro sc_tech encontrado; interpretador efetivo não verificado",
-    "validade_da_versao_inventariada": "Python 3.13.14 foi informado antes da transação aceita; o plano prevê 3.13.9, ainda sem verificação posterior."
+    "validade_da_versao_inventariada": "Saída posterior à instalação; inventário anterior de Python 3.13.14 permanece histórico."
   },
   "ambiente_criado_anteriormente": {
     "nome": "ga001",
@@ -245,16 +249,17 @@
       ],
       "canal": "conda-forge",
       "opcao_preservacao": "--freeze-installed",
-      "status": "plano_conda_aceito_por_Bruno_resultado_pendente",
+      "status": "pacotes_instalados_confirmados_por_conda_list",
       "justificativa": "Camada de acesso SQL e driver PostgreSQL para a integração proposta; não constitui técnica obrigatória adicional ao contrato.",
       "limite_opcao_preservacao": "O plano fornecido mostrou troca de Python e várias atualizações, apesar de --freeze-installed."
-    }
+    },
+    "momento": "Inventário anterior à instalação; versões posteriores em resultado_conda_SC_TECH."
   },
   "plano_conda_SC_TECH": {
     "data": "2026-10-19",
     "fonte": "Plano do Conda fornecido por Bruno e relato de que o aceitou; agente sem acesso à máquina.",
     "comando": "conda install -n SC_TECH -c conda-forge --freeze-installed sqlalchemy psycopg",
-    "status": "aceito_por_Bruno_resultado_da_transacao_pendente",
+    "status": "pacotes_e_python_confirmados_por_comandos_validacao_runtime_pendente",
     "python_antes": "3.13.14",
     "python_planejado": "3.13.9",
     "sqlalchemy_planejado": "2.1.5",
@@ -265,6 +270,28 @@
     "aceitacao": "Bruno informou que aceitou e que não há problema em modificar a versão do Python.",
     "transacao_concluida_verificada": null,
     "importacoes_pos_transacao_verificadas": false,
-    "pip_check_pos_transacao_verificado": false
+    "pip_check_pos_transacao_verificado": true,
+    "evidencia_resultado": "resultado_conda_SC_TECH"
+  },
+  "resultado_conda_SC_TECH": {
+    "data": "2026-10-19",
+    "fonte": "Saídas de python --version, conda list filtrado e pip check fornecidas por Bruno após aceitar a instalação; agente sem acesso à máquina.",
+    "prefixo": "/home/bruno/anaconda3/envs/SC_TECH",
+    "pacotes": {
+      "python": "3.13.9",
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "matplotlib": "3.11.1",
+      "seaborn": "0.13.2",
+      "sqlalchemy": "2.1.5",
+      "psycopg": "3.3.4",
+      "psycopg-c": "3.3.4",
+      "jupyterlab": "4.6.2",
+      "ipykernel": "7.3.0"
+    },
+    "pip_check": "No broken requirements found.",
+    "limite": "Presença e versões comprovadas pelas saídas; dependências declaradas verificadas. Não comprova importações, kernel, conexão PostgreSQL nem reprodutibilidade integral.",
+    "importacoes_verificadas": false,
+    "interpretador_do_kernel_verificado": false
   }
 }

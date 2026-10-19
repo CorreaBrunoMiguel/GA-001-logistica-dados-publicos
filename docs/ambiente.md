@@ -104,3 +104,26 @@ O registro sc_tech existe; o interpretador efetivamente usado por ele ainda ser�
 O plano prevê Python **3.13.14 → 3.13.9**, SQLAlchemy **2.1.5**, Psycopg e psycopg-c **3.3.4**, libpq **18.6** e download de **198,1 MB**. Também altera certificados, OpenSSL, Qt/PySide6, bibliotecas gráficas, MySQL e outras bibliotecas nativas. Esses valores descrevem o plano; não são um inventário posterior à instalação. A opção `--freeze-installed` não preservou integralmente o conjunto instalado neste plano.
 
 A aceitação foi informada por Bruno; a saída final da transação ainda não foi fornecida. Conferir Python, pacotes e `pip check` após a transação, depois importações e interpretador do kernel. O inventário anterior permanece como registro histórico. Nenhuma instalação ou reversão foi executada pelo agente.
+
+## SC_TECH — resultado posterior à instalação
+
+**Data:** 19/10/2026. **Fonte:** três comandos executados por Bruno e saídas fornecidas na conversa; o agente não acessou a máquina.
+
+| Componente | Versão após a instalação |
+| --- | --- |
+| python | 3.13.9 |
+| numpy | 2.5.1 |
+| pandas | 3.0.5 |
+| matplotlib | 3.11.1 |
+| seaborn | 0.13.2 |
+| sqlalchemy | 2.1.5 |
+| psycopg | 3.3.4 |
+| psycopg-c | 3.3.4 |
+| jupyterlab | 4.6.2 |
+| ipykernel | 7.3.0 |
+
+Prefixo informado: `/home/bruno/anaconda3/envs/SC_TECH`. Os pacotes acima foram listados como conda-forge, exceto Seaborn, listado como pypi.
+
+`pip check` retornou **No broken requirements found.** As saídas demonstram os pacotes instalados e a versão efetiva do Python; não é preciso repetir a instalação ou exigir o log final da transação para reconhecer isso. O plano aceito e o inventário anterior permanecem como histórico.
+
+**Pendências atuais da PREP-05:** verificar importações e o interpretador do kernel no JupyterLab e registrar as dependências necessárias à reprodução do projeto. Dependências declaradas consistentes não comprovam funcionamento em execução. A conexão PostgreSQL permanece na PREP-06.

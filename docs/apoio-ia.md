@@ -9,7 +9,8 @@
 - Leitura e organização das referências do contrato.
 - Orientação de comandos administrativos de inventário e clone, executados por Bruno; revisão das saídas por ele fornecidas.
 - Registro do inventário, distinguindo cliente e servidor PostgreSQL e a lacuna de acesso pelo papel bruno.
-- Orientação da reutilização do SC_TECH e instalação de complementos; revisão do plano Conda e registro da aceitação por Bruno, com resultado e verificações ainda pendentes.
+- Orientação da reutilização do SC_TECH e instalação de complementos; revisão do plano Conda e registro da aceitação por Bruno.
+- Revisão das saídas posteriores à instalação: Python e pacotes identificados e pip check sem dependências declaradas quebradas; importações e ligação do kernel ainda pendentes.
 - Orientação da configuração manual do Project por Bruno.
 - Criação das 19 issues, dependências, critérios documentais e exportação dos cards.
 - Organização de README, AGENTS.md com política integral, continuidade, registro de decisões, exclusões Git e pastas vazias.

@@ -32,3 +32,5 @@ O agente pode organizar a redação administrativa do registro a partir do racio
 **Complemento do registro:** o agente recomendou SQLAlchemy e Psycopg, ausentes da listagem filtrada, para a integração PostgreSQL. É proposta de preparação; a instalação e as versões efetivas ainda aguardam evidências de Bruno.
 
 **Atualização de DOP-001:** Bruno forneceu o plano Conda e informou que o aceitou, incluindo a alteração planejada de Python 3.13.14 para 3.13.9. O agente havia indicado preservar pacotes, mas o plano também apresentou várias atualizações; não se registra preservação integral. A escolha de prosseguir é de Bruno. Conclusão da transação, versões efetivas e funcionamento permanecem pendentes de evidência.
+
+**Resultado posterior à instalação:** Bruno confirmou por saídas dos comandos Python 3.13.9, SQLAlchemy 2.1.5 e Psycopg/psycopg-c 3.3.4 no SC_TECH. Os demais pacotes do filtro mantiveram as versões do inventário e `pip check` não encontrou dependências declaradas quebradas. Importações, interpretador do kernel e dependências reproduzíveis ainda serão conferidos; não se infere funcionamento integral.
