@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 1,
+  "revisao": 2,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -26,12 +26,9 @@
     "id": "W003",
     "origem": "Identificador documental registrado no Gerador Analítico; não é ID interno da plataforma."
   },
-  "etapa_atual": "PREP-04",
-  "issue_atual": {
-    "numero": 5,
-    "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5"
-  },
-  "estado_etapa": "em_andamento",
+  "etapa_atual": null,
+  "issue_atual": null,
+  "estado_etapa": "aguardando_sincronizacao_local",
   "etapas_preparacao": [
     {
       "id": "PREP-00",
@@ -74,7 +71,7 @@
     {
       "id": "PREP-04",
       "titulo": "Estruturar a governança da execução",
-      "estado": "em_andamento",
+      "estado": "concluida",
       "dependencias": [
         "PREP-02"
       ],
@@ -142,11 +139,24 @@
       "issues": 19,
       "fechadas": 4,
       "fonte_interface": "Confirmações de Bruno; sem leitura do Project pelo agente."
+    },
+    "governanca": {
+      "commit": "1c36880141502535cfe978c2a90fc6b66e6674c0",
+      "politica_integral": "AGENTS.md",
+      "validacao": "Conteúdos e caminhos consultados no GitHub; cópia integral da política conferida, JSON e links locais verificados; pastas técnicas vazias."
+    },
+    "kanban_atual": {
+      "arquivo": "docs/kanban/cards.json",
+      "issues": 19,
+      "fechadas": 5,
+      "abertas": 14,
+      "fonte_status_issue": "Consulta GitHub após fechamento da issue 5; campos finais do Project não inspecionados."
     }
   },
   "ultimo_checkpoint_concluido": {
-    "etapa": "PREP-03",
-    "commit_solucao": "3da085125f36db41b44224d0b0fa666ecf7bbc8c"
+    "etapa": "PREP-04",
+    "commit_governanca_verificado": "1c36880141502535cfe978c2a90fc6b66e6674c0",
+    "issue": 5
   },
   "copia_local": {
     "clone_confirmado": true,
@@ -154,14 +164,21 @@
     "sincronizacao_apos_alteracoes_administrativas": "pendente_confirmacao_por_Bruno"
   },
   "pendencias": [
-    "Concluir e verificar os documentos administrativos da PREP-04.",
-    "Confirmar sincronização da cópia local de Bruno após as alterações remotas.",
-    "Preparar ambiente Python (PREP-05), acesso PostgreSQL e conexão Python (PREP-06), dados contratados (PREP-07) e checkpoint final (PREP-08)."
+    "Confirmar sincronização da cópia local de Bruno após as alterações administrativas remotas.",
+    "Preparar o ambiente Python do projeto (PREP-05).",
+    "Preparar destino e acesso PostgreSQL e verificar conexão Python (PREP-06).",
+    "Obter e conferir os snapshots contratados (PREP-07).",
+    "Verificar a preparação e registrar o checkpoint final de ambiente (PREP-08)."
   ],
-  "proxima_acao": "Verificar os documentos administrativos, fechar PREP-04 por evidência e atualizar o checkpoint; depois confirmar sincronização local antes da PREP-05.",
+  "proxima_acao": "Bruno sincroniza a cópia local com git pull --ff-only e fornece git status --short --branch; depois retomar PREP-05 / issue 6.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
     "Não há código, SQL, análise ou conclusão da solução implementados por esta governança."
-  ]
+  ],
+  "proxima_etapa": "PREP-05",
+  "proxima_issue": {
+    "numero": 6,
+    "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6"
+  }
 }

@@ -19,7 +19,7 @@ Código, SQL, decisões técnicas, análises e conclusões são de **Bruno**. O 
 
 Leia [AGENTS.md](AGENTS.md), [estado da execução](docs/continuidade/estado.json) e [procedimento de continuidade](docs/continuidade/README.md). Consulte o remoto para identificar a referência atual antes de retomar a issue indicada.
 
-Situação deste checkpoint: PREP-00 a PREP-03 concluídas; documentos da PREP-04 em verificação. A cópia local de Bruno ainda precisa incorporar as alterações administrativas recentes.
+Situação deste checkpoint: PREP-00 a PREP-04 concluídas; próxima etapa: PREP-05, após confirmar a sincronização local. A cópia local de Bruno ainda precisa incorporar as alterações administrativas recentes.
 
 ## Documentação e autoria
 

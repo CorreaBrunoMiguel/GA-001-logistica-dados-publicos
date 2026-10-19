@@ -11,13 +11,13 @@ Documentação administrativa produzida pelo agente de IA. Código, SQL, anális
 
 ## Alcance da conferência
 
-As 19 issues foram criadas e lidas no GitHub. PREP-00, PREP-01 e PREP-02 foram cadastradas retrospectivamente e fechadas com base nas evidências das etapas já realizadas. PREP-03 foi fechada após as confirmações de configuração e entrada dos cards. Há quatro issues fechadas e quinze abertas.
+As 19 issues foram criadas e consultadas no GitHub. PREP-00, PREP-01 e PREP-02 foram cadastradas retrospectivamente e fechadas com base em evidências anteriores. PREP-03 foi fechada após as confirmações do Project; PREP-04, após publicar e conferir os documentos de governança. Há cinco issues fechadas e quatorze abertas.
 
-Bruno confirmou o Project como privado; as cinco opções do campo Status e Backlog como padrão; Auto-add ativado para o repositório com filtro is:issue; entrada dos 19 cards; PREP-00/01/02 em Concluído, PREP-03 em Em andamento antes de seu fechamento e demais cards em Backlog. Depois de corrigir os estados iniciais, confirmou o workflow Item closed ativado com destino Concluído.
+Bruno confirmou Project privado, cinco opções de Status com Backlog padrão, Auto-add para este repositório com filtro is:issue, entrada dos 19 cards e ajustes dos estados iniciais. Também confirmou Item closed ativado com destino Concluído. São informações fornecidas por Bruno: a conexão do agente não lê a interface de Projects. Valores finais dos campos após fechar as issues 4 e 5 não foram inspecionados pelo agente.
 
-Essas informações da interface foram fornecidas por Bruno. A conexão do agente não oferece leitura ou edição de Projects. O fechamento da issue 4 foi realizado e consultado no GitHub pelo agente; o valor final do Status do Project após esse fechamento não foi inspecionado pelo agente.
+A governança foi publicada e conferida no [commit 1c36880](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/commit/1c36880141502535cfe978c2a90fc6b66e6674c0): política integral em AGENTS.md, estado e procedimento de continuidade, apoio da IA, registro de decisões, exclusões Git e pastas técnicas vazias. Nenhuma solução Python, SQL ou análise foi implementada pela IA.
 
-O estado de acompanhamento na tabela é documental. Ele é registrado separadamente do estado aberto/fechado da issue e não é apresentado como leitura direta do campo Status do Project. **PREP-03 concluída; próxima etapa: PREP-04.**
+O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-04 concluída; confirmar sincronização local antes da PREP-05.**
 
 ## Estados acordados
 
@@ -39,7 +39,7 @@ Dependências satisfeitas não autorizam marcar uma tarefa como concluída. A se
 | PREP-01 | [#2 — Inventariar o ambiente local](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2) | Concluído | Fechada | R11 | PREP-00 |
 | PREP-02 | [#3 — Criar o repositório da solução e confirmar o clone](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3) | Concluído | Fechada | R09, R11 | PREP-00 |
 | PREP-03 | [#4 — Configurar o Project, vincular issues e preservar os cards](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/4) | Concluído | Fechada | R09 | PREP-02 |
-| PREP-04 | [#5 — Estruturar a governança e a continuidade da execução](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5) | Backlog | Aberta | R09, R10, R11 | PREP-02 |
+| PREP-04 | [#5 — Estruturar a governança e a continuidade da execução](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5) | Concluído | Fechada | R09, R10, R11 | PREP-02 |
 | PREP-05 | [#6 — Preparar e identificar o ambiente Python do projeto](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6) | Backlog | Aberta | R11 | PREP-01, PREP-02 |
 | PREP-06 | [#7 — Preparar o destino PostgreSQL e verificar a conexão Python](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7) | Backlog | Aberta | R11 | PREP-01, PREP-02, PREP-05 |
 | PREP-07 | [#8 — Obter e conferir os snapshots contratados](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/8) | Backlog | Aberta | R01, R11 | PREP-02, PREP-04 |
