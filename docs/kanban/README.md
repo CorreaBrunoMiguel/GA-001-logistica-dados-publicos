@@ -11,13 +11,13 @@ Documentação administrativa produzida pelo agente de IA. Código, SQL, anális
 
 ## Alcance da conferência
 
-As 19 issues foram criadas e consultadas no GitHub. PREP-00, PREP-01 e PREP-02 foram cadastradas retrospectivamente e fechadas com base em evidências anteriores. PREP-03 foi fechada após as confirmações do Project; PREP-04, após publicar e conferir os documentos de governança. Há cinco issues fechadas e quatorze abertas.
+As 19 issues foram criadas e consultadas no GitHub. PREP-00, PREP-01 e PREP-02 foram cadastradas retrospectivamente e fechadas com base em evidências anteriores. PREP-03 foi fechada após as confirmações do Project; PREP-04, após publicar e conferir os documentos de governança. PREP-05 foi fechada após confirmar kernel, dependências e importações. Há seis issues fechadas e treze abertas.
 
 Bruno confirmou Project privado, cinco opções de Status com Backlog padrão, Auto-add para este repositório com filtro is:issue, entrada dos 19 cards e ajustes dos estados iniciais. Também confirmou Item closed ativado com destino Concluído. São informações fornecidas por Bruno: a conexão do agente não lê a interface de Projects. Valores finais dos campos após fechar as issues 4 e 5 não foram inspecionados pelo agente.
 
 A governança foi publicada e conferida no [commit 1c36880](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/commit/1c36880141502535cfe978c2a90fc6b66e6674c0): política integral em AGENTS.md, estado e procedimento de continuidade, apoio da IA, registro de decisões, exclusões Git e pastas técnicas vazias. Nenhuma solução Python, SQL ou análise foi implementada pela IA.
 
-O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-04 concluída; sincronização local confirmada até 548f8e1; PREP-05 em andamento.** Bruno confirmou Python 3.13.9, SQLAlchemy 2.1.5 e Psycopg 3.3.4 no SC_TECH; pip check sem dependências declaradas quebradas. O interpretador do notebook foi confirmado no SC_TECH, e environment.yml e instruções foram preparados. Falta confirmação explícita das importações sem erro; reconstrução ainda não executada.
+O estado de acompanhamento da tabela é documental, separado do estado aberto/fechado da issue e do campo Status do Project. **PREP-05 concluída; PREP-06 pronta, aguardando sincronização local antes da execução.** Bruno confirmou Python 3.13.9, versões dos pacotes, pip check, interpretador do notebook no SC_TECH e todas as importações sem erro. environment.yml e instruções registrados; reconstrução ainda não executada. A última sincronização local comprovada permanece em 548f8e1.
 
 ## Estados acordados
 
@@ -40,8 +40,8 @@ Dependências satisfeitas não autorizam marcar uma tarefa como concluída. A se
 | PREP-02 | [#3 — Criar o repositório da solução e confirmar o clone](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3) | Concluído | Fechada | R09, R11 | PREP-00 |
 | PREP-03 | [#4 — Configurar o Project, vincular issues e preservar os cards](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/4) | Concluído | Fechada | R09 | PREP-02 |
 | PREP-04 | [#5 — Estruturar a governança e a continuidade da execução](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5) | Concluído | Fechada | R09, R10, R11 | PREP-02 |
-| PREP-05 | [#6 — Preparar e identificar o ambiente Python do projeto](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6) | Em andamento | Aberta | R11 | PREP-01, PREP-02 |
-| PREP-06 | [#7 — Preparar o destino PostgreSQL e verificar a conexão Python](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7) | Backlog | Aberta | R11 | PREP-01, PREP-02, PREP-05 |
+| PREP-05 | [#6 — Preparar e identificar o ambiente Python do projeto](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6) | Concluído | Fechada | R11 | PREP-01, PREP-02 |
+| PREP-06 | [#7 — Preparar o destino PostgreSQL e verificar a conexão Python](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7) | Pronto | Aberta | R11 | PREP-01, PREP-02, PREP-05 |
 | PREP-07 | [#8 — Obter e conferir os snapshots contratados](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/8) | Backlog | Aberta | R01, R11 | PREP-02, PREP-04 |
 | PREP-08 | [#9 — Conferir a preparação e registrar o checkpoint de ambiente](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/9) | Backlog | Aberta | R09, R10, R11 | PREP-03, PREP-04, PREP-05, PREP-06, PREP-07 |
 | T01 | [#10 — Diagnosticar granularidade, cobertura e qualidade dos dois arquivos](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/10) | Backlog | Aberta | R01, R02, R10 | PREP-08 |

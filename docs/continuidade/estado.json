@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 8,
+  "revisao": 9,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -26,12 +26,12 @@
     "id": "W003",
     "origem": "Identificador documental registrado no Gerador Analítico; não é ID interno da plataforma."
   },
-  "etapa_atual": "PREP-05",
+  "etapa_atual": "PREP-06",
   "issue_atual": {
-    "numero": 6,
-    "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6"
+    "numero": 7,
+    "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7"
   },
-  "estado_etapa": "em_andamento",
+  "estado_etapa": "pronto",
   "etapas_preparacao": [
     {
       "id": "PREP-00",
@@ -84,7 +84,7 @@
     {
       "id": "PREP-05",
       "titulo": "Preparar o ambiente Python",
-      "estado": "em_andamento",
+      "estado": "concluida",
       "dependencias": [
         "PREP-01",
         "PREP-02"
@@ -95,7 +95,7 @@
     {
       "id": "PREP-06",
       "titulo": "Preparar o acesso PostgreSQL",
-      "estado": "backlog",
+      "estado": "pronto",
       "dependencias": [
         "PREP-01",
         "PREP-02",
@@ -151,9 +151,9 @@
     "kanban_atual": {
       "arquivo": "docs/kanban/cards.json",
       "issues": 19,
-      "fechadas": 5,
-      "abertas": 14,
-      "fonte_status_issue": "Consulta GitHub após fechamento da issue 5; campos finais do Project não inspecionados."
+      "fechadas": 6,
+      "abertas": 13,
+      "fonte_status_issue": "Issue 6 fechada como concluída com confirmação das importações; issue 7 liberada como Pronto no acompanhamento documental. Status no Project não inspecionado."
     },
     "sincronizacao_local": {
       "commit": "548f8e1c29d07fa03e8693be677c2bc51e1f72fa",
@@ -168,18 +168,24 @@
     "resultado_conda_SC_TECH": {
       "fonte": "Saídas de python --version, conda list filtrado e pip check fornecidas por Bruno após aceitar a instalação; agente sem acesso à máquina.",
       "arquivo": "docs/ambiente.md",
-      "limite": "Presença e versões comprovadas pelas saídas e dependências declaradas verificadas; interpretador do notebook confirmado posteriormente. Importações completas aguardam confirmação explícita; conexão PostgreSQL e reconstrução não testadas."
+      "limite": "Interpretador confirmado por saída do notebook; importações confirmadas explicitamente por Bruno. Conexão PostgreSQL e reconstrução do ambiente não verificadas nesta etapa."
     },
     "kernel_SC_TECH": {
       "arquivo": "docs/ambiente.md",
       "fonte": "Saída fornecida por Bruno após orientação para executar o teste em notebook Jupyter; sem acesso do agente à máquina.",
-      "limite": "A saída confirma o interpretador. Nenhuma exceção foi reportada no teste do notebook; falta confirmação explícita de que todas as importações solicitadas foram executadas sem erro."
+      "limite": "Interpretador confirmado por saída do notebook; importações confirmadas explicitamente por Bruno. Conexão PostgreSQL e reconstrução do ambiente não verificadas nesta etapa."
+    },
+    "importacoes_SC_TECH": {
+      "data": "2026-10-19",
+      "fonte": "Em 19/10/2026, Bruno confirmou explicitamente que todas as importações solicitadas no notebook executaram sem erro, incluindo Psycopg. NumPy, pandas, matplotlib.pyplot, Seaborn, SQLAlchemy e Psycopg verificados por relato do participante; interpretador identificado pelas saídas anteriores.",
+      "arquivo": "docs/ambiente.md"
     }
   },
   "ultimo_checkpoint_concluido": {
-    "etapa": "PREP-04",
-    "commit_governanca_verificado": "1c36880141502535cfe978c2a90fc6b66e6674c0",
-    "issue": 5
+    "etapa": "PREP-05",
+    "issue": 6,
+    "commit_dependencias_verificado": "f424486ec4c56c3147bc7736f69f4ff55c8aac96",
+    "fonte_importacoes": "Em 19/10/2026, Bruno confirmou explicitamente que todas as importações solicitadas no notebook executaram sem erro, incluindo Psycopg. NumPy, pandas, matplotlib.pyplot, Seaborn, SQLAlchemy e Psycopg verificados por relato do participante; interpretador identificado pelas saídas anteriores."
   },
   "copia_local": {
     "clone_confirmado": true,
@@ -190,12 +196,12 @@
     "observacao": "Confirmação limitada ao commit indicado; atualizações administrativas posteriores do remoto não são presumidas como já baixadas."
   },
   "pendencias": [
-    "Confirmar explicitamente que todas as importações no notebook passaram sem erro; environment.yml e instruções de reconstrução registrados, reconstrução ainda não executada (PREP-05).",
+    "Sincronizar a cópia local com as atualizações administrativas remotas antes de executar PREP-06; última sincronização comprovada permanece em 548f8e1.",
     "Preparar destino e acesso PostgreSQL e verificar conexão Python (PREP-06).",
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno confirma se todas as importações solicitadas no notebook executaram sem erro, incluindo Psycopg. Não repetir instalação nem identificação do interpretador. Após essa confirmação, revisar e encerrar PREP-05 com a especificação environment.yml já registrada; sincronizar a cópia local e seguir à PREP-06.",
+  "proxima_acao": "Bruno executa git pull --ff-only e git status --short --branch na raiz do repositório e fornece a saída. Confirmada a sincronização, iniciar PREP-06 (issue 7): identificar e preparar o destino e o acesso PostgreSQL e verificar a conexão Python. Não repetir preparação/importações do SC_TECH.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -206,10 +212,10 @@
     "gerenciador": "Conda",
     "origem": "Escolha explícita de Bruno na conversa de 19/10/2026.",
     "motivo_informado": "Aproveitar bibliotecas existentes e evitar downloads repetidos.",
-    "status": "interpretador_kernel_confirmado_dependencias_declaradas_importacoes_aguardam_confirmacao",
+    "status": "preparado_importacoes_e_kernel_confirmados_reconstrucao_ainda_nao_executada",
     "interface_desejada": "JupyterLab",
     "versao_python_verificada_nesta_execucao": "3.13.9",
-    "bibliotecas_verificadas_nesta_execucao": "Versões e pip check confirmados; nenhuma exceção reportada no teste do notebook, confirmação explícita das importações pendente.",
+    "bibliotecas_verificadas_nesta_execucao": "Em 19/10/2026, Bruno confirmou explicitamente que todas as importações solicitadas no notebook executaram sem erro, incluindo Psycopg. NumPy, pandas, matplotlib.pyplot, Seaborn, SQLAlchemy e Psycopg verificados por relato do participante; interpretador identificado pelas saídas anteriores.",
     "kernel_verificado_nesta_execucao": "/home/bruno/anaconda3/envs/SC_TECH/bin/python — Python 3.13.9, saída do notebook fornecida por Bruno.",
     "validade_da_versao_inventariada": "Saída posterior à instalação; inventário anterior de Python 3.13.14 permanece histórico."
   },
@@ -264,7 +270,7 @@
     "data": "2026-10-19",
     "fonte": "Plano do Conda fornecido por Bruno e relato de que o aceitou; agente sem acesso à máquina.",
     "comando": "conda install -n SC_TECH -c conda-forge --freeze-installed sqlalchemy psycopg",
-    "status": "pacotes_e_python_confirmados_por_comandos_validacao_runtime_pendente",
+    "status": "pacotes_pip_check_importacoes_e_kernel_confirmados",
     "python_antes": "3.13.14",
     "python_planejado": "3.13.9",
     "sqlalchemy_planejado": "2.1.5",
@@ -273,10 +279,11 @@
     "download_planejado_mb": 198.1,
     "outras_alteracoes": "O plano inclui atualizações de certificados, OpenSSL, Qt/PySide6, bibliotecas gráficas, MySQL e outras bibliotecas nativas; --freeze-installed não preservou integralmente o conjunto instalado.",
     "aceitacao": "Bruno informou que aceitou e que não há problema em modificar a versão do Python.",
-    "transacao_concluida_verificada": null,
-    "importacoes_pos_transacao_verificadas": false,
+    "transacao_concluida_verificada": true,
+    "importacoes_pos_transacao_verificadas": true,
     "pip_check_pos_transacao_verificado": true,
-    "evidencia_resultado": "resultado_conda_SC_TECH"
+    "evidencia_resultado": "resultado_conda_SC_TECH",
+    "fonte_confirmacao": "Presença dos pacotes e funcionamento informados por Bruno; não foi necessário exigir o log final."
   },
   "resultado_conda_SC_TECH": {
     "data": "2026-10-19",
@@ -295,9 +302,10 @@
       "ipykernel": "7.3.0"
     },
     "pip_check": "No broken requirements found.",
-    "limite": "Presença e versões comprovadas pelas saídas e dependências declaradas verificadas; interpretador do notebook confirmado posteriormente. Importações completas aguardam confirmação explícita; conexão PostgreSQL e reconstrução não testadas.",
-    "importacoes_verificadas": false,
-    "interpretador_do_kernel_verificado": true
+    "limite": "Interpretador confirmado por saída do notebook; importações confirmadas explicitamente por Bruno. Conexão PostgreSQL e reconstrução do ambiente não verificadas nesta etapa.",
+    "importacoes_verificadas": true,
+    "interpretador_do_kernel_verificado": true,
+    "fonte_importacoes": "Em 19/10/2026, Bruno confirmou explicitamente que todas as importações solicitadas no notebook executaram sem erro, incluindo Psycopg. NumPy, pandas, matplotlib.pyplot, Seaborn, SQLAlchemy e Psycopg verificados por relato do participante; interpretador identificado pelas saídas anteriores."
   },
   "kernel_SC_TECH": {
     "data": "2026-10-19",
@@ -307,8 +315,9 @@
     "saida": "/home/bruno/anaconda3/envs/SC_TECH/bin/python 3.13.9 | packaged by conda-forge | (main, Oct 16 2025, 10:31:39) [GCC 14.3.0]",
     "interpretador_confirmado": true,
     "importacoes_sem_erro_reportado": true,
-    "importacoes_confirmadas_explicitamente": false,
-    "limite": "A saída confirma o interpretador. Nenhuma exceção foi reportada no teste do notebook; falta confirmação explícita de que todas as importações solicitadas foram executadas sem erro."
+    "importacoes_confirmadas_explicitamente": true,
+    "limite": "Interpretador confirmado por saída do notebook; importações confirmadas explicitamente por Bruno. Conexão PostgreSQL e reconstrução do ambiente não verificadas nesta etapa.",
+    "confirmacao_importacoes": "Em 19/10/2026, Bruno confirmou explicitamente que todas as importações solicitadas no notebook executaram sem erro, incluindo Psycopg. NumPy, pandas, matplotlib.pyplot, Seaborn, SQLAlchemy e Psycopg verificados por relato do participante; interpretador identificado pelas saídas anteriores."
   },
   "dependencias_reproducao": {
     "arquivo": "environment.yml",
