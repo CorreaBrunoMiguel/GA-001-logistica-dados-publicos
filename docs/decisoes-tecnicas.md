@@ -24,7 +24,9 @@ O agente pode organizar a redação administrativa do registro a partir do racio
 - **Escolha expressa por Bruno:** priorizar a avaliação do ambiente Conda existente SC_TECH para o projeto, com JupyterLab como interface.
 - **Justificativa informada:** aproveitar bibliotecas já instaladas e evitar baixá-las novamente.
 - **Alternativa considerada na conversa:** continuar a preparação do novo ga001. Bruno confirmou esse ambiente com Python 3.12.15 antes de solicitar a avaliação do SC_TECH.
-- **Estado da decisão:** preferência definida; adequação técnica e ajustes necessários ainda pendentes de inspeção.
+- **Estado da decisão:** preferência definida e inventário inicial recebido; complementos, importações, ligação do kernel e dependências reproduzíveis ainda pendentes.
 - **Evidências:** mensagens de Bruno e [PREP-05 / issue 6](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6). A escolha do ambiente foi explícita; não se infere compatibilidade das versões.
-- **Consequências verificadas:** nenhuma conclusão sobre pacotes ou kernel do SC_TECH nesta execução. O agente não instalou, atualizou ou removeu ambientes na máquina de Bruno.
+- **Consequências verificadas:** Python 3.13.14 e pacotes de análise/Jupyter inventariados; pip check sem dependências quebradas declaradas; registro do kernel sc_tech encontrado. Não se infere funcionamento das importações ou ligação do kernel. O agente não instalou, atualizou ou removeu ambientes na máquina de Bruno.
 - **Contrato relacionado:** R11; a demanda exige Python 3 e ambiente/dependências documentados, sem impor a criação de uma env nova.
+
+**Complemento do registro:** o agente recomendou SQLAlchemy e Psycopg, ausentes da listagem filtrada, para a integração PostgreSQL. É proposta de preparação; a instalação e as versões efetivas ainda aguardam evidências de Bruno.

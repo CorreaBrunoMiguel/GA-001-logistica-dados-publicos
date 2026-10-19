@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 4,
+  "revisao": 5,
   "atualizado_em": "2026-10-19",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -175,13 +175,13 @@
     "observacao": "Confirmação limitada ao commit indicado; atualizações administrativas posteriores do remoto não são presumidas como já baixadas."
   },
   "pendencias": [
-    "Inspecionar Python, pacotes relevantes, dependências declaradas e kernels existentes do SC_TECH (PREP-05).",
-    "Avaliar adequação e eventuais ajustes mínimos; verificar importações, interface/kernel e registrar dependências efetivas (PREP-05).",
+    "Preparar os complementos propostos SQLAlchemy/Psycopg ou justificar alternativa válida, com versões efetivas (PREP-05).",
+    "Verificar importações e interpretador do kernel sc_tech; registrar dependências necessárias ao projeto (PREP-05).",
     "Preparar destino e acesso PostgreSQL e verificar conexão Python (PREP-06).",
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno fornece versão de Python, lista filtrada de pacotes, resultado de pip check no SC_TECH e lista de kernels vista pelo Jupyter do base. Inspeção antes de instalar ou atualizar pacotes.",
+  "proxima_acao": "Bruno instala os complementos propostos SQLAlchemy e Psycopg no SC_TECH com preservação dos pacotes existentes e fornece o resultado; não presumir instalação concluída.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -192,11 +192,11 @@
     "gerenciador": "Conda",
     "origem": "Escolha explícita de Bruno na conversa de 19/10/2026.",
     "motivo_informado": "Aproveitar bibliotecas existentes e evitar downloads repetidos.",
-    "status": "selecionado_para_inspecao_adequacao_ainda_nao_verificada",
+    "status": "inventario_inicial_registrado_complementos_e_validacoes_pendentes",
     "interface_desejada": "JupyterLab",
-    "versao_python_verificada_nesta_execucao": null,
-    "bibliotecas_verificadas_nesta_execucao": false,
-    "kernel_verificado_nesta_execucao": false
+    "versao_python_verificada_nesta_execucao": "3.13.14",
+    "bibliotecas_verificadas_nesta_execucao": "Inventariadas; importações não verificadas",
+    "kernel_verificado_nesta_execucao": "Registro sc_tech encontrado; interpretador efetivo não verificado"
   },
   "ambiente_criado_anteriormente": {
     "nome": "ga001",
@@ -204,5 +204,43 @@
     "executavel_informado": "/home/bruno/anaconda3/envs/ga001/bin/python",
     "origem": "Saída fornecida por Bruno.",
     "situacao": "Preparação suspensa em favor da avaliação do SC_TECH; não removido pelo agente."
+  },
+  "inspecao_SC_TECH": {
+    "data": "2026-10-19",
+    "fonte": "Saídas de quatro comandos executados por Bruno; agente sem acesso à máquina.",
+    "prefixo": "/home/bruno/anaconda3/envs/SC_TECH",
+    "pacotes": {
+      "python": "3.13.14",
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "matplotlib": "3.11.1",
+      "seaborn": "0.13.2",
+      "jupyterlab": "4.6.2",
+      "ipykernel": "7.3.0",
+      "ipython": "9.16.1"
+    },
+    "pip_check": "No broken requirements found.",
+    "limite_pip_check": "Verifica dependências declaradas; não substitui a execução das importações.",
+    "kernels": {
+      "dados": "/home/bruno/.local/share/jupyter/kernels/dados",
+      "sc_tech": "/home/bruno/.local/share/jupyter/kernels/sc_tech",
+      "python3": "/home/bruno/anaconda3/share/jupyter/kernels/python3"
+    },
+    "interpretador_do_kernel_verificado": false,
+    "importacoes_verificadas": false,
+    "pacotes_nao_presentes_na_listagem_filtrada": [
+      "sqlalchemy",
+      "psycopg"
+    ],
+    "proposta_agente": {
+      "pacotes": [
+        "sqlalchemy",
+        "psycopg"
+      ],
+      "canal": "conda-forge",
+      "opcao_preservacao": "--freeze-installed",
+      "status": "aguardando_execucao_e_confirmacao",
+      "justificativa": "Camada de acesso SQL e driver PostgreSQL para a integração proposta; não constitui técnica obrigatória adicional ao contrato."
+    }
   }
 }

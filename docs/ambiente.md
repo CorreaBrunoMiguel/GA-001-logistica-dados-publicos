@@ -67,3 +67,32 @@ retornou 14.24 (Ubuntu 14.24-1.pgdg22.04+2). Assim, versão do cliente e versão
 Permanecem em tarefas próprias a confirmação do clone local (PREP-02), a preparação do ambiente Python dedicado (PREP-05) e o destino e acesso PostgreSQL para o projeto, incluindo conexão pelo Python (PREP-06). Nenhuma dessas configurações é declarada concluída por este inventário.
 
 Este arquivo é documentação administrativa. O conteúdo técnico da solução permanece de autoria de Bruno.
+
+## SC_TECH — inspeção para reutilização
+
+**Data:** 19/10/2026. **Fonte:** saídas executadas e fornecidas por Bruno. Escolha operacional: [DOP-001](decisoes-tecnicas.md).
+
+| Componente | Versão informada |
+| --- | --- |
+| python | 3.13.14 |
+| numpy | 2.5.1 |
+| pandas | 3.0.5 |
+| matplotlib | 3.11.1 |
+| seaborn | 0.13.2 |
+| jupyterlab | 4.6.2 |
+| ipykernel | 7.3.0 |
+| ipython | 9.16.1 |
+
+Prefixo informado pelo Conda: /home/bruno/anaconda3/envs/SC_TECH. A maioria dos pacotes listados tem origem conda-forge; Seaborn foi listado como pypi. Não se generaliza essa origem a pacotes não mostrados.
+
+pip check retornou **No broken requirements found.** Isso é verificação de dependências declaradas, não teste de importações nem de execução da solução.
+
+| Kernel registrado | Diretório informado |
+| --- | --- |
+| dados | /home/bruno/.local/share/jupyter/kernels/dados |
+| sc_tech | /home/bruno/.local/share/jupyter/kernels/sc_tech |
+| python3 | /home/bruno/anaconda3/share/jupyter/kernels/python3 |
+
+O registro sc_tech existe; o interpretador efetivamente usado por ele ainda será conferido. SQLAlchemy e Psycopg não apareceram no filtro de pacotes. O agente propôs acrescentá-los para a integração PostgreSQL, sem declarar essa proposta como requisito de biblioteca do contrato ou como instalação já realizada.
+
+**PREP-05 permanece em andamento:** complementos, importações, ligação do kernel e dependências reproduzíveis ainda pendentes. A versão 3.12.7 no inventário inicial pertence ao base; o ambiente escolhido para avaliação é SC_TECH com Python 3.13.14, conforme a inspeção acima.
