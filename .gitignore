@@ -1,0 +1,16 @@
+# Configuração e credenciais locais
+.env
+.env.*
+!.env.example
+!.env.*.example
+.pgpass
+.pg_service.conf
+
+# Ambientes locais
+.venv/
+venv/
+
+# Arquivos gerados por Python e Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/

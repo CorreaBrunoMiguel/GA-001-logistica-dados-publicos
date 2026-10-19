@@ -1,14 +1,34 @@
 # GA-001-logistica-dados-publicos
 
-Projeto de estudo GA-001, com execução técnica autoral de Bruno e governança/orientação do agente de IA.
+Estudo de portfólio sobre os fluxos ferroviários de cargas dos snapshots ANTT/SIADE de 2024 e 2025, conforme a demanda GA-001. O fluxo contratado é arquivos originais → Python → PostgreSQL → SQL → resultados consumidos em Python.
 
-## Contrato e acompanhamento
+Código, SQL, decisões técnicas, análises e conclusões são de **Bruno**. O agente de IA responde pela governança e orientação conforme a política publicada.
 
-- [Contrato GA-001 / 1.0.0](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.
-- [Política de execução e autoria](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).
-- [GitHub Project 5](https://github.com/users/CorreaBrunoMiguel/projects/5).
-- [Issues e tarefas](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues).
-- [Inventário e exportação dos cards](docs/kanban/README.md).
+## Contrato e recursos
+
+| Referência | Recurso |
+| --- | --- |
+| Contrato | [Demanda GA-001 / 1.0.0](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), commit 0143e0d4e1a3edf0c084656f9b956a101e24a942 |
+| Avaliação | [Rubrica publicada](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), por conformidade, sem nota |
+| Dados | [Manifesto e hashes](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json); obtenção prevista na PREP-07 |
+| Repositório | [GA-001-logistica-dados-publicos](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos) |
+| Project | [Project 5](https://github.com/users/CorreaBrunoMiguel/projects/5), privado segundo confirmação de Bruno |
+| Tarefas | [Issues](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues) e [inventário/exportação](docs/kanban/README.md) |
+
+## Começar ou retomar
+
+Leia [AGENTS.md](AGENTS.md), [estado da execução](docs/continuidade/estado.json) e [procedimento de continuidade](docs/continuidade/README.md). Consulte o remoto para identificar a referência atual antes de retomar a issue indicada.
+
+Situação deste checkpoint: PREP-00 a PREP-03 concluídas; documentos da PREP-04 em verificação. A cópia local de Bruno ainda precisa incorporar as alterações administrativas recentes.
+
+## Documentação e autoria
+
+- [Organização de pastas e entregáveis](docs/estrutura.md).
 - [Inventário inicial do ambiente](docs/ambiente.md).
+- [Registro de decisões técnicas de Bruno](docs/decisoes-tecnicas.md).
+- [Declaração de apoio da IA](docs/apoio-ia.md).
+- [Cards completos e evidências](docs/kanban/cards.json).
 
-Situação: preparação do ambiente. PREP-00 a PREP-03 concluídas; próxima etapa: PREP-04, governança e continuidade da execução. Este README contém organização administrativa inicial; código, SQL e análises ainda serão desenvolvidos por Bruno.
+As pastas técnicas estão vazias. A implementação e os resultados serão produzidos por Bruno nas respectivas tarefas. Dependências, configuração de exemplo e comandos reais de execução serão documentados a partir da preparação e implementação efetivamente realizadas.
+
+A estrutura de pastas é uma convenção de organização; não altera requisitos, dados ou critérios do contrato. A submissão final deverá identificar um commit completo e a exportação atualizada dos cards.
