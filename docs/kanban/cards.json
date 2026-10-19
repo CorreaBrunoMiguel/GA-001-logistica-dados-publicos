@@ -1,0 +1,899 @@
+{
+  "schema_version": "1.0.0",
+  "projeto_id": "GA-001",
+  "demanda_versao": "1.0.0",
+  "contrato_commit": "0143e0d4e1a3edf0c084656f9b956a101e24a942",
+  "data_snapshot": "2026-10-19",
+  "autoria_administrativa": "Agente de IA",
+  "execucao_tecnica": "Bruno",
+  "repositorio": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos",
+  "project_url": "https://github.com/users/CorreaBrunoMiguel/projects/5",
+  "origem_dos_estados": {
+    "issues": "Consultadas no GitHub após a criação e fechamento das etapas concluídas.",
+    "acompanhamento": "Planejamento e evidências do agente, com PREP-00 a PREP-02 concluídas e PREP-03 em andamento.",
+    "campo_status_project": "Não lido pela conexão; valores do quadro e entrada efetiva dos cards aguardam conferência por Bruno."
+  },
+  "configuracoes_informadas_por_Bruno": {
+    "status_opcoes": [
+      "Backlog",
+      "Pronto",
+      "Em andamento",
+      "Em revisão",
+      "Concluído"
+    ],
+    "status_padrao": "Backlog",
+    "auto_add": {
+      "repositorio": "CorreaBrunoMiguel/GA-001-logistica-dados-publicos",
+      "filtro": "is:issue",
+      "ativado_informado": true
+    },
+    "origem": "Confirmações 'feito' na conversa de 19/10/2026.",
+    "visibilidade": null,
+    "entrada_efetiva_dos_cards_confirmada": false
+  },
+  "cobertura_requisitos": [
+    {
+      "requisito": "R01",
+      "issues": [
+        8,
+        10
+      ]
+    },
+    {
+      "requisito": "R02",
+      "issues": [
+        10
+      ]
+    },
+    {
+      "requisito": "R03",
+      "issues": [
+        12,
+        17
+      ]
+    },
+    {
+      "requisito": "R04",
+      "issues": [
+        11,
+        12,
+        17
+      ]
+    },
+    {
+      "requisito": "R05",
+      "issues": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "requisito": "R06",
+      "issues": [
+        16
+      ]
+    },
+    {
+      "requisito": "R07",
+      "issues": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        17
+      ]
+    },
+    {
+      "requisito": "R08",
+      "issues": [
+        16,
+        18
+      ]
+    },
+    {
+      "requisito": "R09",
+      "issues": [
+        1,
+        3,
+        4,
+        5,
+        9,
+        19
+      ]
+    },
+    {
+      "requisito": "R10",
+      "issues": [
+        1,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19
+      ]
+    },
+    {
+      "requisito": "R11",
+      "issues": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        17,
+        19
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "PREP-00",
+      "titulo": "[PREP-00] Recuperar o contrato publicado e definir papéis",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/1",
+      "issue_number": 1,
+      "natureza": "Administrativa",
+      "responsavel": "Agente de IA",
+      "requisitos": [
+        "R09",
+        "R10",
+        "R11"
+      ],
+      "entregaveis": [
+        "E04"
+      ],
+      "dependencias": [],
+      "estado_issue": "closed",
+      "motivo_fechamento": "completed",
+      "estado_acompanhamento": "Concluído",
+      "status_project_observado": null,
+      "evidencias": [
+        "Contrato 0143e0d4e1a3edf0c084656f9b956a101e24a942; leitura registrada no Work W003 do Gerador Analítico."
+      ],
+      "bloqueios": "Nenhum. Registro retrospectivo: esta issue é cadastrada após a conclusão documental.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Administrativa.\n**Responsável:** Agente de IA.\n**Estado de acompanhamento:** Concluído. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R09, R10, R11. **Entregáveis:** E04.\n\n## Objetivo e finalidade\n\nFixar a versão aplicável, os critérios e a autoria antes da execução.\n\n## Entradas e referências\n\n- Estado do Gerador Analítico e documentos da versão GA-001 / 1.0.0.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- Nenhuma dependência anterior.\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Consultar demanda, rubrica, manifesto, política e orientações pelo commit de publicação.\n- Registrar que o agente assume governança e orientação e Bruno executa Python, SQL, análises e conclusões.\n\n## Critérios observáveis de conclusão\n\n- [x] Contrato completo e commit de publicação identificados.\n- [x] Papéis e limites de autoria reconhecidos.\n\n## Evidências e registro\n\n- Contrato 0143e0d4e1a3edf0c084656f9b956a101e24a942; leitura registrada no Work W003 do Gerador Analítico.\n\n## Bloqueios e limites conhecidos\n\nNenhum. Registro retrospectivo: esta issue é cadastrada após a conclusão documental.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:45:26Z",
+      "atualizada_em": "2026-10-19T19:45:49Z",
+      "fechada_em": "2026-10-19T19:45:49Z"
+    },
+    {
+      "id": "PREP-01",
+      "titulo": "[PREP-01] Inventariar o ambiente local",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2",
+      "issue_number": 2,
+      "natureza": "Preparação; registro administrativo de evidências",
+      "responsavel": "Bruno executa as verificações; agente revisa e registra",
+      "requisitos": [
+        "R11"
+      ],
+      "entregaveis": [
+        "E01"
+      ],
+      "dependencias": [
+        {
+          "id": "PREP-00",
+          "issue_number": 1,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/1"
+        }
+      ],
+      "estado_issue": "closed",
+      "motivo_fechamento": "completed",
+      "estado_acompanhamento": "Concluído",
+      "status_project_observado": null,
+      "evidencias": [
+        "[Inventário registrado](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/8c4cbd7981855a4d1100976d5a652ba65139fe5e/docs/ambiente.md).",
+        "Saídas de Bruno: Mint 21.3, Bash 5.1.16, Git 2.34.1, Conda 24.11.3, Python 3.12.7 no base, JupyterLab 4.2.5, cliente psql 18.6 e servidor PostgreSQL 14.24. Consulta pela conta postgres bem-sucedida; papel bruno ausente."
+      ],
+      "bloqueios": "Nenhum para o inventário. Configuração própria do projeto e conexão Python pertencem à PREP-06. Registro retrospectivo.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação; registro administrativo de evidências.\n**Responsável:** Bruno executa as verificações; agente revisa e registra.\n**Estado de acompanhamento:** Concluído. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nIdentificar o ambiente real e as lacunas antes de instalar ou configurar ferramentas.\n\n## Entradas e referências\n\n- Terminal e máquina local de Bruno.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-00: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/1\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Identificar sistema, Bash, Git, Conda, ambientes, interpretador Python e Jupyter.\n- Distinguir cliente e servidor PostgreSQL e verificar acesso local disponível.\n\n## Critérios observáveis de conclusão\n\n- [x] Inventário atual registrado com origem das evidências.\n- [x] Versão do servidor e lacuna do papel bruno documentadas.\n\n## Evidências e registro\n\n- [Inventário registrado](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/8c4cbd7981855a4d1100976d5a652ba65139fe5e/docs/ambiente.md).\n- Saídas de Bruno: Mint 21.3, Bash 5.1.16, Git 2.34.1, Conda 24.11.3, Python 3.12.7 no base, JupyterLab 4.2.5, cliente psql 18.6 e servidor PostgreSQL 14.24. Consulta pela conta postgres bem-sucedida; papel bruno ausente.\n\n## Bloqueios e limites conhecidos\n\nNenhum para o inventário. Configuração própria do projeto e conexão Python pertencem à PREP-06. Registro retrospectivo.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:45:50Z",
+      "atualizada_em": "2026-10-19T19:45:51Z",
+      "fechada_em": "2026-10-19T19:45:51Z"
+    },
+    {
+      "id": "PREP-02",
+      "titulo": "[PREP-02] Criar o repositório da solução e confirmar o clone",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3",
+      "issue_number": 3,
+      "natureza": "Administrativa",
+      "responsavel": "Bruno cria e clona; agente registra e confere as saídas",
+      "requisitos": [
+        "R09",
+        "R11"
+      ],
+      "entregaveis": [
+        "E04"
+      ],
+      "dependencias": [
+        {
+          "id": "PREP-00",
+          "issue_number": 1,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/1"
+        }
+      ],
+      "estado_issue": "closed",
+      "motivo_fechamento": "completed",
+      "estado_acompanhamento": "Concluído",
+      "status_project_observado": null,
+      "evidencias": [
+        "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos",
+        "Saídas fornecidas por Bruno em 19/10/2026: clone bem-sucedido; origin fetch/push correto; status contendo apenas ## main...origin/main, sem alterações locais. Visibilidade pública escolhida na criação por Bruno; nenhuma alteração de visibilidade pelo agente."
+      ],
+      "bloqueios": "Nenhum. Registro retrospectivo; não se atribui um hash local que não foi informado.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Administrativa.\n**Responsável:** Bruno cria e clona; agente registra e confere as saídas.\n**Estado de acompanhamento:** Concluído. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R09, R11. **Entregáveis:** E04.\n\n## Objetivo e finalidade\n\nManter a solução separada do núcleo elaborador/avaliador, com cópia local vinculada ao remoto correto.\n\n## Entradas e referências\n\n- Conta de Bruno e Git local.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-00: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/1\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Registrar o repositório real criado por Bruno.\n- Clonar e conferir remotos, branch e estado do diretório de trabalho.\n\n## Critérios observáveis de conclusão\n\n- [x] Repositório e clone confirmados.\n- [x] Origin fetch/push corresponde à solução e branch local acompanha origin/main.\n\n## Evidências e registro\n\n- https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos\n- Saídas fornecidas por Bruno em 19/10/2026: clone bem-sucedido; origin fetch/push correto; status contendo apenas ## main...origin/main, sem alterações locais. Visibilidade pública escolhida na criação por Bruno; nenhuma alteração de visibilidade pelo agente.\n\n## Bloqueios e limites conhecidos\n\nNenhum. Registro retrospectivo; não se atribui um hash local que não foi informado.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:45:52Z",
+      "atualizada_em": "2026-10-19T19:45:53Z",
+      "fechada_em": "2026-10-19T19:45:53Z"
+    },
+    {
+      "id": "PREP-03",
+      "titulo": "[PREP-03] Configurar o Project, vincular issues e preservar os cards",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/4",
+      "issue_number": 4,
+      "natureza": "Administrativa",
+      "responsavel": "Bruno configura a interface; agente cria e mantém issues e exportação",
+      "requisitos": [
+        "R09"
+      ],
+      "entregaveis": [
+        "E04"
+      ],
+      "dependencias": [
+        {
+          "id": "PREP-02",
+          "issue_number": 3,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Em andamento",
+      "status_project_observado": null,
+      "evidencias": [
+        "Bruno informou a URL do Project e confirmou na conversa as cinco opções de Status/Backlog padrão e o Auto-add ativado para a solução com filtro is:issue.",
+        "URLs das issues e exportação em docs/kanban/cards.json e docs/kanban/README.md; commit a registrar após a publicação."
+      ],
+      "bloqueios": "A conexão do agente não permite ler ou alterar Projects. Entrada real dos cards e visibilidade ainda não foram confirmadas; configurações foram informadas por Bruno.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Administrativa.\n**Responsável:** Bruno configura a interface; agente cria e mantém issues e exportação.\n**Estado de acompanhamento:** Em andamento. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R09. **Entregáveis:** E04.\n\n## Objetivo e finalidade\n\nViabilizar acompanhamento rastreável por Kanban, sem transformar organização em novos requisitos técnicos.\n\n## Entradas e referências\n\n- [Project 5](https://github.com/users/CorreaBrunoMiguel/projects/5)\n- Repositório da solução, contrato e este conjunto de issues.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Configurar Status com Backlog, Pronto, Em andamento, Em revisão e Concluído; Backlog como padrão.\n- Configurar Auto-add para o repositório da solução com filtro is:issue.\n- Conferir entrada real das issues no quadro e os estados das etapas já concluídas e da tarefa atual.\n- Preservar inventário textual versionado com detalhes, requisitos, dependências, estados e evidências; registrar URL do Project no README.\n- Registrar limites de acesso e confirmar visibilidade do Project conforme a orientação de criação privada.\n\n## Critérios observáveis de conclusão\n\n- [ ] Project identificado e opções de Status configuradas.\n- [ ] Adição das issues ao quadro efetivamente conferida.\n- [ ] Cards detalhados e dependências acessíveis em exportação versionada.\n- [ ] Visibilidade informada e distinção entre estado registrado e campo observado do Project preservadas.\n\n## Evidências e registro\n\n- Bruno informou a URL do Project e confirmou na conversa as cinco opções de Status/Backlog padrão e o Auto-add ativado para a solução com filtro is:issue.\n- URLs das issues e exportação em docs/kanban/cards.json e docs/kanban/README.md; commit a registrar após a publicação.\n\n## Bloqueios e limites conhecidos\n\nA conexão do agente não permite ler ou alterar Projects. Entrada real dos cards e visibilidade ainda não foram confirmadas; configurações foram informadas por Bruno.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:45:55Z",
+      "atualizada_em": "2026-10-19T19:45:55Z",
+      "fechada_em": null
+    },
+    {
+      "id": "PREP-04",
+      "titulo": "[PREP-04] Estruturar a governança e a continuidade da execução",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5",
+      "issue_number": 5,
+      "natureza": "Administrativa",
+      "responsavel": "Agente de IA; Bruno aplica operações locais necessárias",
+      "requisitos": [
+        "R09",
+        "R10",
+        "R11"
+      ],
+      "entregaveis": [
+        "E04"
+      ],
+      "dependencias": [
+        {
+          "id": "PREP-02",
+          "issue_number": 3,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Arquivos administrativos e commit real no repositório; configuração de exemplo sanitizada quando definida."
+      ],
+      "bloqueios": "Nenhum bloqueio técnico identificado; tarefa ainda não liberada na sequência. Estruturação completa não foi executada.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Administrativa.\n**Responsável:** Agente de IA; Bruno aplica operações locais necessárias.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R09, R10, R11. **Entregáveis:** E04.\n\n## Objetivo e finalidade\n\nGarantir que novos Works recuperem contrato, papéis, decisões e estado de trabalho.\n\n## Entradas e referências\n\n- Contrato fixado, política integral, URLs reais e inventário já registrado.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Organizar README e estado de continuidade da execução.\n- Criar AGENTS.md com os papéis e a política publicada completa.\n- Organizar registro do apoio da IA e local para decisões técnicas autorais de Bruno.\n- Definir organização de dados, Python, SQL, análises, documentação e evidências; preparar exclusões Git para configurações sensíveis e arquivos locais.\n\n## Critérios observáveis de conclusão\n\n- [ ] Documentos administrativos identificam autoria da IA e contrato fixo.\n- [ ] Política integral e orientações de continuidade localizáveis.\n- [ ] Locais dos entregáveis e exclusões Git documentados sem impor uma estrutura como critério novo de avaliação.\n\n## Evidências e registro\n\n- Arquivos administrativos e commit real no repositório; configuração de exemplo sanitizada quando definida.\n\n## Bloqueios e limites conhecidos\n\nNenhum bloqueio técnico identificado; tarefa ainda não liberada na sequência. Estruturação completa não foi executada.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:45:55Z",
+      "atualizada_em": "2026-10-19T19:45:55Z",
+      "fechada_em": null
+    },
+    {
+      "id": "PREP-05",
+      "titulo": "[PREP-05] Preparar e identificar o ambiente Python do projeto",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6",
+      "issue_number": 6,
+      "natureza": "Preparação de ambiente",
+      "responsavel": "Bruno executa e justifica; agente orienta e revisa",
+      "requisitos": [
+        "R11"
+      ],
+      "entregaveis": [
+        "E01"
+      ],
+      "dependencias": [
+        {
+          "id": "PREP-01",
+          "issue_number": 2,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2"
+        },
+        {
+          "id": "PREP-02",
+          "issue_number": 3,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Arquivo de dependências, identificação de interpretador/kernel e saídas das verificações no local documentado no README."
+      ],
+      "bloqueios": "Ambiente ativo inventariado é base; ambiente dedicado e bibliotecas do projeto ainda não preparados.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação de ambiente.\n**Responsável:** Bruno executa e justifica; agente orienta e revisa.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nUsar um ambiente identificável e reproduzível para a integração Python/PostgreSQL.\n\n## Entradas e referências\n\n- [Inventário](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/8c4cbd7981855a4d1100976d5a652ba65139fe5e/docs/ambiente.md)\n- Contrato exige Python 3 e PostgreSQL; bibliotecas pertencem à escolha justificada do participante.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Escolher o isolamento e a interface de trabalho adequados.\n- Selecionar bibliotecas para leitura de dados, conexão PostgreSQL e visualização; registrar a finalidade das escolhas.\n- Conferir interpretador e, se usar Jupyter, o kernel; verificar importações e registrar versões efetivas.\n\n## Critérios observáveis de conclusão\n\n- [ ] Ambiente do projeto identificado e utilizável.\n- [ ] Dependências e versões reais registradas; instruções permitem reconstruir o ambiente.\n\n## Evidências e registro\n\n- Arquivo de dependências, identificação de interpretador/kernel e saídas das verificações no local documentado no README.\n\n## Bloqueios e limites conhecidos\n\nAmbiente ativo inventariado é base; ambiente dedicado e bibliotecas do projeto ainda não preparados.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:45:56Z",
+      "atualizada_em": "2026-10-19T19:45:56Z",
+      "fechada_em": null
+    },
+    {
+      "id": "PREP-06",
+      "titulo": "[PREP-06] Preparar o destino PostgreSQL e verificar a conexão Python",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7",
+      "issue_number": 7,
+      "natureza": "Preparação de ambiente",
+      "responsavel": "Bruno executa; agente orienta e revisa",
+      "requisitos": [
+        "R11"
+      ],
+      "entregaveis": [
+        "E01"
+      ],
+      "dependencias": [
+        {
+          "id": "PREP-01",
+          "issue_number": 2,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2"
+        },
+        {
+          "id": "PREP-02",
+          "issue_number": 3,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3"
+        },
+        {
+          "id": "PREP-05",
+          "issue_number": 6,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Instruções, exemplo sanitizado e saída da conexão; não incluir senha nem string de conexão sensível."
+      ],
+      "bloqueios": "Acesso administrativo local existe; acesso específico do projeto e conexão Python não foram configurados/verificados. Modelagem e carga ficam nos cards técnicos.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação de ambiente.\n**Responsável:** Bruno executa; agente orienta e revisa.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nDisponibilizar acesso reproduzível ao destino de trabalho identificado.\n\n## Entradas e referências\n\n- PostgreSQL servidor 14.24 identificado nas saídas de Bruno.\n- Ambiente Python do projeto e configuração local.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n- PREP-05: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Definir e preparar banco/schema de trabalho identificado e acesso apropriado ao projeto.\n- Tratar a ausência do papel bruno conforme a opção de acesso escolhida; não presumir que o nome do usuário Linux seja a credencial da aplicação.\n- Documentar configuração sem segredos e exemplo sanitizado; verificar a conexão a partir do Python.\n\n## Critérios observáveis de conclusão\n\n- [ ] Destino e acesso do projeto identificados.\n- [ ] Conexão Python ao destino correto demonstrada.\n- [ ] Configuração e instruções são reproduzíveis sem segredos no Git.\n\n## Evidências e registro\n\n- Instruções, exemplo sanitizado e saída da conexão; não incluir senha nem string de conexão sensível.\n\n## Bloqueios e limites conhecidos\n\nAcesso administrativo local existe; acesso específico do projeto e conexão Python não foram configurados/verificados. Modelagem e carga ficam nos cards técnicos.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:45:57Z",
+      "atualizada_em": "2026-10-19T19:45:57Z",
+      "fechada_em": null
+    },
+    {
+      "id": "PREP-07",
+      "titulo": "[PREP-07] Obter e conferir os snapshots contratados",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/8",
+      "issue_number": 8,
+      "natureza": "Preparação e rastreabilidade de dados",
+      "responsavel": "Bruno executa; agente revisa",
+      "requisitos": [
+        "R01",
+        "R11"
+      ],
+      "entregaveis": [
+        "E01",
+        "E02"
+      ],
+      "dependencias": [
+        {
+          "id": "PREP-02",
+          "issue_number": 3,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3"
+        },
+        {
+          "id": "PREP-04",
+          "issue_number": 5,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Registro real da obtenção, tamanhos e hashes; referências no README ou documentação técnica."
+      ],
+      "bloqueios": "Nenhuma identidade de bytes foi verificada nesta execução. Revisões atuais do portal não substituem o snapshot contratado sem correspondência dos hashes.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação e rastreabilidade de dados.\n**Responsável:** Bruno executa; agente revisa.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R01, R11. **Entregáveis:** E01, E02.\n\n## Objetivo e finalidade\n\nGarantir identidade dos bytes analisados e preservar sua procedência.\n\n## Entradas e referências\n\n- [Pacote versionado](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/dados/fontes-antt-siade-2024-2025.zip)\n- [Manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json)\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n- PREP-04: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Obter o ZIP no commit contratado, conferir tamanho e SHA-256 e extrair sem modificar os CSVs.\n- Conferir tamanho e SHA-256 de producao_origem_destino_2024.csv e producao_origem_destino_2025.csv.\n- Registrar data de obtenção, URLs, atribuição ANTT/SIADE, limites de procedência e local dos originais.\n\n## Critérios observáveis de conclusão\n\n- [ ] ZIP e dois CSVs correspondem aos hashes do manifesto.\n- [ ] Originais preservados e versão efetiva dos dados identificável.\n\n## Evidências e registro\n\n- Registro real da obtenção, tamanhos e hashes; referências no README ou documentação técnica.\n\n## Bloqueios e limites conhecidos\n\nNenhuma identidade de bytes foi verificada nesta execução. Revisões atuais do portal não substituem o snapshot contratado sem correspondência dos hashes.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:45:58Z",
+      "atualizada_em": "2026-10-19T19:45:58Z",
+      "fechada_em": null
+    },
+    {
+      "id": "PREP-08",
+      "titulo": "[PREP-08] Conferir a preparação e registrar o checkpoint de ambiente",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/9",
+      "issue_number": 9,
+      "natureza": "Preparação e checkpoint administrativo",
+      "responsavel": "Bruno fornece verificações; agente revisa e registra",
+      "requisitos": [
+        "R09",
+        "R10",
+        "R11"
+      ],
+      "entregaveis": [
+        "E04"
+      ],
+      "dependencias": [
+        {
+          "id": "PREP-03",
+          "issue_number": 4,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/4"
+        },
+        {
+          "id": "PREP-04",
+          "issue_number": 5,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5"
+        },
+        {
+          "id": "PREP-05",
+          "issue_number": 6,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6"
+        },
+        {
+          "id": "PREP-06",
+          "issue_number": 7,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7"
+        },
+        {
+          "id": "PREP-07",
+          "issue_number": 8,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/8"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Commit da preparação e referências às verificações e issues."
+      ],
+      "bloqueios": "Aguarda as frentes de preparação. Este card não representa a execução das perguntas analíticas.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação e checkpoint administrativo.\n**Responsável:** Bruno fornece verificações; agente revisa e registra.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R09, R10, R11. **Entregáveis:** E04.\n\n## Objetivo e finalidade\n\nIniciar o diagnóstico com ambiente, dados e governança identificados.\n\n## Entradas e referências\n\n- Evidências dos cards de preparação e estado real do repositório.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-03: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/4\n- PREP-04: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5\n- PREP-05: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6\n- PREP-06: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7\n- PREP-07: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/8\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Reunir evidências do ambiente, dependências, conexão PostgreSQL e identidade dos dados.\n- Conferir documentação, configuração sem segredos, estados e exportação dos cards.\n- Registrar checkpoint e identificar o primeiro card técnico; manter bloqueios explícitos.\n\n## Critérios observáveis de conclusão\n\n- [ ] Preparação concluída com evidências e pendências resolvidas ou explicitamente registradas.\n- [ ] Checkpoint identificado por commit real; nenhuma análise ou carga declarada realizada por antecipação.\n\n## Evidências e registro\n\n- Commit da preparação e referências às verificações e issues.\n\n## Bloqueios e limites conhecidos\n\nAguarda as frentes de preparação. Este card não representa a execução das perguntas analíticas.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:45:59Z",
+      "atualizada_em": "2026-10-19T19:45:59Z",
+      "fechada_em": null
+    },
+    {
+      "id": "T01",
+      "titulo": "[T01] Diagnosticar granularidade, cobertura e qualidade dos dois arquivos",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/10",
+      "issue_number": 10,
+      "natureza": "Técnica autoral",
+      "responsavel": "Bruno",
+      "requisitos": [
+        "R01",
+        "R02",
+        "R10"
+      ],
+      "entregaveis": [
+        "E02"
+      ],
+      "dependencias": [
+        {
+          "id": "PREP-08",
+          "issue_number": 9,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/9"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Notebook ou documentação técnica autoral, saídas do diagnóstico e registro das decisões."
+      ],
+      "bloqueios": "Aguarda preparação; não introduzir limpeza, descarte ou falhas artificiais para preencher etapas.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Técnica autoral.\n**Responsável:** Bruno.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R01, R02, R10. **Entregáveis:** E02.\n\n## Objetivo e finalidade\n\nCompreender a população e fundamentar as decisões antes de transformar ou modelar os dados.\n\n## Entradas e referências\n\n- Snapshots contratados preservados, dicionário, demanda e registros de obtenção.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-08: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/9\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Examinar grão real, cobertura mensal, campos, tipos, unidades e representações numéricas.\n- Investigar ausências, repetições, identidade de estações e combinações descritivas; justificar tratamentos ou a ausência de necessidade de tratamento.\n- Registrar decisões de Bruno e quantificar efeitos quando houver mudanças.\n\n## Critérios observáveis de conclusão\n\n- [ ] Diagnóstico cobre os itens de R02 e é sustentado por evidências.\n- [ ] Repetições, ausências e rótulos não são tratados automaticamente por suposição.\n- [ ] Unidades e limites da fonte são compreendidos e documentados.\n\n## Evidências e registro\n\n- Notebook ou documentação técnica autoral, saídas do diagnóstico e registro das decisões.\n\n## Bloqueios e limites conhecidos\n\nAguarda preparação; não introduzir limpeza, descarte ou falhas artificiais para preencher etapas.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:46:00Z",
+      "atualizada_em": "2026-10-19T19:46:00Z",
+      "fechada_em": null
+    },
+    {
+      "id": "T02",
+      "titulo": "[T02] Projetar o modelo relacional e a integridade dos dados",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/11",
+      "issue_number": 11,
+      "natureza": "Técnica autoral",
+      "responsavel": "Bruno",
+      "requisitos": [
+        "R04",
+        "R07",
+        "R10"
+      ],
+      "entregaveis": [
+        "E01",
+        "E02"
+      ],
+      "dependencias": [
+        {
+          "id": "T01",
+          "issue_number": 10,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/10"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "SQL de estrutura, documentação do modelo e decisões técnicas autorais."
+      ],
+      "bloqueios": "Aguarda diagnóstico; o agente não fornece o desenho relacional ou DDL da solução.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Técnica autoral.\n**Responsável:** Bruno.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R04, R07, R10. **Entregáveis:** E01, E02.\n\n## Objetivo e finalidade\n\nRepresentar o grão e entidades reutilizáveis sem distorcer a população ou as medidas.\n\n## Entradas e referências\n\n- Diagnóstico, dicionário, unidades e requisitos relacionais.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- T01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/10\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Propor e justificar entidades, identidade, chaves, relações, cardinalidades e tipos.\n- Implementar a estrutura relacional e a integridade referencial em PostgreSQL.\n- Prever junções analíticas pertinentes e como verificar seus efeitos sobre registros e medidas; preservar inteiros originais, incluindo TKU acima de 2.147.483.647.\n\n## Critérios observáveis de conclusão\n\n- [ ] Modelo e estrutura SQL implementados de forma coerente e justificada.\n- [ ] Chaves e integridade referencial representadas.\n- [ ] Estratégia verificável para preservar população e precisão das medidas documentada.\n\n## Evidências e registro\n\n- SQL de estrutura, documentação do modelo e decisões técnicas autorais.\n\n## Bloqueios e limites conhecidos\n\nAguarda diagnóstico; o agente não fornece o desenho relacional ou DDL da solução.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:46:01Z",
+      "atualizada_em": "2026-10-19T19:46:01Z",
+      "fechada_em": null
+    },
+    {
+      "id": "T03",
+      "titulo": "[T03] Implementar ingestão Python e carga reexecutável no PostgreSQL",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/12",
+      "issue_number": 12,
+      "natureza": "Técnica autoral",
+      "responsavel": "Bruno",
+      "requisitos": [
+        "R03",
+        "R04",
+        "R07",
+        "R10",
+        "R11"
+      ],
+      "entregaveis": [
+        "E01",
+        "E02"
+      ],
+      "dependencias": [
+        {
+          "id": "T01",
+          "issue_number": 10,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/10"
+        },
+        {
+          "id": "T02",
+          "issue_number": 11,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/11"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Código autoral, registros de primeira execução e reexecução, contagens/somas e instruções reais."
+      ],
+      "bloqueios": "Aguarda diagnóstico e estrutura relacional. Verificações devem usar o banco/schema de trabalho do projeto.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Técnica autoral.\n**Responsável:** Bruno.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R03, R04, R07, R10, R11. **Entregáveis:** E01, E02.\n\n## Objetivo e finalidade\n\nPercorrer os arquivos contratados até o banco de forma executável e sem acúmulo indevido.\n\n## Entradas e referências\n\n- Snapshots, diagnóstico, modelo, ambiente e configuração documentados.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- T01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/10\n- T02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/11\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Implementar leitura e transformações justificadas em Python e carga no modelo PostgreSQL.\n- Registrar a relação entre entrada, elegibilidade, exclusões e dados carregados.\n- Executar a carga e repetir com os mesmos arquivos; demonstrar que contagens e medidas não crescem por acúmulo indevido.\n- Documentar a ordem real de execução no destino de trabalho identificado.\n\n## Critérios observáveis de conclusão\n\n- [ ] Integração Python–banco executável.\n- [ ] Reexecução com a mesma entrada preserva contagens e medidas esperadas.\n- [ ] Tratamentos e diferenças de população quantificados e justificados; inteiros preservados.\n\n## Evidências e registro\n\n- Código autoral, registros de primeira execução e reexecução, contagens/somas e instruções reais.\n\n## Bloqueios e limites conhecidos\n\nAguarda diagnóstico e estrutura relacional. Verificações devem usar o banco/schema de trabalho do projeto.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:46:02Z",
+      "atualizada_em": "2026-10-19T19:46:02Z",
+      "fechada_em": null
+    },
+    {
+      "id": "T04",
+      "titulo": "[T04] Responder Q01 em SQL: evolução mensal de TU e TKU",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/13",
+      "issue_number": 13,
+      "natureza": "Técnica autoral",
+      "responsavel": "Bruno",
+      "requisitos": [
+        "R05",
+        "R07",
+        "R10"
+      ],
+      "entregaveis": [
+        "E01",
+        "E03"
+      ],
+      "dependencias": [
+        {
+          "id": "T03",
+          "issue_number": 12,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/12"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Consultas SQL autorais, saídas tabulares em formato aberto e registro de execução."
+      ],
+      "bloqueios": "Aguarda a carga. Agregação, JOIN pertinente, CTE e função de janela são exigidos no conjunto de consultas de R05 com finalidade analítica; não são exigências repetidas em cada pergunta.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Técnica autoral.\n**Responsável:** Bruno.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R05, R07, R10. **Entregáveis:** E01, E03.\n\n## Objetivo e finalidade\n\nDescrever evolução mensal e totais de períodos comparáveis com unidades e cobertura explícitas.\n\n## Entradas e referências\n\n- Dados carregados e contrato Q01.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- T03: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/12\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Escrever e versionar consultas SQL de Q01.\n- Produzir séries mensais, totais anuais e variações entre períodos comparáveis; identificar cobertura e eventual ausência de meses.\n- Manter TU e TKU distintos e rastrear os cálculos à população elegível.\n\n## Critérios observáveis de conclusão\n\n- [ ] Q01 respondida com saídas SQL identificáveis.\n- [ ] Períodos, unidades, população e comparabilidade explícitos.\n- [ ] Inteiros completos preservados; formatação não substitui verificação numérica.\n\n## Evidências e registro\n\n- Consultas SQL autorais, saídas tabulares em formato aberto e registro de execução.\n\n## Bloqueios e limites conhecidos\n\nAguarda a carga. Agregação, JOIN pertinente, CTE e função de janela são exigidos no conjunto de consultas de R05 com finalidade analítica; não são exigências repetidas em cada pergunta.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:46:03Z",
+      "atualizada_em": "2026-10-19T19:46:03Z",
+      "fechada_em": null
+    },
+    {
+      "id": "T05",
+      "titulo": "[T05] Responder Q02 em SQL: concentração nos eixos direcionais",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/14",
+      "issue_number": 14,
+      "natureza": "Técnica autoral",
+      "responsavel": "Bruno",
+      "requisitos": [
+        "R05",
+        "R07",
+        "R10"
+      ],
+      "entregaveis": [
+        "E01",
+        "E03"
+      ],
+      "dependencias": [
+        {
+          "id": "T03",
+          "issue_number": 12,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/12"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Consultas autorais, saídas em formato aberto, regras de ranking e denominadores."
+      ],
+      "bloqueios": "Aguarda carga; conferir a cobertura de recursos SQL do conjunto R05 sem adicionar técnicas obrigatórias além do contrato.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Técnica autoral.\n**Responsável:** Bruno.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R05, R07, R10. **Entregáveis:** E01, E03.\n\n## Objetivo e finalidade\n\nMedir concentração de TU em 2025 e comparar os mesmos eixos com 2024.\n\n## Entradas e referências\n\n- Dados carregados e contrato Q02.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- T03: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/12\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Escrever e versionar consultas para os dez primeiros eixos UF origem → UF destino de 2025; incluir todos se houver menos de dez.\n- Apresentar participação individual e acumulada no total elegível de 2025, identificar demais eixos e nulidades e comparar os mesmos eixos em 2024.\n- Documentar a direcionalidade, os denominadores e regra determinística para empates.\n\n## Critérios observáveis de conclusão\n\n- [ ] Ranking e participações seguem período e população contratados.\n- [ ] Origem/destino invertidos não são fundidos; eixos na mesma UF são mantidos quando presentes.\n- [ ] Demais eixos, nulidades e comparações estão identificados.\n\n## Evidências e registro\n\n- Consultas autorais, saídas em formato aberto, regras de ranking e denominadores.\n\n## Bloqueios e limites conhecidos\n\nAguarda carga; conferir a cobertura de recursos SQL do conjunto R05 sem adicionar técnicas obrigatórias além do contrato.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:46:03Z",
+      "atualizada_em": "2026-10-19T19:46:03Z",
+      "fechada_em": null
+    },
+    {
+      "id": "T06",
+      "titulo": "[T06] Responder Q03 em SQL: contribuição das mercadorias à variação",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/15",
+      "issue_number": 15,
+      "natureza": "Técnica autoral",
+      "responsavel": "Bruno",
+      "requisitos": [
+        "R05",
+        "R07",
+        "R10"
+      ],
+      "entregaveis": [
+        "E01",
+        "E03"
+      ],
+      "dependencias": [
+        {
+          "id": "T03",
+          "issue_number": 12,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/12"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Consultas autorais, saídas em formato aberto e verificação da composição/contribuições."
+      ],
+      "bloqueios": "Aguarda carga; recursos SQL de R05 devem ter finalidade demonstrada no conjunto de Q01–Q03.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Técnica autoral.\n**Responsável:** Bruno.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R05, R07, R10. **Entregáveis:** E01, E03.\n\n## Objetivo e finalidade\n\nDescrever composição e contribuições à mudança de TU, relacionando-as à evolução de TKU.\n\n## Entradas e referências\n\n- Dados carregados e contrato Q03.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- T03: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/12\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Escrever e versionar consultas para composição, diferenças absolutas, variações relativas e contribuições positivas e negativas por mercadoria.\n- Preservar a união das categorias dos dois anos e identificar categorias sem registro em um deles, distinguindo essa condição de zero observado.\n- Tratar denominadores zero como não calculáveis e documentar eventual ausência de contribuições de um sinal.\n- Relacionar TU e TKU respeitando suas unidades e reconciliar as contribuições com a mudança do total da mesma população.\n\n## Critérios observáveis de conclusão\n\n- [ ] Q03 cobre as condições do contrato e categorias exclusivas de um ano.\n- [ ] Contribuições absolutas reconciliam exatamente para a mesma população.\n- [ ] Resultados não atribuem causas não demonstradas às mudanças.\n\n## Evidências e registro\n\n- Consultas autorais, saídas em formato aberto e verificação da composição/contribuições.\n\n## Bloqueios e limites conhecidos\n\nAguarda carga; recursos SQL de R05 devem ter finalidade demonstrada no conjunto de Q01–Q03.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:46:04Z",
+      "atualizada_em": "2026-10-19T19:46:04Z",
+      "fechada_em": null
+    },
+    {
+      "id": "T07",
+      "titulo": "[T07] Consumir resultados SQL no Python e produzir visualizações rastreáveis",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/16",
+      "issue_number": 16,
+      "natureza": "Técnica autoral",
+      "responsavel": "Bruno",
+      "requisitos": [
+        "R06",
+        "R08",
+        "R10"
+      ],
+      "entregaveis": [
+        "E01",
+        "E03"
+      ],
+      "dependencias": [
+        {
+          "id": "T04",
+          "issue_number": 13,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/13"
+        },
+        {
+          "id": "T05",
+          "issue_number": 14,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/14"
+        },
+        {
+          "id": "T06",
+          "issue_number": 15,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/15"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Código/notebook autoral, saídas abertas, figuras e referências às consultas."
+      ],
+      "bloqueios": "Aguarda as três consultas. Não há quantidade decorativa de gráficos nem exigência de biblioteca específica.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Técnica autoral.\n**Responsável:** Bruno.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R06, R08, R10. **Entregáveis:** E01, E03.\n\n## Objetivo e finalidade\n\nConectar consultas e comunicação visual por um fluxo executável.\n\n## Entradas e referências\n\n- Consultas e saídas de Q01–Q03, ambiente Python e conexão PostgreSQL.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- T04: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/13\n- T05: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/14\n- T06: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/15\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Implementar em Python o consumo dos resultados das consultas.\n- Produzir visualizações adequadas à evolução temporal, concentração nos eixos e composição/mudança de mercadorias.\n- Identificar consulta, população, período, unidades, escalas e denominadores de tabelas e figuras.\n- Preservar resultados tabulares em formato aberto e rastrear cada saída ao SQL que a produziu.\n\n## Critérios observáveis de conclusão\n\n- [ ] Figuras e tabelas são reproduzidas a partir do fluxo SQL–Python.\n- [ ] Rastreabilidade e elementos de leitura permitem interpretar Q01–Q03.\n- [ ] Dados inseridos manualmente não são apresentados como resultados do banco.\n\n## Evidências e registro\n\n- Código/notebook autoral, saídas abertas, figuras e referências às consultas.\n\n## Bloqueios e limites conhecidos\n\nAguarda as três consultas. Não há quantidade decorativa de gráficos nem exigência de biblioteca específica.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:46:05Z",
+      "atualizada_em": "2026-10-19T19:46:05Z",
+      "fechada_em": null
+    },
+    {
+      "id": "T08",
+      "titulo": "[T08] Reconciliar populações, medidas, junções e reexecução",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/17",
+      "issue_number": 17,
+      "natureza": "Técnica autoral de verificação",
+      "responsavel": "Bruno",
+      "requisitos": [
+        "R03",
+        "R04",
+        "R07",
+        "R11"
+      ],
+      "entregaveis": [
+        "E02",
+        "E03"
+      ],
+      "dependencias": [
+        {
+          "id": "T03",
+          "issue_number": 12,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/12"
+        },
+        {
+          "id": "T04",
+          "issue_number": 13,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/13"
+        },
+        {
+          "id": "T05",
+          "issue_number": 14,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/14"
+        },
+        {
+          "id": "T06",
+          "issue_number": 15,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/15"
+        },
+        {
+          "id": "T07",
+          "issue_number": 16,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/16"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Verificações implementadas por Bruno, resultados e documentação técnica com referências aos arquivos/consultas."
+      ],
+      "bloqueios": "Aguarda as saídas do fluxo. Limites numéricos são os publicados no contrato, sem tolerância para perda de milhares ou estouro de inteiros.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Técnica autoral de verificação.\n**Responsável:** Bruno.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R03, R04, R07, R11. **Entregáveis:** E02, E03.\n\n## Objetivo e finalidade\n\nDemonstrar que o fluxo preserva o significado e a precisão dos dados.\n\n## Entradas e referências\n\n- Entrada preservada, decisões de elegibilidade, carga, junções, consultas e saídas Python.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- T03: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/12\n- T04: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/13\n- T05: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/14\n- T06: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/15\n- T07: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/16\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Reconciliar contagens, TU e TKU entre entrada, elegibilidade, carga e resultados.\n- Quantificar nulidades, exclusões, diferenças justificadas e efeitos de junções.\n- Consolidar evidências da primeira carga e da reexecução.\n- Verificar igualdade exata para contagens, categorias e medidas inteiras; aplicar aos percentuais não formatados as tolerâncias contratuais e separar arredondamento de apresentação.\n\n## Critérios observáveis de conclusão\n\n- [ ] Pontos exigidos pelo contrato reconciliam ou possuem diferenças quantificadas e justificadas.\n- [ ] Junções não multiplicam ou eliminam registros indevidamente.\n- [ ] Reexecução e integridade numérica demonstradas com evidências.\n\n## Evidências e registro\n\n- Verificações implementadas por Bruno, resultados e documentação técnica com referências aos arquivos/consultas.\n\n## Bloqueios e limites conhecidos\n\nAguarda as saídas do fluxo. Limites numéricos são os publicados no contrato, sem tolerância para perda de milhares ou estouro de inteiros.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:46:06Z",
+      "atualizada_em": "2026-10-19T19:46:06Z",
+      "fechada_em": null
+    },
+    {
+      "id": "T09",
+      "titulo": "[T09] Elaborar o relatório técnico e registrar interpretações autorais",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/18",
+      "issue_number": 18,
+      "natureza": "Técnica autoral",
+      "responsavel": "Bruno",
+      "requisitos": [
+        "R08",
+        "R10"
+      ],
+      "entregaveis": [
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "dependencias": [
+        {
+          "id": "T07",
+          "issue_number": 16,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/16"
+        },
+        {
+          "id": "T08",
+          "issue_number": 17,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/17"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Relatório/notebook autoral, referências, decisões técnicas e declaração de apoio."
+      ],
+      "bloqueios": "Aguarda verificação dos resultados. O agente revisa raciocínio e evidências sem escrever as conclusões para copiar.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Técnica autoral.\n**Responsável:** Bruno.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R08, R10. **Entregáveis:** E02, E03, E04.\n\n## Objetivo e finalidade\n\nComunicar respostas verificadas com alcance, incertezas e autoria explícitos.\n\n## Entradas e referências\n\n- Resultados e visualizações rastreáveis, reconciliações, fontes e decisões de Bruno.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- T07: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/16\n- T08: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/17\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Elaborar texto técnico ou notebook narrativo respondendo Q01–Q03.\n- Explicitar população, cobertura, unidades, denominadores, referências e limites da fonte.\n- Distinguir observações, inferências e hipóteses; não inventar cliente, empresa, cenário, meta ou causa.\n- Registrar decisões autorais e declarar o papel da IA na orientação e governança.\n\n## Critérios observáveis de conclusão\n\n- [ ] As três respostas são localizáveis e coerentes com os resultados.\n- [ ] Interpretações respeitam a cobertura e não apresentam causalidade sem demonstração.\n- [ ] Apoio da IA e autoria técnica de Bruno declarados.\n\n## Evidências e registro\n\n- Relatório/notebook autoral, referências, decisões técnicas e declaração de apoio.\n\n## Bloqueios e limites conhecidos\n\nAguarda verificação dos resultados. O agente revisa raciocínio e evidências sem escrever as conclusões para copiar.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:46:07Z",
+      "atualizada_em": "2026-10-19T19:46:07Z",
+      "fechada_em": null
+    },
+    {
+      "id": "T10",
+      "titulo": "[T10] Verificar reprodução e preparar a submissão identificada",
+      "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/19",
+      "issue_number": 19,
+      "natureza": "Técnica autoral e fechamento administrativo",
+      "responsavel": "Bruno executa reprodução e submissão; agente organiza a governança",
+      "requisitos": [
+        "R09",
+        "R10",
+        "R11"
+      ],
+      "entregaveis": [
+        "E01",
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "dependencias": [
+        {
+          "id": "T09",
+          "issue_number": 18,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/18"
+        },
+        {
+          "id": "PREP-03",
+          "issue_number": 4,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/4"
+        },
+        {
+          "id": "PREP-04",
+          "issue_number": 5,
+          "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5"
+        }
+      ],
+      "estado_issue": "open",
+      "motivo_fechamento": null,
+      "estado_acompanhamento": "Backlog",
+      "status_project_observado": null,
+      "evidencias": [
+        "Registro da reprodução, README atualizado, exportação dos cards, declaração de apoio e submissão identificada."
+      ],
+      "bloqueios": "Aguarda o trabalho técnico. Não inventar hash, execução do avaliador, aprovação, nota ou veredito; a avaliação será realizada pelo Gerador sobre a submissão fixa.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Técnica autoral e fechamento administrativo.\n**Responsável:** Bruno executa reprodução e submissão; agente organiza a governança.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R09, R10, R11. **Entregáveis:** E01, E02, E03, E04.\n\n## Objetivo e finalidade\n\nEntregar uma referência fixa e completa para avaliação independente pelo Gerador Analítico.\n\n## Entradas e referências\n\n- Todos os entregáveis e respectivas evidências, contrato, dados e Project.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- T09: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/18\n- PREP-03: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/4\n- PREP-04: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Conferir README com arquivos/comandos reais, dependências, configuração de exemplo sem segredos e ordem de execução.\n- Conferir se arquivos e instruções são suficientes para reprodução em cópia isolada; registrar verificações e execuções realmente realizadas, sem declarar uma execução que não ocorreu.\n- Atualizar inventário/exportação dos cards, estados, dependências e evidências e identificar eventuais limites de acesso ao Project.\n- Preparar submissão com versão GA-001 / 1.0.0, commit completo do contrato e da solução, URLs reais e hashes dos dados; registrar o apoio da IA.\n\n## Critérios observáveis de conclusão\n\n- [ ] E01–E04 localizáveis e instruções reproduzíveis.\n- [ ] Entrega identificada por commit completo real, com fontes, contrato e evidências.\n- [ ] Exportação textual permite avaliar a governança quando o Project não estiver acessível.\n\n## Evidências e registro\n\n- Registro da reprodução, README atualizado, exportação dos cards, declaração de apoio e submissão identificada.\n\n## Bloqueios e limites conhecidos\n\nAguarda o trabalho técnico. Não inventar hash, execução do avaliador, aprovação, nota ou veredito; a avaliação será realizada pelo Gerador sobre a submissão fixa.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "criada_em": "2026-10-19T19:46:08Z",
+      "atualizada_em": "2026-10-19T19:46:08Z",
+      "fechada_em": null
+    }
+  ]
+}
