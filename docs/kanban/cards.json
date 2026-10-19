@@ -10,8 +10,8 @@
   "project_url": "https://github.com/users/CorreaBrunoMiguel/projects/5",
   "origem_dos_estados": {
     "issues": "Consultadas no GitHub após a criação e fechamento das etapas concluídas.",
-    "acompanhamento": "Planejamento e evidências do agente, com PREP-00 a PREP-02 concluídas e PREP-03 em andamento.",
-    "campo_status_project": "Não lido pela conexão; valores do quadro e entrada efetiva dos cards aguardam conferência por Bruno."
+    "acompanhamento": "PREP-00 a PREP-03 concluídas com evidências registradas; demais cards permanecem em Backlog.",
+    "campo_status_project": "Bruno confirmou entrada dos 19 cards e ajuste dos estados antes do fechamento da PREP-03; interface não lida pelo agente. Valor do campo após o fechamento da issue 4 não foi inspecionado pelo agente."
   },
   "configuracoes_informadas_por_Bruno": {
     "status_opcoes": [
@@ -28,8 +28,40 @@
       "ativado_informado": true
     },
     "origem": "Confirmações 'feito' na conversa de 19/10/2026.",
-    "visibilidade": null,
-    "entrada_efetiva_dos_cards_confirmada": false
+    "visibilidade": "private",
+    "entrada_efetiva_dos_cards_confirmada": true,
+    "item_closed": {
+      "ativado_informado": true,
+      "destino_status": "Concluído",
+      "origem": "Bruno confirmou a configuração na conversa de 19/10/2026."
+    },
+    "status_antes_do_fechamento_PREP03": {
+      "concluido": [
+        "PREP-00",
+        "PREP-01",
+        "PREP-02"
+      ],
+      "em_andamento": [
+        "PREP-03"
+      ],
+      "backlog": [
+        "PREP-04",
+        "PREP-05",
+        "PREP-06",
+        "PREP-07",
+        "PREP-08",
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T08",
+        "T09",
+        "T10"
+      ]
+    }
   },
   "cobertura_requisitos": [
     {
@@ -256,19 +288,21 @@
           "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3"
         }
       ],
-      "estado_issue": "open",
-      "motivo_fechamento": null,
-      "estado_acompanhamento": "Em andamento",
+      "estado_issue": "closed",
+      "motivo_fechamento": "completed",
+      "estado_acompanhamento": "Concluído",
       "status_project_observado": null,
       "evidencias": [
-        "Bruno informou a URL do Project e confirmou na conversa as cinco opções de Status/Backlog padrão e o Auto-add ativado para a solução com filtro is:issue.",
-        "URLs das issues e exportação em docs/kanban/cards.json e docs/kanban/README.md; commit a registrar após a publicação."
+        "Bruno confirmou: Project privado; cinco opções de Status e Backlog padrão; Auto-add ativado para o repositório com filtro is:issue; entrada efetiva das 19 issues; ajuste de PREP-00/01/02 para Concluído, PREP-03 para Em andamento e restantes para Backlog.",
+        "Bruno confirmou a regra Item closed ativada com destino Concluído após corrigir os estados iniciais.",
+        "19 issues criadas e consultadas pelo agente, com cobertura de R01–R11 e dependências reais; issues 1–3 fechadas com base em evidências anteriores.",
+        "Inventário e exportação integral publicados no commit 2bec6082e0794703c364c14974e5979c6bf8a943, em docs/kanban/README.md e docs/kanban/cards.json; este fechamento será incluído no próximo snapshot."
       ],
-      "bloqueios": "A conexão do agente não permite ler ou alterar Projects. Entrada real dos cards e visibilidade ainda não foram confirmadas; configurações foram informadas por Bruno.",
-      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Administrativa.\n**Responsável:** Bruno configura a interface; agente cria e mantém issues e exportação.\n**Estado de acompanhamento:** Em andamento. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R09. **Entregáveis:** E04.\n\n## Objetivo e finalidade\n\nViabilizar acompanhamento rastreável por Kanban, sem transformar organização em novos requisitos técnicos.\n\n## Entradas e referências\n\n- [Project 5](https://github.com/users/CorreaBrunoMiguel/projects/5)\n- Repositório da solução, contrato e este conjunto de issues.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Configurar Status com Backlog, Pronto, Em andamento, Em revisão e Concluído; Backlog como padrão.\n- Configurar Auto-add para o repositório da solução com filtro is:issue.\n- Conferir entrada real das issues no quadro e os estados das etapas já concluídas e da tarefa atual.\n- Preservar inventário textual versionado com detalhes, requisitos, dependências, estados e evidências; registrar URL do Project no README.\n- Registrar limites de acesso e confirmar visibilidade do Project conforme a orientação de criação privada.\n\n## Critérios observáveis de conclusão\n\n- [ ] Project identificado e opções de Status configuradas.\n- [ ] Adição das issues ao quadro efetivamente conferida.\n- [ ] Cards detalhados e dependências acessíveis em exportação versionada.\n- [ ] Visibilidade informada e distinção entre estado registrado e campo observado do Project preservadas.\n\n## Evidências e registro\n\n- Bruno informou a URL do Project e confirmou na conversa as cinco opções de Status/Backlog padrão e o Auto-add ativado para a solução com filtro is:issue.\n- URLs das issues e exportação em docs/kanban/cards.json e docs/kanban/README.md; commit a registrar após a publicação.\n\n## Bloqueios e limites conhecidos\n\nA conexão do agente não permite ler ou alterar Projects. Entrada real dos cards e visibilidade ainda não foram confirmadas; configurações foram informadas por Bruno.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "bloqueios": "Nenhum bloqueio restante para PREP-03. A leitura da interface do Project não está disponível ao agente: configurações, visibilidade, entrada dos cards e ajustes dos campos são evidências fornecidas por Bruno. O fechamento da issue é realizado e consultado pelo agente no GitHub; o valor final do Status no Project após esse fechamento não foi inspecionado pelo agente.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Administrativa.\n**Responsável:** Bruno configura a interface; agente cria e mantém issues e exportação.\n**Estado de acompanhamento:** Concluído. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R09. **Entregáveis:** E04.\n\n## Objetivo e finalidade\n\nViabilizar acompanhamento rastreável por Kanban, sem transformar organização em novos requisitos técnicos.\n\n## Entradas e referências\n\n- [Project 5](https://github.com/users/CorreaBrunoMiguel/projects/5)\n- Repositório da solução, contrato e este conjunto de issues.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Configurar Status com Backlog, Pronto, Em andamento, Em revisão e Concluído; Backlog como padrão.\n- Configurar Auto-add para o repositório da solução com filtro is:issue.\n- Conferir entrada real das issues no quadro e os estados das etapas já concluídas e da tarefa atual.\n- Preservar inventário textual versionado com detalhes, requisitos, dependências, estados e evidências; registrar URL do Project no README.\n- Registrar limites de acesso e confirmar visibilidade do Project conforme a orientação de criação privada.\n\n## Critérios observáveis de conclusão\n\n- [x] Project identificado e opções de Status configuradas.\n- [x] Adição das issues ao quadro efetivamente conferida.\n- [x] Cards detalhados e dependências acessíveis em exportação versionada.\n- [x] Visibilidade informada e distinção entre estado registrado e campo observado do Project preservadas.\n\n## Evidências e registro\n\n- Bruno confirmou: Project privado; cinco opções de Status e Backlog padrão; Auto-add ativado para o repositório com filtro is:issue; entrada efetiva das 19 issues; ajuste de PREP-00/01/02 para Concluído, PREP-03 para Em andamento e restantes para Backlog.\n- Bruno confirmou a regra Item closed ativada com destino Concluído após corrigir os estados iniciais.\n- 19 issues criadas e consultadas pelo agente, com cobertura de R01–R11 e dependências reais; issues 1–3 fechadas com base em evidências anteriores.\n- Inventário e exportação integral publicados no commit 2bec6082e0794703c364c14974e5979c6bf8a943, em docs/kanban/README.md e docs/kanban/cards.json; este fechamento será incluído no próximo snapshot.\n\n## Bloqueios e limites conhecidos\n\nNenhum bloqueio restante para PREP-03. A leitura da interface do Project não está disponível ao agente: configurações, visibilidade, entrada dos cards e ajustes dos campos são evidências fornecidas por Bruno. O fechamento da issue é realizado e consultado pelo agente no GitHub; o valor final do Status no Project após esse fechamento não foi inspecionado pelo agente.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
       "criada_em": "2026-10-19T19:45:55Z",
-      "atualizada_em": "2026-10-19T19:45:55Z",
-      "fechada_em": null
+      "atualizada_em": "2026-10-19T19:55:50Z",
+      "fechada_em": "2026-10-19T19:55:50Z"
     },
     {
       "id": "PREP-04",
@@ -895,5 +929,6 @@
       "atualizada_em": "2026-10-19T19:46:08Z",
       "fechada_em": null
     }
-  ]
+  ],
+  "marco": "PREP-03 concluída"
 }

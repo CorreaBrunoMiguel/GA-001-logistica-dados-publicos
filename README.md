@@ -11,4 +11,4 @@ Projeto de estudo GA-001, com execução técnica autoral de Bruno e governança
 - [Inventário e exportação dos cards](docs/kanban/README.md).
 - [Inventário inicial do ambiente](docs/ambiente.md).
 
-Situação: preparação do ambiente. PREP-00 a PREP-02 concluídas; PREP-03 em andamento, aguardando conferência da entrada dos cards no quadro e da visibilidade. Este README contém organização administrativa inicial; código, SQL e análises ainda serão desenvolvidos por Bruno.
+Situação: preparação do ambiente. PREP-00 a PREP-03 concluídas; próxima etapa: PREP-04, governança e continuidade da execução. Este README contém organização administrativa inicial; código, SQL e análises ainda serão desenvolvidos por Bruno.

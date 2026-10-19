@@ -11,11 +11,13 @@ Documentação administrativa produzida pelo agente de IA. Código, SQL, anális
 
 ## Alcance da conferência
 
-As 19 issues foram criadas e lidas no GitHub; PREP-00, PREP-01 e PREP-02 foram fechadas por conclusão já comprovada pelas evidências registradas. Essas três issues foram cadastradas retrospectivamente, após as ações; sua data de criação não representa a data de início do trabalho.
+As 19 issues foram criadas e lidas no GitHub. PREP-00, PREP-01 e PREP-02 foram cadastradas retrospectivamente e fechadas com base nas evidências das etapas já realizadas. PREP-03 foi fechada após as confirmações de configuração e entrada dos cards. Há quatro issues fechadas e quinze abertas.
 
-Bruno confirmou as cinco opções do campo Status, Backlog como padrão e o workflow Auto-add ativado para este repositório com filtro is:issue. A conexão do agente não oferece leitura ou edição de Projects. Assim, a entrada efetiva dos cards, os valores reais do campo Status e a visibilidade do Project ainda aguardam conferência de Bruno. PREP-03 permanece em andamento.
+Bruno confirmou o Project como privado; as cinco opções do campo Status e Backlog como padrão; Auto-add ativado para o repositório com filtro is:issue; entrada dos 19 cards; PREP-00/01/02 em Concluído, PREP-03 em Em andamento antes de seu fechamento e demais cards em Backlog. Depois de corrigir os estados iniciais, confirmou o workflow Item closed ativado com destino Concluído.
 
-O estado de acompanhamento na tabela é documental. Ele é registrado separadamente do estado aberto/fechado da issue e não é apresentado como leitura do campo Status do Project.
+Essas informações da interface foram fornecidas por Bruno. A conexão do agente não oferece leitura ou edição de Projects. O fechamento da issue 4 foi realizado e consultado no GitHub pelo agente; o valor final do Status do Project após esse fechamento não foi inspecionado pelo agente.
+
+O estado de acompanhamento na tabela é documental. Ele é registrado separadamente do estado aberto/fechado da issue e não é apresentado como leitura direta do campo Status do Project. **PREP-03 concluída; próxima etapa: PREP-04.**
 
 ## Estados acordados
 
@@ -36,7 +38,7 @@ Dependências satisfeitas não autorizam marcar uma tarefa como concluída. A se
 | PREP-00 | [#1 — Recuperar o contrato publicado e definir papéis](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/1) | Concluído | Fechada | R09, R10, R11 | Nenhuma |
 | PREP-01 | [#2 — Inventariar o ambiente local](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2) | Concluído | Fechada | R11 | PREP-00 |
 | PREP-02 | [#3 — Criar o repositório da solução e confirmar o clone](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3) | Concluído | Fechada | R09, R11 | PREP-00 |
-| PREP-03 | [#4 — Configurar o Project, vincular issues e preservar os cards](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/4) | Em andamento | Aberta | R09 | PREP-02 |
+| PREP-03 | [#4 — Configurar o Project, vincular issues e preservar os cards](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/4) | Concluído | Fechada | R09 | PREP-02 |
 | PREP-04 | [#5 — Estruturar a governança e a continuidade da execução](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5) | Backlog | Aberta | R09, R10, R11 | PREP-02 |
 | PREP-05 | [#6 — Preparar e identificar o ambiente Python do projeto](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6) | Backlog | Aberta | R11 | PREP-01, PREP-02 |
 | PREP-06 | [#7 — Preparar o destino PostgreSQL e verificar a conexão Python](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7) | Backlog | Aberta | R11 | PREP-01, PREP-02, PREP-05 |
