@@ -3,14 +3,14 @@
   "projeto_id": "GA-001",
   "demanda_versao": "1.0.0",
   "contrato_commit": "0143e0d4e1a3edf0c084656f9b956a101e24a942",
-  "data_snapshot": "2026-10-19",
+  "data_snapshot": "2026-10-20",
   "autoria_administrativa": "Agente de IA",
   "execucao_tecnica": "Bruno",
   "repositorio": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos",
   "project_url": "https://github.com/users/CorreaBrunoMiguel/projects/5",
   "origem_dos_estados": {
     "issues": "Consultadas no GitHub após a criação e fechamento das etapas concluídas.",
-    "acompanhamento": "PREP-00 a PREP-05 concluídas; PREP-06 em andamento. Campo Status do Project não lido pelo agente.",
+    "acompanhamento": "PREP-00 a PREP-06 concluídas; PREP-07 pronta. Campo Status do Project não inspecionado pelo agente.",
     "campo_status_project": "Configuração e estados anteriores confirmados por Bruno; interface não lida pelo agente. Valores finais após fechar as issues 4 e 5 não inspecionados pelo agente."
   },
   "configuracoes_informadas_por_Bruno": {
@@ -417,9 +417,9 @@
           "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6"
         }
       ],
-      "estado_issue": "open",
-      "motivo_fechamento": null,
-      "estado_acompanhamento": "Em andamento",
+      "estado_issue": "closed",
+      "motivo_fechamento": "completed",
+      "estado_acompanhamento": "Concluído",
       "status_project_observado": null,
       "evidencias": [
         "Instruções, exemplo sanitizado e saída da conexão; não incluir senha nem string de conexão sensível.",
@@ -428,13 +428,14 @@
         "Bruno forneceu \\du e \\l: três papéis e seis bancos listados; ga001_app e ga001_logistica não aparecem. Acesso administrativo postgres confirmado. Proposta para o projeto: papel ga001_app com LOGIN, NOSUPERUSER, NOCREATEDB e NOCREATEROLE, senha definida interativamente. Criação ainda não executada/comprovada.",
         "Bruno forneceu \\du ga001_app: papel presente, campo Atributos vazio; nenhum privilégio administrativo exibido. A listagem não demonstra conexão pelo papel. Criação do banco ga001_logistica, propriedade ga001_app e acesso psql/Python ainda aguardam evidência.",
         "Bruno forneceu conexão psql bem-sucedida: ga001_logistica, ga001_app, 127.0.0.1:5432, Password Used true, Superuser off e TLSv1.3. \\l confirmou proprietário ga001_app, UTF8 e pt_BR.UTF-8. Aviso anterior de diretório ao executar createdb não impediu a criação, demonstrada pelo acesso posterior. Conexão Python ainda pendente.",
-        ".env.example e docs/postgresql.md preparados administrativamente pela IA, sem senha e sem código Python; implementação do teste é de Bruno."
+        ".env.example e docs/postgresql.md preparados administrativamente pela IA, sem senha e sem código Python; implementação do teste é de Bruno.",
+        "20/10/2026: código de conexão escrito por Bruno e saída dbname ga001_logistica, user ga001_app, host 127.0.0.1 e port 5432 revisados; getpass e with usados no código, sem senha legível enviada."
       ],
-      "bloqueios": "Nenhum bloqueio de papel, banco ou acesso psql. Falta demonstrar a conexão pelo Python no SC_TECH: Bruno escreve e executa o teste com Psycopg e senha via getpass; mostrar somente banco, usuário, host e porta da conexão aberta e fechar a conexão. Configuração de referência e instruções registradas, sem segredo. A PREP-06 permanece aberta até essa evidência.",
-      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação de ambiente.\n**Responsável:** Bruno executa; agente orienta e revisa.\n**Estado de acompanhamento:** Em andamento. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nDisponibilizar acesso reproduzível ao destino de trabalho identificado.\n\n## Entradas e referências\n\n- PostgreSQL servidor 14.24 identificado nas saídas de Bruno.\n- Ambiente Python do projeto e configuração local.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n- PREP-05: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6\n\nPREP-01, PREP-02 e PREP-05 concluídas. Bruno confirmou sincronização local até 9da5f1a532194dcbb34bd5c50d448f75576d34ef. Inventário de papéis e bancos conferido e existência do papel ga001_app confirmada por Bruno. Banco e acesso por psql confirmados posteriormente. Próxima ação: Bruno escrever e executar o teste de conexão Python.\n\n## Trabalho a realizar\n\n- Definir e preparar banco/schema de trabalho identificado e acesso apropriado ao projeto.\n- Tratar a ausência do papel bruno conforme a opção de acesso escolhida; não presumir que o nome do usuário Linux seja a credencial da aplicação.\n- Documentar configuração sem segredos e exemplo sanitizado; verificar a conexão a partir do Python.\n\n## Critérios observáveis de conclusão\n\n- [x] Destino e acesso do projeto identificados.\n- [ ] Conexão Python ao destino correto demonstrada.\n- [x] Configuração e instruções são reproduzíveis sem segredos no Git.\n\n## Evidências e registro\n\n- Bruno forneceu conexão psql bem-sucedida: ga001_logistica, ga001_app, 127.0.0.1:5432, Password Used true, Superuser off e TLSv1.3. \\l confirmou proprietário ga001_app, UTF8 e pt_BR.UTF-8. Aviso anterior de diretório ao executar createdb não impediu a criação, demonstrada pelo acesso posterior. Conexão Python ainda pendente.\n- Configuração de referência em [.env.example](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/main/.env.example) e [instruções PostgreSQL](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/main/docs/postgresql.md), administrativas, sem senha. Não há carregador .env implementado; o teste usa parâmetros explícitos e entrada de senha em tempo de execução.\n- Bruno forneceu \\du ga001_app: papel presente, campo Atributos vazio; nenhum privilégio administrativo exibido. A listagem não demonstra conexão pelo papel. Criação do banco ga001_logistica, propriedade ga001_app e acesso psql/Python ainda aguardam evidência.\n- Bruno forneceu \\du e \\l: três papéis e seis bancos listados; ga001_app e ga001_logistica não aparecem. Acesso administrativo postgres confirmado. Proposta para o projeto: papel ga001_app com LOGIN, NOSUPERUSER, NOCREATEDB e NOCREATEROLE, senha definida interativamente. Criação ainda não executada/comprovada.\n- Sincronização local fornecida por Bruno: fast-forward até 9da5f1a532194dcbb34bd5c50d448f75576d34ef. git status mostra main alinhada ao remoto nessa referência e somente Untitled.ipynb sem rastreamento; o agente não alterou esse notebook.\n- Instruções, exemplo sanitizado e saída da conexão; não incluir senha nem string de conexão sensível.\n\n## Bloqueios e limites conhecidos\n\nNenhum bloqueio de papel, banco ou acesso psql. Falta demonstrar a conexão pelo Python no SC_TECH: Bruno escreve e executa o teste com Psycopg e senha via getpass; mostrar somente banco, usuário, host e porta da conexão aberta e fechar a conexão. Configuração de referência e instruções registradas, sem segredo. A PREP-06 permanece aberta até essa evidência.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "bloqueios": "Nenhum bloqueio para concluir PREP-06. Destino, proprietário, acesso psql e conexão Python demonstrados pelas evidências fornecidas. Configuração de referência e instruções registradas sem segredo. A célula de teste usa parâmetros explícitos e senha interativa; não foi implementado carregador .env pela IA. Ingestão, modelagem, consultas e reconstrução integral permanecem nos respectivos cards.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação de ambiente.\n**Responsável:** Bruno executa; agente orienta e revisa.\n**Estado de acompanhamento:** Concluído. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R11. **Entregáveis:** E01.\n\n## Objetivo e finalidade\n\nDisponibilizar acesso reproduzível ao destino de trabalho identificado.\n\n## Entradas e referências\n\n- PostgreSQL servidor 14.24 identificado nas saídas de Bruno.\n- Ambiente Python do projeto e configuração local.\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-01: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/2\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n- PREP-05: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/6\n\nPREP-01, PREP-02 e PREP-05 concluídas. PREP-06 encerrada em 20/10/2026 após revisão do teste Python escrito e executado por Bruno.\n\n## Trabalho a realizar\n\n- Definir e preparar banco/schema de trabalho identificado e acesso apropriado ao projeto.\n- Tratar a ausência do papel bruno conforme a opção de acesso escolhida; não presumir que o nome do usuário Linux seja a credencial da aplicação.\n- Documentar configuração sem segredos e exemplo sanitizado; verificar a conexão a partir do Python.\n\n## Critérios observáveis de conclusão\n\n- [x] Destino e acesso do projeto identificados.\n- [x] Conexão Python ao destino correto demonstrada.\n- [x] Configuração e instruções são reproduzíveis sem segredos no Git.\n\n## Evidências e registro\n\n- Papel ga001_app, banco ga001_logistica e proprietário ga001_app confirmados nas saídas de Bruno; acesso psql em 127.0.0.1:5432 demonstrado com Password Used true e Superuser off.\n- Em 20/10/2026, Bruno enviou código com getpass.getpass, psycopg.connect e gerenciador de contexto with, acompanhado da saída: dbname ga001_logistica; user ga001_app; host 127.0.0.1; port 5432. O código não contém senha literal, e a saída enviada está mascarada no prompt.\n- [Registro do teste e instruções](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/main/docs/postgresql.md) e [referência de configuração sem senha](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/main/.env.example), preparados administrativamente pela IA. O teste Python foi escrito e executado por Bruno; o agente revisou código e saída, sem execução na máquina do participante.\n- Última sincronização local comprovada em 9da5f1a532194dcbb34bd5c50d448f75576d34ef. Atualizar a cópia local antes de iniciar PREP-07.\n\n## Bloqueios e limites conhecidos\n\nNenhum bloqueio para concluir PREP-06. Destino, proprietário, acesso psql e conexão Python demonstrados pelas evidências fornecidas. Configuração de referência e instruções registradas sem segredo. A célula de teste usa parâmetros explícitos e senha interativa; não foi implementado carregador .env pela IA. Ingestão, modelagem, consultas e reconstrução integral permanecem nos respectivos cards.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
       "criada_em": "2026-10-19T19:45:57Z",
-      "atualizada_em": "2026-10-19T21:08:37Z",
-      "fechada_em": null
+      "atualizada_em": "2026-10-20T22:12:26Z",
+      "fechada_em": "2026-10-20T22:12:25Z"
     },
     {
       "id": "PREP-07",
@@ -465,15 +466,16 @@
       ],
       "estado_issue": "open",
       "motivo_fechamento": null,
-      "estado_acompanhamento": "Backlog",
+      "estado_acompanhamento": "Pronto",
       "status_project_observado": null,
       "evidencias": [
-        "Registro real da obtenção, tamanhos e hashes; referências no README ou documentação técnica."
+        "Registro real da obtenção, tamanhos e hashes; referências no README ou documentação técnica.",
+        "Liberada na sequência após PREP-06; dependências PREP-02 e PREP-04 concluídas. Sincronização local do checkpoint aguardada; hashes de dados ainda não verificados nesta execução."
       ],
       "bloqueios": "Nenhuma identidade de bytes foi verificada nesta execução. Revisões atuais do portal não substituem o snapshot contratado sem correspondência dos hashes.",
-      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação e rastreabilidade de dados.\n**Responsável:** Bruno executa; agente revisa.\n**Estado de acompanhamento:** Backlog. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R01, R11. **Entregáveis:** E01, E02.\n\n## Objetivo e finalidade\n\nGarantir identidade dos bytes analisados e preservar sua procedência.\n\n## Entradas e referências\n\n- [Pacote versionado](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/dados/fontes-antt-siade-2024-2025.zip)\n- [Manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json)\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n- PREP-04: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5\n\nAguardar as dependências e a liberação da tarefa na sequência conduzida pelo agente.\n\n## Trabalho a realizar\n\n- Obter o ZIP no commit contratado, conferir tamanho e SHA-256 e extrair sem modificar os CSVs.\n- Conferir tamanho e SHA-256 de producao_origem_destino_2024.csv e producao_origem_destino_2025.csv.\n- Registrar data de obtenção, URLs, atribuição ANTT/SIADE, limites de procedência e local dos originais.\n\n## Critérios observáveis de conclusão\n\n- [ ] ZIP e dois CSVs correspondem aos hashes do manifesto.\n- [ ] Originais preservados e versão efetiva dos dados identificável.\n\n## Evidências e registro\n\n- Registro real da obtenção, tamanhos e hashes; referências no README ou documentação técnica.\n\n## Bloqueios e limites conhecidos\n\nNenhuma identidade de bytes foi verificada nesta execução. Revisões atuais do portal não substituem o snapshot contratado sem correspondência dos hashes.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação e rastreabilidade de dados.\n**Responsável:** Bruno executa; agente revisa.\n**Estado de acompanhamento:** Pronto. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R01, R11. **Entregáveis:** E01, E02.\n\n## Objetivo e finalidade\n\nGarantir identidade dos bytes analisados e preservar sua procedência.\n\n## Entradas e referências\n\n- [Pacote versionado](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/dados/fontes-antt-siade-2024-2025.zip)\n- [Manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json)\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n- PREP-04: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5\n\nPREP-02 e PREP-04 concluídas. Tarefa liberada na sequência após PREP-06; aguardar a sincronização da cópia local com o checkpoint antes da obtenção e conferência dos dados.\n\n## Trabalho a realizar\n\n- Obter o ZIP no commit contratado, conferir tamanho e SHA-256 e extrair sem modificar os CSVs.\n- Conferir tamanho e SHA-256 de producao_origem_destino_2024.csv e producao_origem_destino_2025.csv.\n- Registrar data de obtenção, URLs, atribuição ANTT/SIADE, limites de procedência e local dos originais.\n\n## Critérios observáveis de conclusão\n\n- [ ] ZIP e dois CSVs correspondem aos hashes do manifesto.\n- [ ] Originais preservados e versão efetiva dos dados identificável.\n\n## Evidências e registro\n\n- Registro real da obtenção, tamanhos e hashes; referências no README ou documentação técnica.\n\n## Bloqueios e limites conhecidos\n\nNenhuma identidade de bytes foi verificada nesta execução. Revisões atuais do portal não substituem o snapshot contratado sem correspondência dos hashes.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
       "criada_em": "2026-10-19T19:45:58Z",
-      "atualizada_em": "2026-10-19T19:45:58Z",
+      "atualizada_em": "2026-10-20T22:12:27Z",
       "fechada_em": null
     },
     {
@@ -946,7 +948,7 @@
       "fechada_em": null
     }
   ],
-  "marco": "PREP-06: banco, proprietário e acesso psql confirmados; configuração de referência registrada; conexão Python pendente.",
+  "marco": "PREP-06 concluída com acesso Python confirmado; PREP-07 pronta, aguardando sincronização local.",
   "governanca": {
     "commit_verificado": "1c36880141502535cfe978c2a90fc6b66e6674c0",
     "politica_integral_em": "AGENTS.md",
@@ -1087,13 +1089,13 @@
     "limite": "Listagem de recursos existentes; ainda não comprova criação, senha, autenticação do projeto ou conexão Python."
   },
   "preparacao_postgresql": {
-    "estado": "banco_e_acesso_psql_confirmados_conexao_python_pendente",
+    "estado": "concluida",
     "servidor_confirmado": "14.24",
     "acesso_administrativo_local_confirmado": true,
     "papel_bruno_ausente_na_verificacao_inicial": true,
     "destino_do_projeto_definido": true,
-    "conexao_python_verificada": false,
-    "fonte": "Inventário atual fornecido por Bruno; nomes específicos propostos pelo agente para organizar o acesso, execução ainda pendente.",
+    "conexao_python_verificada": true,
+    "fonte": "Papel, banco e acesso psql confirmados por saídas de Bruno em 19/10; conexão Python confirmada por código e saída enviados em 20/10/2026.",
     "modelagem_e_carga": "Cards T02 e T03; ainda não iniciados.",
     "inventario": {
       "data": "2026-10-19",
@@ -1117,7 +1119,7 @@
       "atributos_exibidos": "",
       "privilegios_administrativos_exibidos": false,
       "conexao_com_papel_verificada": true,
-      "limite": "Existência e atributos conferidos; acesso por psql confirmado posteriormente. Conexão Python ainda pendente."
+      "limite": "Existência e atributos conferidos; acessos psql e Python confirmados por evidências de Bruno."
     },
     "conexao_psql_verificada": true,
     "papel_projeto": "ga001_app",
@@ -1145,6 +1147,23 @@
     },
     "configuracao_exemplo": ".env.example",
     "instrucoes": "docs/postgresql.md",
-    "carregamento_configuracao_implementado": false
+    "carregamento_configuracao_implementado": false,
+    "acesso_python": {
+      "data": "2026-10-20",
+      "fonte": "Código e saída enviados por Bruno na conversa; agente realizou revisão estática, sem executar na máquina do participante.",
+      "autoria_codigo": "Bruno",
+      "kernel_contexto": "SC_TECH previamente identificado na PREP-05; o teste de conexão não repete a identificação do interpretador.",
+      "biblioteca": "Psycopg 3",
+      "dbname": "ga001_logistica",
+      "user": "ga001_app",
+      "host": "127.0.0.1",
+      "port": 5432,
+      "senha": "Entrada interativa por getpass.getpass, sem literal de senha no código ou senha legível na saída enviada.",
+      "fechamento": "Gerenciador de contexto with no código revisado.",
+      "saida": "dbname: ga001_logistica\nuser  : ga001_app\nhost  : 127.0.0.1\nport  : 5432",
+      "conexao_python_verificada": true,
+      "local_arquivo_teste": "Código e saída disponíveis na conversa e documentados em docs/postgresql.md; caminho do notebook deste teste não informado.",
+      "limite": "Comprova conexão e identificação do destino pelas evidências fornecidas; não comprova ingestão, consultas analíticas, resultados nem reconstrução integral do ambiente."
+    }
   }
 }

@@ -206,4 +206,21 @@ O comando createdb emitiu `could not change directory to "/home/bruno/Desktop/an
 
 O psql demonstrou o destino e o acesso. A [referência de configuração](../.env.example) e as [instruções de reconstrução e teste](postgresql.md) foram preparadas administrativamente pela IA. A senha não integra esses arquivos; .env não é carregado automaticamente pelo Python.
 
-**Pendência atual:** Bruno escrever e executar a conexão no notebook com kernel SC_TECH, solicitando senha com getpass, usando Psycopg e exibindo banco, usuário, host e porta da conexão aberta. A PREP-06 permanece em andamento até a evidência Python.
+**Situação em 19/10:** a conexão Python ainda estava pendente; resultado posterior documentado na conclusão a seguir.
+
+## Conclusão da PREP-06 — conexão Python
+
+**Data:** 20/10/2026. **Fonte:** código e saída enviados por Bruno; revisão estática pela IA, sem execução na máquina do participante.
+
+Bruno escreveu a conexão com psycopg.connect, senha obtida por getpass.getpass e gerenciador de contexto with. O código exibe as propriedades da conexão aberta e gerencia seu fechamento ao sair do bloco. A senha não é literal do código, e o prompt foi enviado mascarado.
+
+```text
+dbname: ga001_logistica
+user  : ga001_app
+host  : 127.0.0.1
+port  : 5432
+```
+
+**PREP-06 concluída:** destino e proprietário identificados; acessos por psql e Python demonstrados; referência de configuração e instruções registradas sem senha. O caminho do notebook deste teste não foi informado; código e saída foram enviados na conversa, e o resultado está preservado nesta documentação. O código de teste é de autoria de Bruno.
+
+A obtenção e os hashes dos dados permanecem na PREP-07. Antes de iniciá-la, sincronizar a cópia local com o checkpoint. A reconstrução integral do ambiente segue prevista na verificação de reprodução da entrega.

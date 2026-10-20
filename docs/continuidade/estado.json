@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 13,
-  "atualizado_em": "2026-10-19",
+  "revisao": 14,
+  "atualizado_em": "2026-10-20",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
   "contrato": {
@@ -26,12 +26,12 @@
     "id": "W003",
     "origem": "Identificador documental registrado no Gerador Analítico; não é ID interno da plataforma."
   },
-  "etapa_atual": "PREP-06",
+  "etapa_atual": "PREP-07",
   "issue_atual": {
-    "numero": 7,
-    "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/7"
+    "numero": 8,
+    "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/8"
   },
-  "estado_etapa": "em_andamento",
+  "estado_etapa": "pronto",
   "etapas_preparacao": [
     {
       "id": "PREP-00",
@@ -95,7 +95,7 @@
     {
       "id": "PREP-06",
       "titulo": "Preparar o acesso PostgreSQL",
-      "estado": "em_andamento",
+      "estado": "concluida",
       "dependencias": [
         "PREP-01",
         "PREP-02",
@@ -107,7 +107,7 @@
     {
       "id": "PREP-07",
       "titulo": "Obter e conferir os dados contratados",
-      "estado": "backlog",
+      "estado": "pronto",
       "dependencias": [
         "PREP-02",
         "PREP-04"
@@ -151,9 +151,9 @@
     "kanban_atual": {
       "arquivo": "docs/kanban/cards.json",
       "issues": 19,
-      "fechadas": 6,
-      "abertas": 13,
-      "fonte_status_issue": "Issue 6 fechada como concluída com confirmação das importações; issue 7 liberada como Pronto no acompanhamento documental. Status no Project não inspecionado."
+      "fechadas": 7,
+      "abertas": 12,
+      "fonte_status_issue": "Issue 7 fechada como concluída após revisão do código e saída Python de Bruno; issue 8 liberada como Pronto no acompanhamento documental. Status no Project não inspecionado."
     },
     "sincronizacao_local": {
       "commit": "9da5f1a532194dcbb34bd5c50d448f75576d34ef",
@@ -168,7 +168,7 @@
     "plano_conda_SC_TECH": {
       "fonte": "Plano e aceitação informados por Bruno na conversa.",
       "arquivo": "docs/ambiente.md",
-      "limite": "Resultado da transação ainda pendente."
+      "limite": "Plano inicial preservado como histórico; resultado e funcionamento posteriormente confirmados nas evidências resultado_conda_SC_TECH e kernel_SC_TECH."
     },
     "resultado_conda_SC_TECH": {
       "fonte": "Saídas de python --version, conda list filtrado e pip check fornecidas por Bruno após aceitar a instalação; agente sem acesso à máquina.",
@@ -225,13 +225,32 @@
       "conexao_psql_verificada": true,
       "conexao_python_verificada": false,
       "limite": "Demonstra acesso por psql ao destino e propriedade do banco. A conexão por Python ainda será executada por Bruno."
+    },
+    "acesso_postgresql_python": {
+      "arquivo": "docs/postgresql.md",
+      "data": "2026-10-20",
+      "fonte": "Código e saída enviados por Bruno na conversa; agente realizou revisão estática, sem executar na máquina do participante.",
+      "autoria_codigo": "Bruno",
+      "kernel_contexto": "SC_TECH previamente identificado na PREP-05; o teste de conexão não repete a identificação do interpretador.",
+      "biblioteca": "Psycopg 3",
+      "dbname": "ga001_logistica",
+      "user": "ga001_app",
+      "host": "127.0.0.1",
+      "port": 5432,
+      "senha": "Entrada interativa por getpass.getpass, sem literal de senha no código ou senha legível na saída enviada.",
+      "fechamento": "Gerenciador de contexto with no código revisado.",
+      "saida": "dbname: ga001_logistica\nuser  : ga001_app\nhost  : 127.0.0.1\nport  : 5432",
+      "conexao_python_verificada": true,
+      "local_arquivo_teste": "Código e saída disponíveis na conversa e documentados em docs/postgresql.md; caminho do notebook deste teste não informado.",
+      "limite": "Comprova conexão e identificação do destino pelas evidências fornecidas; não comprova ingestão, consultas analíticas, resultados nem reconstrução integral do ambiente."
     }
   },
   "ultimo_checkpoint_concluido": {
-    "etapa": "PREP-05",
-    "issue": 6,
-    "commit_dependencias_verificado": "f424486ec4c56c3147bc7736f69f4ff55c8aac96",
-    "fonte_importacoes": "Em 19/10/2026, Bruno confirmou explicitamente que todas as importações solicitadas no notebook executaram sem erro, incluindo Psycopg. NumPy, pandas, matplotlib.pyplot, Seaborn, SQLAlchemy e Psycopg verificados por relato do participante; interpretador identificado pelas saídas anteriores."
+    "etapa": "PREP-06",
+    "issue": 7,
+    "data": "2026-10-20",
+    "commit_configuracao_verificado": "195a3df3330d9c5d65eb4416a184d5a114123da3",
+    "fonte_teste_python": "Código e saída enviados por Bruno na conversa; agente realizou revisão estática, sem executar na máquina do participante."
   },
   "copia_local": {
     "clone_confirmado": true,
@@ -246,11 +265,11 @@
     ]
   },
   "pendencias": [
-    "Preparar destino e acesso PostgreSQL e verificar conexão Python (PREP-06).",
+    "Sincronizar a cópia local com o checkpoint de conclusão da PREP-06 antes de iniciar a PREP-07; última sincronização comprovada permanece em 9da5f1a.",
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno escreve e executa uma célula de teste no notebook com kernel SC_TECH: obter senha com getpass.getpass, abrir psycopg.connect com host 127.0.0.1, port 5432, dbname ga001_logistica e user ga001_app, exibir apenas info.dbname, info.user, info.host e info.port e fechar a conexão com gerenciador de contexto. Enviar código sem senha e saída, ou erro. Não repetir criação de papel/banco nem teste psql já comprovados.",
+  "proxima_acao": "Bruno executa git pull --ff-only e git status --short --branch na raiz do projeto e fornece a saída. Confirmada a sincronização, iniciar PREP-07 (issue 8): obter o ZIP e os CSVs no snapshot do commit contratado e conferir tamanhos e SHA-256 contra o manifesto. Não repetir preparação de ambiente nem conexões já comprovadas.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -377,13 +396,13 @@
     "teste_previsto": "Verificação de reprodução da entrega, T10."
   },
   "preparacao_postgresql": {
-    "estado": "banco_e_acesso_psql_confirmados_conexao_python_pendente",
+    "estado": "concluida",
     "servidor_confirmado": "14.24",
     "acesso_administrativo_local_confirmado": true,
     "papel_bruno_ausente_na_verificacao_inicial": true,
     "destino_do_projeto_definido": true,
-    "conexao_python_verificada": false,
-    "fonte": "Inventário atual fornecido por Bruno; nomes específicos propostos pelo agente para organizar o acesso, execução ainda pendente.",
+    "conexao_python_verificada": true,
+    "fonte": "Papel, banco e acesso psql confirmados por saídas de Bruno em 19/10; conexão Python confirmada por código e saída enviados em 20/10/2026.",
     "modelagem_e_carga": "Cards T02 e T03; ainda não iniciados.",
     "inventario": {
       "data": "2026-10-19",
@@ -407,7 +426,7 @@
       "atributos_exibidos": "",
       "privilegios_administrativos_exibidos": false,
       "conexao_com_papel_verificada": true,
-      "limite": "Existência e atributos conferidos; acesso por psql confirmado posteriormente. Conexão Python ainda pendente."
+      "limite": "Existência e atributos conferidos; acessos psql e Python confirmados por evidências de Bruno."
     },
     "conexao_psql_verificada": true,
     "papel_projeto": "ga001_app",
@@ -435,6 +454,23 @@
     },
     "configuracao_exemplo": ".env.example",
     "instrucoes": "docs/postgresql.md",
-    "carregamento_configuracao_implementado": false
+    "carregamento_configuracao_implementado": false,
+    "acesso_python": {
+      "data": "2026-10-20",
+      "fonte": "Código e saída enviados por Bruno na conversa; agente realizou revisão estática, sem executar na máquina do participante.",
+      "autoria_codigo": "Bruno",
+      "kernel_contexto": "SC_TECH previamente identificado na PREP-05; o teste de conexão não repete a identificação do interpretador.",
+      "biblioteca": "Psycopg 3",
+      "dbname": "ga001_logistica",
+      "user": "ga001_app",
+      "host": "127.0.0.1",
+      "port": 5432,
+      "senha": "Entrada interativa por getpass.getpass, sem literal de senha no código ou senha legível na saída enviada.",
+      "fechamento": "Gerenciador de contexto with no código revisado.",
+      "saida": "dbname: ga001_logistica\nuser  : ga001_app\nhost  : 127.0.0.1\nport  : 5432",
+      "conexao_python_verificada": true,
+      "local_arquivo_teste": "Código e saída disponíveis na conversa e documentados em docs/postgresql.md; caminho do notebook deste teste não informado.",
+      "limite": "Comprova conexão e identificação do destino pelas evidências fornecidas; não comprova ingestão, consultas analíticas, resultados nem reconstrução integral do ambiente."
+    }
   }
 }

@@ -11,7 +11,7 @@ Documentação administrativa produzida pela IA com base nos comandos e saídas 
 | PGDATABASE | dbname | ga001_logistica |
 | PGUSER | user | ga001_app |
 
-O banco pertence a ga001_app, usa UTF8 e localidade pt_BR.UTF-8. A conexão pelo psql foi demonstrada com Password Used true, Superuser off e TLSv1.3. Essas informações não substituem o teste no Python.
+O banco pertence a ga001_app, usa UTF8 e localidade pt_BR.UTF-8. A conexão pelo psql foi demonstrada com Password Used true, Superuser off e TLSv1.3. O teste Python foi demonstrado posteriormente por Bruno, conforme a seção de verificação abaixo.
 
 A amostra [.env.example](../.env.example) contém apenas valores não secretos. É uma referência para a configuração: o Python não carrega arquivos .env automaticamente, e nenhum carregador foi implementado pela IA. Nesta preparação, Bruno deve explicitar os parâmetros da conexão e solicitar a senha em tempo de execução. O carregamento da configuração do fluxo analítico será implementado por Bruno no card correspondente. O [.gitignore](../.gitignore) já exclui .env e outras configurações locais.
 
@@ -43,7 +43,7 @@ psql -X -P pager=off -h 127.0.0.1 -p 5432 -U ga001_app -d ga001_logistica -W -c 
 
 O acesso TCP local precisa estar permitido pela configuração PostgreSQL da instalação. No ambiente de Bruno, o teste acima já funcionou. As instruções não alteram o método de autenticação do servidor.
 
-## Verificação Python a executar por Bruno
+## Verificação Python
 
 Usar o notebook com kernel SC_TECH, já conferido na PREP-05, e as dependências de [environment.yml](../environment.yml). A biblioteca getpass pertence à biblioteca padrão.
 
@@ -53,7 +53,18 @@ Usar o notebook com kernel SC_TECH, já conferido na PREP-05, e as dependências
 4. Exibir apenas as propriedades dbname, user, host e port do atributo info da conexão aberta.
 5. Fornecer código sem senha e saída ou erro para revisão.
 
-O agente fornece o objetivo e as referências; Bruno escreve e executa a célula. Nenhum código de teste Python ou da solução analítica foi produzido pela IA. Após o resultado, atualizar a evidência de conexão e os critérios da issue PREP-06.
+O agente forneceu o objetivo e as referências; Bruno escreveu e executou a célula. Nenhum código de teste Python ou da solução analítica foi produzido pela IA.
+
+**Resultado fornecido em 20/10/2026:** código com getpass.getpass, psycopg.connect e with revisado; saída enviada por Bruno:
+
+```text
+dbname: ga001_logistica
+user  : ga001_app
+host  : 127.0.0.1
+port  : 5432
+```
+
+A conexão Python ao destino está confirmada por essa evidência. O fechamento é gerenciado pelo with no código revisado. O código não contém senha literal, e a saída do prompt enviada aparece mascarada. A PREP-06 está concluída; ingestão e consultas analíticas ainda não foram executadas. O carregamento de .env permanece parte da implementação futura de Bruno.
 
 ## Referências
 

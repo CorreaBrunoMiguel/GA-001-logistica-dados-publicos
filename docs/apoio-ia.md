@@ -2,6 +2,7 @@
 
 **Projeto:** GA-001 / contrato 1.0.0, commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.  
 **Declaração inicial:** 19/10/2026.  
+**Atualização:** 20/10/2026.  
 **Autoria deste registro administrativo:** agente de IA.
 
 ## Apoio realizado até a preparação administrativa
@@ -13,8 +14,9 @@
 - Revisão das saídas posteriores à instalação: Python e pacotes identificados e pip check sem dependências declaradas quebradas; interpretador do notebook confirmado posteriormente. Bruno confirmou posteriormente todas as importações sem erro, incluindo Psycopg; evidência registrada e PREP-05 encerrada.
 - Orientação para distinguir o Python do base do SC_TECH e selecionar o kernel; revisão das saídas fornecidas por Bruno.
 - Preparação administrativa de environment.yml e instruções de reconstrução com as versões informadas; reconstrução não executada pelo agente ou comprovada nesta etapa.
-- Registro da sincronização local até 9da5f1a, com notebook temporário sem rastreamento, e início da orientação do inventário PostgreSQL; destino e conexão Python ainda não configurados/verificados.
-- Orientação dos comandos administrativos para papel e banco; revisão das saídas que confirmam proprietário e acesso pelo psql. Preparação de .env.example e docs/postgresql.md sem senha; teste de conexão Python proposto para Bruno implementar, ainda pendente.
+- Registro da sincronização local até 9da5f1a, com notebook temporário sem rastreamento, e início da orientação do inventário PostgreSQL; registro inicial anterior às verificações posteriores do destino e da conexão Python.
+- Orientação dos comandos administrativos para papel e banco; revisão das saídas que confirmam proprietário e acesso pelo psql. Preparação de .env.example e docs/postgresql.md sem senha; teste de conexão Python escrito por Bruno e revisado pela IA em 20/10/2026, com saída que confirma banco, usuário, host e porta.
+- Encerramento documental da PREP-06 e liberação da PREP-07 após revisão das evidências; obtenção e hashes dos dados ainda pendentes.
 - Orientação da configuração manual do Project por Bruno.
 - Criação das 19 issues, dependências, critérios documentais e exportação dos cards.
 - Organização de README, AGENTS.md com política integral, continuidade, registro de decisões, exclusões Git e pastas vazias.
