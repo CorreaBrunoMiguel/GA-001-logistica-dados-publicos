@@ -10,7 +10,7 @@
   "project_url": "https://github.com/users/CorreaBrunoMiguel/projects/5",
   "origem_dos_estados": {
     "issues": "Consultadas no GitHub após a criação e fechamento das etapas concluídas.",
-    "acompanhamento": "PREP-00 a PREP-06 concluídas; PREP-07 pronta. Campo Status do Project não inspecionado pelo agente.",
+    "acompanhamento": "PREP-00 a PREP-06 concluídas; PREP-07 em andamento. Campo Status do Project não lido pelo agente.",
     "campo_status_project": "Configuração e estados anteriores confirmados por Bruno; interface não lida pelo agente. Valores finais após fechar as issues 4 e 5 não inspecionados pelo agente."
   },
   "configuracoes_informadas_por_Bruno": {
@@ -466,16 +466,17 @@
       ],
       "estado_issue": "open",
       "motivo_fechamento": null,
-      "estado_acompanhamento": "Pronto",
+      "estado_acompanhamento": "Em andamento",
       "status_project_observado": null,
       "evidencias": [
         "Registro real da obtenção, tamanhos e hashes; referências no README ou documentação técnica.",
-        "Liberada na sequência após PREP-06; dependências PREP-02 e PREP-04 concluídas. Sincronização local do checkpoint aguardada; hashes de dados ainda não verificados nesta execução."
+        "Liberada na sequência após PREP-06; dependências PREP-02 e PREP-04 concluídas. Sincronização local do checkpoint aguardada; hashes de dados ainda não verificados nesta execução.",
+        "20/10/2026: sincronização local até 4d6f172 confirmada; manifesto fixo consultado pelo agente para obter tamanhos e hashes esperados. Não houve conferência de bytes locais ainda."
       ],
       "bloqueios": "Nenhuma identidade de bytes foi verificada nesta execução. Revisões atuais do portal não substituem o snapshot contratado sem correspondência dos hashes.",
-      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação e rastreabilidade de dados.\n**Responsável:** Bruno executa; agente revisa.\n**Estado de acompanhamento:** Pronto. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R01, R11. **Entregáveis:** E01, E02.\n\n## Objetivo e finalidade\n\nGarantir identidade dos bytes analisados e preservar sua procedência.\n\n## Entradas e referências\n\n- [Pacote versionado](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/dados/fontes-antt-siade-2024-2025.zip)\n- [Manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json)\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n- PREP-04: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5\n\nPREP-02 e PREP-04 concluídas. Tarefa liberada na sequência após PREP-06; aguardar a sincronização da cópia local com o checkpoint antes da obtenção e conferência dos dados.\n\n## Trabalho a realizar\n\n- Obter o ZIP no commit contratado, conferir tamanho e SHA-256 e extrair sem modificar os CSVs.\n- Conferir tamanho e SHA-256 de producao_origem_destino_2024.csv e producao_origem_destino_2025.csv.\n- Registrar data de obtenção, URLs, atribuição ANTT/SIADE, limites de procedência e local dos originais.\n\n## Critérios observáveis de conclusão\n\n- [ ] ZIP e dois CSVs correspondem aos hashes do manifesto.\n- [ ] Originais preservados e versão efetiva dos dados identificável.\n\n## Evidências e registro\n\n- Registro real da obtenção, tamanhos e hashes; referências no README ou documentação técnica.\n\n## Bloqueios e limites conhecidos\n\nNenhuma identidade de bytes foi verificada nesta execução. Revisões atuais do portal não substituem o snapshot contratado sem correspondência dos hashes.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
+      "corpo_issue": "**Projeto/contrato:** GA-001 / 1.0.0 — commit 0143e0d4e1a3edf0c084656f9b956a101e24a942.\n**Natureza:** Preparação e rastreabilidade de dados.\n**Responsável:** Bruno executa; agente revisa.\n**Estado de acompanhamento:** Em andamento. O campo Status do Project não foi inspecionado pelo agente.\n**Requisitos:** R01, R11. **Entregáveis:** E01, E02.\n\n## Objetivo e finalidade\n\nGarantir identidade dos bytes analisados e preservar sua procedência.\n\n## Entradas e referências\n\n- [Pacote versionado](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/dados/fontes-antt-siade-2024-2025.zip)\n- [Manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json)\n- [Demanda](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/demanda.md), [rubrica](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/rubrica.md), [manifesto](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json) e [política de execução](https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/politica-execucao.md).\n\n## Dependências e condição de início\n\n- PREP-02: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/3\n- PREP-04: https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/5\n\nPREP-02 e PREP-04 concluídas. PREP-06 concluída e sincronização local até 4d6f1728c62f2b4fbe9ce926d28bfb36f8c6028f confirmada por Bruno em 20/10/2026. Tarefa iniciada pela obtenção e conferência do ZIP.\n\n## Trabalho a realizar\n\n- Obter o ZIP no commit contratado, conferir tamanho e SHA-256 e extrair sem modificar os CSVs.\n- Conferir tamanho e SHA-256 de producao_origem_destino_2024.csv e producao_origem_destino_2025.csv.\n- Registrar data de obtenção, URLs, atribuição ANTT/SIADE, limites de procedência e local dos originais.\n\n## Critérios observáveis de conclusão\n\n- [ ] ZIP e dois CSVs correspondem aos hashes do manifesto.\n- [ ] Originais preservados e versão efetiva dos dados identificável.\n\n## Evidências e registro\n\n- Bruno confirmou git pull em fast-forward até 4d6f172 e somente Untitled.ipynb sem rastreamento.\n- Manifesto consultado no commit contratado: ZIP de 264642 bytes, SHA-256 2a5d0b6c0dfaddca5d4415f76eda38a1f7fcca383a4de3a799412ffc713dbbfb. Repositório de origem privado; download orientado pelo navegador GitHub. Valores esperados e procedência em [docs/dados.md](https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/blob/main/docs/dados.md); download e hashes locais ainda pendentes.\n- Registro real da obtenção, tamanhos e hashes; referências no README ou documentação técnica.\n\n## Bloqueios e limites conhecidos\n\nNenhuma identidade de bytes foi verificada nesta execução. Revisões atuais do portal não substituem o snapshot contratado sem correspondência dos hashes.\n\n---\nCard e organização administrativa produzidos pela IA. Código, SQL, análises e conclusões pertencem a Bruno. Este card organiza o contrato e não introduz critério de avaliação adicional.",
       "criada_em": "2026-10-19T19:45:58Z",
-      "atualizada_em": "2026-10-20T22:12:27Z",
+      "atualizada_em": "2026-10-20T22:19:34Z",
       "fechada_em": null
     },
     {
@@ -948,16 +949,16 @@
       "fechada_em": null
     }
   ],
-  "marco": "PREP-06 concluída com acesso Python confirmado; PREP-07 pronta, aguardando sincronização local.",
+  "marco": "PREP-07 em andamento: sincronização até 4d6f172 confirmada; aguardando obtenção e conferência local do ZIP contratado.",
   "governanca": {
     "commit_verificado": "1c36880141502535cfe978c2a90fc6b66e6674c0",
     "politica_integral_em": "AGENTS.md",
     "estado_execucao": "docs/continuidade/estado.json",
-    "sincronizacao_local": "Confirmada por Bruno até 9da5f1a532194dcbb34bd5c50d448f75576d34ef; atualizações administrativas posteriores não presumidas como baixadas."
+    "sincronizacao_local": "Confirmada por Bruno até 4d6f1728c62f2b4fbe9ce926d28bfb36f8c6028f; atualizações administrativas posteriores não presumidas como baixadas."
   },
   "sincronizacao_local": {
-    "commit_confirmado": "9da5f1a532194dcbb34bd5c50d448f75576d34ef",
-    "fonte": "Saída de git pull --ff-only e git status --short --branch fornecida por Bruno em 19/10/2026; agente sem acesso à máquina.",
+    "commit_confirmado": "4d6f1728c62f2b4fbe9ce926d28bfb36f8c6028f",
+    "fonte": "Saídas de git pull --ff-only e git status --short --branch fornecidas por Bruno em 20/10/2026; agente sem acesso à máquina.",
     "status": "## main...origin/main\n?? Untitled.ipynb",
     "alteracoes_reportadas": true,
     "alteracoes_rastreadas_reportadas": false,
@@ -1165,5 +1166,36 @@
       "local_arquivo_teste": "Código e saída disponíveis na conversa e documentados em docs/postgresql.md; caminho do notebook deste teste não informado.",
       "limite": "Comprova conexão e identificação do destino pelas evidências fornecidas; não comprova ingestão, consultas analíticas, resultados nem reconstrução integral do ambiente."
     }
+  },
+  "preparacao_dados": {
+    "estado": "aguardando_obtencao_e_conferencia_zip",
+    "contrato_commit": "0143e0d4e1a3edf0c084656f9b956a101e24a942",
+    "manifesto": "https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json",
+    "fonte_repositorio_privado": true,
+    "instrucoes_download": "Bruno baixa o ZIP pelo GitHub no navegador com acesso ao repositório; não é indicado curl anônimo para recurso privado.",
+    "zip": {
+      "arquivo_local": "data/raw/fontes-antt-siade-2024-2025.zip",
+      "url": "https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/dados/fontes-antt-siade-2024-2025.zip",
+      "tamanho_bytes_esperado": 264642,
+      "sha256_esperado": "2a5d0b6c0dfaddca5d4415f76eda38a1f7fcca383a4de3a799412ffc713dbbfb",
+      "obtencao_confirmada": false,
+      "hash_local_verificado": false
+    },
+    "csvs": [
+      {
+        "arquivo_local": "data/raw/producao_origem_destino_2024.csv",
+        "tamanho_bytes_esperado": 607661,
+        "sha256_esperado": "5f596d970ca568679b1db2962f82b92b21e39ad9f6fe871137613d4dcf7a0673",
+        "hash_local_verificado": false
+      },
+      {
+        "arquivo_local": "data/raw/producao_origem_destino_2025.csv",
+        "tamanho_bytes_esperado": 601420,
+        "sha256_esperado": "265a40f1759fcb6af5a83d28b687d3621d8cf50054ae777f80e7cb0d9e863114",
+        "hash_local_verificado": false
+      }
+    ],
+    "registro": "docs/dados.md",
+    "limite": "Valores esperados lidos no manifesto fixo; nenhum download local, tamanho ou hash fornecido por Bruno nesta etapa ainda."
   }
 }

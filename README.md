@@ -19,13 +19,14 @@ Código, SQL, decisões técnicas, análises e conclusões são de **Bruno**. O 
 
 Leia [AGENTS.md](AGENTS.md), [estado da execução](docs/continuidade/estado.json) e [procedimento de continuidade](docs/continuidade/README.md). Consulte o remoto para identificar a referência atual antes de retomar a issue indicada.
 
-Situação deste checkpoint: PREP-00 a PREP-06 concluídas. SC_TECH com Python 3.13.9 e bibliotecas identificados; kernel e importações conferidos. Banco ga001_logistica, proprietário ga001_app e acessos por psql e Python confirmados por evidências de Bruno. [Dependências](environment.yml), [configuração de referência](.env.example) e [instruções de acesso](docs/postgresql.md) registradas; reconstrução integral ainda não executada. PREP-07 pronta para iniciar após sincronização local. A última sincronização comprovada permanece em 9da5f1a532194dcbb34bd5c50d448f75576d34ef; o teste Python atual teve código e saída enviados na conversa.
+Situação deste checkpoint: PREP-00 a PREP-06 concluídas. SC_TECH com Python 3.13.9 e bibliotecas identificados; kernel e importações conferidos. Banco ga001_logistica, proprietário ga001_app e acessos por psql e Python confirmados por evidências de Bruno. [Dependências](environment.yml), [configuração de referência](.env.example) e [instruções de acesso](docs/postgresql.md) registradas; reconstrução integral ainda não executada. PREP-07 em andamento: obtenção e conferência dos dados conforme o [registro de procedência e valores esperados](docs/dados.md). Sincronização local confirmada até 4d6f1728c62f2b4fbe9ce926d28bfb36f8c6028f, com apenas Untitled.ipynb sem rastreamento.
 
 ## Documentação e autoria
 
 - [Organização de pastas e entregáveis](docs/estrutura.md).
 - [Inventário inicial do ambiente](docs/ambiente.md).
 - [Configuração e instruções PostgreSQL](docs/postgresql.md), com [referência não secreta](.env.example).
+- [Procedência, obtenção e identidade esperada dos dados](docs/dados.md).
 - [Registro de decisões técnicas de Bruno](docs/decisoes-tecnicas.md).
 - [Declaração de apoio da IA](docs/apoio-ia.md).
 - [Cards completos e evidências](docs/kanban/cards.json).

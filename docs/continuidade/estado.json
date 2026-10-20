@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "revisao": 14,
+  "revisao": 15,
   "atualizado_em": "2026-10-20",
   "projeto_id": "GA-001",
   "titulo": "Fluxos ferroviários de cargas com dados públicos",
@@ -31,7 +31,7 @@
     "numero": 8,
     "url": "https://github.com/CorreaBrunoMiguel/GA-001-logistica-dados-publicos/issues/8"
   },
-  "estado_etapa": "pronto",
+  "estado_etapa": "em_andamento",
   "etapas_preparacao": [
     {
       "id": "PREP-00",
@@ -107,7 +107,7 @@
     {
       "id": "PREP-07",
       "titulo": "Obter e conferir os dados contratados",
-      "estado": "pronto",
+      "estado": "em_andamento",
       "dependencias": [
         "PREP-02",
         "PREP-04"
@@ -156,9 +156,9 @@
       "fonte_status_issue": "Issue 7 fechada como concluída após revisão do código e saída Python de Bruno; issue 8 liberada como Pronto no acompanhamento documental. Status no Project não inspecionado."
     },
     "sincronizacao_local": {
-      "commit": "9da5f1a532194dcbb34bd5c50d448f75576d34ef",
+      "commit": "4d6f1728c62f2b4fbe9ce926d28bfb36f8c6028f",
       "tipo": "Fast-forward",
-      "origem": "Saída de git pull --ff-only e git status --short --branch fornecida por Bruno em 19/10/2026; agente sem acesso à máquina.",
+      "origem": "Saídas de git pull --ff-only e git status --short --branch fornecidas por Bruno em 20/10/2026; agente sem acesso à máquina.",
       "saida_status": "## main...origin/main\n?? Untitled.ipynb",
       "arquivos_nao_rastreados": [
         "Untitled.ipynb"
@@ -254,22 +254,21 @@
   },
   "copia_local": {
     "clone_confirmado": true,
-    "sincronizacao_confirmada_ate": "9da5f1a532194dcbb34bd5c50d448f75576d34ef",
-    "fonte": "Saída de git pull --ff-only e git status --short --branch fornecida por Bruno em 19/10/2026; agente sem acesso à máquina.",
+    "sincronizacao_confirmada_ate": "4d6f1728c62f2b4fbe9ce926d28bfb36f8c6028f",
+    "fonte": "Saídas de git pull --ff-only e git status --short --branch fornecidas por Bruno em 20/10/2026; agente sem acesso à máquina.",
     "saida_status": "## main...origin/main\n?? Untitled.ipynb",
     "alteracoes_locais_reportadas": true,
-    "observacao": "O notebook temporário está sem rastreamento. Não foi adicionado, removido ou alterado pelo agente. Confirmação de sincronização limitada ao commit indicado; avanços administrativos posteriores não são presumidos como baixados.",
+    "observacao": "Notebook sem rastreamento preservado. Confirmação limitada ao commit indicado; atualizações administrativas posteriores não são presumidas como baixadas.",
     "alteracoes_rastreadas_reportadas": false,
     "arquivos_nao_rastreados": [
       "Untitled.ipynb"
     ]
   },
   "pendencias": [
-    "Sincronizar a cópia local com o checkpoint de conclusão da PREP-06 antes de iniciar a PREP-07; última sincronização comprovada permanece em 9da5f1a.",
     "Obter e conferir os snapshots contratados (PREP-07).",
     "Verificar a preparação e registrar checkpoint final (PREP-08)."
   ],
-  "proxima_acao": "Bruno executa git pull --ff-only e git status --short --branch na raiz do projeto e fornece a saída. Confirmada a sincronização, iniciar PREP-07 (issue 8): obter o ZIP e os CSVs no snapshot do commit contratado e conferir tamanhos e SHA-256 contra o manifesto. Não repetir preparação de ambiente nem conexões já comprovadas.",
+  "proxima_acao": "Bruno move PREP-07 para Em andamento no Project, baixa o ZIP pelo link GitHub no commit contratado e o salva como data/raw/fontes-antt-siade-2024-2025.zip. Na raiz do projeto, executa wc -c data/raw/fontes-antt-siade-2024-2025.zip e sha256sum data/raw/fontes-antt-siade-2024-2025.zip e fornece as saídas. Conferir 264642 bytes e SHA-256 2a5d0b6c0dfaddca5d4415f76eda38a1f7fcca383a4de3a799412ffc713dbbfb antes de orientar a extração.",
   "limites": [
     "O agente não acessa a máquina de Bruno.",
     "A conexão não lê a interface de Projects; confirmações manuais têm sua fonte identificada.",
@@ -472,5 +471,36 @@
       "local_arquivo_teste": "Código e saída disponíveis na conversa e documentados em docs/postgresql.md; caminho do notebook deste teste não informado.",
       "limite": "Comprova conexão e identificação do destino pelas evidências fornecidas; não comprova ingestão, consultas analíticas, resultados nem reconstrução integral do ambiente."
     }
+  },
+  "preparacao_dados": {
+    "estado": "aguardando_obtencao_e_conferencia_zip",
+    "contrato_commit": "0143e0d4e1a3edf0c084656f9b956a101e24a942",
+    "manifesto": "https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/manifesto.json",
+    "fonte_repositorio_privado": true,
+    "instrucoes_download": "Bruno baixa o ZIP pelo GitHub no navegador com acesso ao repositório; não é indicado curl anônimo para recurso privado.",
+    "zip": {
+      "arquivo_local": "data/raw/fontes-antt-siade-2024-2025.zip",
+      "url": "https://github.com/CorreaBrunoMiguel/gerador_analitico/blob/0143e0d4e1a3edf0c084656f9b956a101e24a942/projetos/GA-001-logistica-dados-publicos/versoes/1.0.0/dados/fontes-antt-siade-2024-2025.zip",
+      "tamanho_bytes_esperado": 264642,
+      "sha256_esperado": "2a5d0b6c0dfaddca5d4415f76eda38a1f7fcca383a4de3a799412ffc713dbbfb",
+      "obtencao_confirmada": false,
+      "hash_local_verificado": false
+    },
+    "csvs": [
+      {
+        "arquivo_local": "data/raw/producao_origem_destino_2024.csv",
+        "tamanho_bytes_esperado": 607661,
+        "sha256_esperado": "5f596d970ca568679b1db2962f82b92b21e39ad9f6fe871137613d4dcf7a0673",
+        "hash_local_verificado": false
+      },
+      {
+        "arquivo_local": "data/raw/producao_origem_destino_2025.csv",
+        "tamanho_bytes_esperado": 601420,
+        "sha256_esperado": "265a40f1759fcb6af5a83d28b687d3621d8cf50054ae777f80e7cb0d9e863114",
+        "hash_local_verificado": false
+      }
+    ],
+    "registro": "docs/dados.md",
+    "limite": "Valores esperados lidos no manifesto fixo; nenhum download local, tamanho ou hash fornecido por Bruno nesta etapa ainda."
   }
 }
